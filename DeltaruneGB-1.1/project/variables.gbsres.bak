@@ -195,6 +195,31 @@
       "id": "cef55cca-106e-4e82-b38d-cfe1faac3a91__L0",
       "name": "Local 0",
       "symbol": "var_local_1"
+    },
+    {
+      "id": "511",
+      "name": "bloodType",
+      "symbol": "var_bloodtype"
+    },
+    {
+      "id": "510",
+      "name": "Favorite food",
+      "symbol": "var_favorite_food"
+    },
+    {
+      "id": "509",
+      "name": "color",
+      "symbol": "var_color"
+    },
+    {
+      "id": "508",
+      "name": "GIFT",
+      "symbol": "var_gift"
+    },
+    {
+      "id": "507",
+      "name": "ressentiment",
+      "symbol": "var_ressentiment"
     }
   ]
 }

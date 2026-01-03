@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "16be298b-20b9-4f2c-b6d6-c657be2bbbf4",
-  "name": "",
+  "id": "c5fdf7de-40fa-4dfc-b972-fb5bdb9f1c69",
+  "name": "Hax",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "dce93b2e-4fe9-4740-bb9c-5f9eca8caa30",
+  "spriteSheetId": "9724d44d-720b-490c-8e80-983e33485157",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,22 +14,14 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_87",
+  "symbol": "actor_35",
   "script": [],
-  "startScript": [
-    {
-      "command": "EVENT_ACTOR_HIDE",
-      "args": {
-        "actorId": "$self$"
-      },
-      "id": "f0b40387-253d-4550-b8c1-8764644091c3"
-    }
-  ],
+  "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 15,
-  "y": 5,
-  "_index": 2
+  "x": 1,
+  "y": 13,
+  "_index": 5
 }

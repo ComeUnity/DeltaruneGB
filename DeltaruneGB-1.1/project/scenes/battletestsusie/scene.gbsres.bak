@@ -1,15 +1,15 @@
 {
   "_resourceType": "scene",
   "id": "cef55cca-106e-4e82-b38d-cfe1faac3a91",
-  "_index": 27,
+  "_index": 26,
   "type": "TOPDOWN",
   "name": "BattleTestSusie",
   "symbol": "scene_29",
   "x": 1640,
   "y": 776,
-  "width": 27,
-  "height": 28,
-  "backgroundId": "ddb146e8-f251-402d-af10-a46cb8627c42",
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8216f73b-0d3c-4193-9f8f-4c246e9f8358",
   "tilesetId": "",
   "paletteIds": [
     "37439072-72d1-4465-9093-d247d47a4312",
@@ -24,9 +24,12 @@
   "spritePaletteIds": [
     "b09f4d90-7dae-4540-b13f-8447654b8599",
     "dc234996-22f5-4637-adad-fbd4fed68c79",
-    "default-bg-1",
-    "default-bg-4",
-    "92f02c0f-b003-444e-98b2-260612d565ac"
+    "1c76dcdd-3e93-41a4-8093-0ab59d10d371",
+    "0d555469-6c2f-46ce-bcbd-40cb8c1a5973",
+    "92f02c0f-b003-444e-98b2-260612d565ac",
+    "aafd9fd9-fd3f-415a-9895-8303420c1637",
+    "3548cd93-69b2-4888-97e8-dbda39740de9",
+    "dd2e4c14-ee0d-45a4-86a4-c7b2962ad781"
   ],
   "autoFadeSpeed": 1,
   "script": [
@@ -133,20 +136,19 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "L0",
-              "items": 4,
-              "option1": "Attack",
-              "option2": "Act",
-              "option3": "Item",
-              "option4": "Spare",
-              "option5": "",
+              "items": 5,
+              "option1": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Fight!F:aad41666-0487-4159-b718-979dd3a5e8ef!D",
+              "option2": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Act. !F:aad41666-0487-4159-b718-979dd3a5e8ef!AB",
+              "option3": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Item !F:aad41666-0487-4159-b718-979dd3a5e8ef!C",
+              "option4": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Spare!F:aad41666-0487-4159-b718-979dd3a5e8ef!E",
+              "option5": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Def. !F:aad41666-0487-4159-b718-979dd3a5e8ef!F",
               "option6": "",
               "option7": "",
               "option8": "",
-              "cancelOnB": false,
-              "layout": "dialogue",
-              "cancelOnLastOption": true
+              "cancelOnB": true,
+              "layout": "menu"
             },
-            "id": "6295dab0-8dab-4001-842b-b18b36552a67"
+            "id": "8ff174f9-8b1c-4202-9dc6-bfbb98c08b16"
           },
           {
             "command": "EVENT_IF",
@@ -879,6 +881,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "",
+  "collisions": "00168+",
   "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
 }

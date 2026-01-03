@@ -114,10 +114,10 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!A castle...?",
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!A castle...?",
                 "Why the hell is\nthere a castle\ninside a sluppy\ncloset...?",
                 "!S1!  Welcome Heroes!",
-                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Who's there?!",
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Who's there?!",
                 "!S1!Do not be alarmed\nI'm not your enemy",
                 "Please come\nforward, both of\nyou..."
               ],
@@ -178,7 +178,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Welcome, i'm the\nprince of this\nkingdom...",
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Welcome, i'm the\nprince of this\nkingdom...",
                 "The KINGDOM OF\nDARKNESS.",
                 "Kris,Susie, there\nis a LEGEND in\nthis land.",
                 "A legend that one\nday, two HEROES OF\nLIGHTS will arrive",
@@ -246,7 +246,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:Very well,then.."
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Very well,then.."
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -369,8 +369,8 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:Phew...",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:Very well,then.."
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Phew...",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Very well,then.."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -428,20 +428,20 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!... really?\nYou've heard it\nalready?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!... really?\nYou've heard it\nalready?",
                             "Oh.Perhaps I\nshouldn't have\nrehearsed it so-",
                             "-much...",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Look,dude, we\ndidn't come here\nfor a bedtime story",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Look,dude, we\ndidn't come here\nfor a bedtime story",
                             "Just tell us how\nto get home.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ummm, the\neasiest way would\nbe to seal the-",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ummm, the\neasiest way would\nbe to seal the-",
                             "Eastern FOUNTAIN.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d! Fountain? You\nmean,like the water\nbubbler or somethin",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!THE fountain.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Fountain? You\nmean,like the water\nbubbler or somethin",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!THE fountain.",
                             "That which gives\nthe DARK WORLD\nform.",
                             "...umm, are you\nsure you actually\nknow the legend?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Look.No. but I\nthink I've got\nenough info.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Look.No. but I\nthink I've got\nenough info.",
                             "See you two later.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!WAIT! let me at\nleast tell you\nhow..."
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!WAIT! let me at\nleast tell you\nhow..."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -523,35 +523,35 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ho ho ho!\n",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ho ho ho!\n",
                             "The heroes are\nalready running\naway...",
                             "And they didn't\neven know I was\nhere.",
                             "My dad's gonna\nmake me Son of the\nMonth!",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Who the hell are\nyou!?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!I'm...!\n",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Who the hell are\nyou!?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I'm...!\n",
                             "The bad guy.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!The Bad Guy?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!You know.\nTeardrop-\nheaded kid.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!The Bad Guy?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!You know.\nTeardrop-\nheaded kid.",
                             "From the legend?",
                             "... No?",
                             "Aw boy.\nThis is gonna be\nhard to explain.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!From the legend?\nI could help\nexplain it...!",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Stay out of this,\nkindboy!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!From the legend?\nI could help\nexplain it...!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Stay out of this,\nkindboy!",
                             "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!No! I'll protect\nthe heroes with my\nlife!",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Actually,can you\nhold off?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Actually,can you\nhold off?",
                             "I wanna hear this\nkid.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!OK, so, long story\nshort.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!OK, so, long story\nshort.",
                             "You guys are\nheroes.You wanna\ngo EAST",
                             "To seal our\nDARK FOUNTAIN.",
                             "That'll stop\ndarkness from\ncovering the world",
                             "We,on the other\nhand,don't want\nthat, because:",
                             "It would rule,\nand be great.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Wait, why DO we\nwant to stop that?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Uhh, I dunno... I\nguess I could go\nask my dad?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!I could tell you!",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!We GOT this.\nSo the POINT is,\nyou wanna fight us?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Correct-a-mundo!",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Arright, kid..",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Wait, why DO we\nwant to stop that?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Uhh, I dunno... I\nguess I could go\nask my dad?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I could tell you!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!We GOT this.\nSo the POINT is,\nyou wanna fight us?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Correct-a-mundo!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Arright, kid..",
                             "NOW you're telling\nme something I\nunderstand!"
                           ],
                           "__section": "text",
@@ -636,26 +636,26 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Kris,Susie...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Kris,Susie...",
                       "Thank you for\nlistening my long\ntale.",
                       "I deeply believe\nyou two are the\nHEROES of the LEGEND",
                       "That, despite\nwhatever ennemies\nyou may face...",
                       "..You two have the\nCOURAGE to SAVE\nTHE WORLD.",
                       "DELTA WARRIORS!\nPlease won't you\naccept your destiny",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d! Uhhh...\nNah.",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!W-What?!",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d! Me?Some kind of\nhero or something?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Uhhh...\nNah.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!W-What?!",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Me?Some kind of\nhero or something?",
                       "You've got the\nwrong person.",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!B-but Susie,\nwithout you, th-\nThe world will-",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!So what? If the\nworld gets\ndestroyed...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!B-but Susie,\nwithout you, th-\nThe world will-",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!So what? If the\nworld gets\ndestroyed...",
                       "It's none of my\ndamn buisness.",
                       "Might even be kind\nof fun, honestly.",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!...",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Anyway Kris...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Anyway Kris...",
                       "If YOU wanna play\npretend with this\nweirdo...",
                       "Stick around.",
                       "I'M going to find\na way out of here.",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Susie! WAIT !"
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Susie! WAIT !"
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -756,27 +756,27 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ho ho ho!\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ho ho ho!\n",
                       "The heroes are\nalready running\naway...",
                       "And they didn't\neven know I was\nhere.",
                       "My dad's gonna\nmake me Son of the\nMonth!",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Who the hell\nare you!?",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!I'm...!\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Who the hell\nare you!?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I'm...!\n",
                       "The bad guy.",
                       "You CLOWNS want to\nseal our\nDARK FOUNTAIN,huh!",
                       "And- STILL\npicturing you\nguys as CLOWNS",
                       "Save the world\nfrom ETERNAL\nDARKNESS, huh!?",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Eh.\n",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Don't try to deny\nit...!\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Eh.\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Don't try to deny\nit...!\n",
                       "We both know\nyou'll go EAST!",
                       "It's your only way\nhome!",
                       "But, I, LANCER,\nwon't let you go\nthere!",
                       "And I've got a\nflawless two step\nplan to ensure it.",
                       "Step one.\nI thrash you.",
                       "Step two.\nYou lose!",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hmm. Nice plan,\nkid.",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!R-really...?\n",
-                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Yeah, actually...\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Hmm. Nice plan,\nkid.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!R-really...?\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Yeah, actually...\n",
                       "Mind if we use\nit on you instead?"
                     ],
                     "__section": "text",
@@ -867,7 +867,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!...Are you two\nok ?"
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!...Are you two\nok ?"
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -909,10 +909,10 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Um, allow me to\nintroduce myself\nmore properly,i am",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Jeez,can you\ntake off that hood",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Um, allow me to\nintroduce myself\nmore properly,i am",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Jeez,can you\ntake off that hood",
                             "I can barely hear\nyou under there.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ummm.. Alright.."
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ummm.. Alright.."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -945,12 +945,12 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hello everyone,\ni'm Ralsei.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Hello everyone,\ni'm Ralsei.",
                             "Kris, Susie. It's\never so wonderful\nto meet you!",
                             "I'm certain we're\ngoing to become\ngreat friends and-",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Best way to\nleave is East\nright ?",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Yes! That's\nwhere we will...",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Got it."
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Best way to\nleave is East\nright ?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Yes! That's\nwhere we will...",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Got it."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -1005,7 +1005,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!See you at\nschool, Kris."
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!See you at\nschool, Kris."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -1054,7 +1054,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ummm...",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ummm...",
                             "I suppose it's just\nthe two of us then"
                           ],
                           "__section": "text",
@@ -1108,7 +1108,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Kris,I'm a\nPRINCE but",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Kris,I'm a\nPRINCE but",
                             "I, uh, currently\ndon't have any\nsubject",
                             "I've been waiting\nalone here...",
                             "Umm, My whole life\nfor you two to\narrive..",
@@ -1149,9 +1149,9 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Let's Try to\nfind Susie !",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Let's Try to\nfind Susie !",
                             "She must be to the\nsoutheast.",
-                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!You can lead the\nway Kris !"
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!You can lead the\nway Kris !"
                           ],
                           "__section": "text",
                           "avatarId": "",

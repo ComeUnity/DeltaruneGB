@@ -593,11 +593,11 @@
                           "sceneId": "cef55cca-106e-4e82-b38d-cfe1faac3a91",
                           "x": {
                             "type": "number",
-                            "value": 12
+                            "value": 7
                           },
                           "y": {
                             "type": "number",
-                            "value": 17
+                            "value": 9
                           },
                           "direction": "",
                           "fadeSpeed": "2"
@@ -818,11 +818,11 @@
                     "sceneId": "cef55cca-106e-4e82-b38d-cfe1faac3a91",
                     "x": {
                       "type": "number",
-                      "value": 12
+                      "value": 7
                     },
                     "y": {
                       "type": "number",
-                      "value": 17
+                      "value": 10
                     },
                     "direction": "",
                     "fadeSpeed": "2"

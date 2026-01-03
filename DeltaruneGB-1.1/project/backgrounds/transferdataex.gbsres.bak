@@ -8,5 +8,6 @@
   "imageWidth": 184,
   "imageHeight": 144,
   "filename": "TransferDataEx.png",
-  "tileColors": "0052+05!0016f+"
+  "tileColors": "0052+05!0016f+",
+  "autoColor": false
 }
