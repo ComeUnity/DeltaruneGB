@@ -1,0 +1,83 @@
+{
+  "_resourceType": "scene",
+  "id": "4853f913-b12a-4a56-b115-881d7755e61d",
+  "_index": 22,
+  "type": "TOPDOWN",
+  "name": "Scène NNN",
+  "symbol": "scene_23",
+  "x": 2968,
+  "y": 736,
+  "width": 24,
+  "height": 18,
+  "backgroundId": "2fdff45f-51fe-4c73-b0f6-a4d83587b42a",
+  "tilesetId": "",
+  "paletteIds": [
+    "116975a1-6c36-47f6-ac49-5fb89eb5fbef",
+    "18a59039-f9db-4516-929c-2b05cbda92eb",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ab2df109-d0b0-4c03-a2cd-ff327adb8c87"
+      },
+      "id": "7141d67b-c4a6-488c-a749-f694abcb054e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!First.",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!You must name\nyour vessel"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "d9cfe1db-de88-452e-a262-03b94cfa071b"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "849bff4b-bc8d-4284-b9f0-4416ffb3640f",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "52f825d2-c526-47f5-80ab-80f343b871fc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001b0+",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

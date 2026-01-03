@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "0d388a0b-fbf7-47d9-8057-3b51014423d9",
+  "name": "Legend2",
+  "symbol": "bg_legend2",
+  "width": 32,
+  "height": 27,
+  "imageWidth": 262,
+  "imageHeight": 216,
+  "filename": "Legend2.png",
+  "tileColors": "00360+",
+  "autoColor": false
+}

@@ -1,0 +1,78 @@
+{
+  "_resourceType": "scene",
+  "id": "cc2cdc06-0de5-4904-be39-40e19bb063f2",
+  "_index": 9,
+  "type": "TOPDOWN",
+  "name": "Scène 15",
+  "symbol": "scene_0",
+  "x": 1224,
+  "y": 160,
+  "width": 24,
+  "height": 21,
+  "backgroundId": "6430955c-6dca-46b6-8bb8-57e2d52b52c3",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The sky will run \nblack with terror",
+          "And the land will\ncrack with fear.",
+          "Then, her heart\npounding...",
+          "The EARTH will\ndraw her final\n     breath."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "ef5e87da-579f-4b8d-82c6-2b94ca119d56"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "7f8b553e-fd48-4da5-b2a6-38915d5e06e3",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "9863d6d5-fc00-4d22-9ce8-6baf13838694"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001f8+",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "b54fd3ed-ea7f-428e-a00f-aa23b9a505b6",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f6617398-b624-4f6b-9e2d-944d05cc7e6b",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_38",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There's a photo on\nthe fridge.",
+          "It's of you,your\nmother,and\nyour brother."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f20360db-ee3d-4f81-9e0c-8dac7df1f79e"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 18,
+  "y": 13,
+  "_index": 0
+}

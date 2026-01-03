@@ -1,0 +1,38 @@
+{
+  "_resourceType": "scene",
+  "id": "5cfd198f-0fe7-474e-b592-8fa01e9c307b",
+  "_index": 44,
+  "type": "TOPDOWN",
+  "name": "BlackDoor",
+  "symbol": "scene_47",
+  "x": 3664,
+  "y": 944,
+  "width": 57,
+  "height": 22,
+  "backgroundId": "b1024749-4640-4a55-bbba-64550f2c0ce3",
+  "tilesetId": "",
+  "paletteIds": [
+    "1515f879-e834-4eea-aa22-c680a48c145d",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "spritePaletteIds": [
+    "08a8b14e-0bc4-4d74-a2d6-5ac9a5b0228c",
+    "",
+    "",
+    "",
+    "2a01f30d-2e3b-4576-99db-997f2cc9cf90"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00e4+0f72+00156+0f72+001c8+"
+}

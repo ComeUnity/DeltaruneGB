@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "34e92775-3c4f-43ab-81e5-65c7bfafccd9",
+  "_index": 8,
+  "name": "Legend4",
+  "backgroundId": "a5096dff-101a-4c9d-9f46-b7521c2e6a94",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0017a+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_15",
+  "x": 993,
+  "y": 139,
+  "script": [
+    {
+      "id": "c9cae430-475a-4749-a562-c61f53ef1c0f",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "4bc11c87-3835-4bc2-a51b-bafbcba22126"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "A terrible calamity\n    would occur.",
+        "x": 1,
+        "y": 1,
+        "location": "background"
+      },
+      "id": "e1bac545-7882-496a-af25-7acb9deacfda"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "70576979-dd27-4c91-8bab-12e4ef379cda"
+    },
+    {
+      "id": "5680929d-e6e7-4a3e-936d-b9509957a8cf",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "cc2cdc06-0de5-4904-be39-40e19bb063f2",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

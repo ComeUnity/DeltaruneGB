@@ -1,0 +1,1264 @@
+{
+  "_resourceType": "scene",
+  "id": "64daa024-36f1-4050-853c-a2d17bf29ad1",
+  "_index": 62,
+  "type": "TOPDOWN",
+  "name": "Scene 65",
+  "symbol": "scene_65",
+  "x": 4536,
+  "y": 528,
+  "width": 20,
+  "height": 26,
+  "backgroundId": "d517461b-1d90-40e6-ae7e-8dbd66853568",
+  "tilesetId": "",
+  "paletteIds": [
+    "6cdd0707-f0f2-4333-a044-89537a6805f7",
+    "dc234996-22f5-4637-adad-fbd4fed68c79",
+    "dc234996-22f5-4637-adad-fbd4fed68c79",
+    "dc234996-22f5-4637-adad-fbd4fed68c79",
+    "56080135-dfdc-4075-bfc9-e564794f73c7",
+    "",
+    "dc234996-22f5-4637-adad-fbd4fed68c79"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "dc234996-22f5-4637-adad-fbd4fed68c79",
+    "default-bg-1",
+    "default-bg-4",
+    "1c76dcdd-3e93-41a4-8093-0ab59d10d371",
+    "a7a47462-0888-491b-b71d-b7dcc16c6772"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6177ae22-fd88-43f6-b491-37509c85cef4",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5"
+      },
+      "id": "5584f2fb-526b-4dca-81e7-84f349b2dcce"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "98"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 9
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15"
+            },
+            "id": "0467929d-a12b-4bd5-973e-d5ead023dd6d"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2"
+            },
+            "id": "143d95c9-19ec-43db-a596-5b978d076ae7"
+          }
+        ],
+        "false": []
+      },
+      "id": "ae381c8e-d0cb-462c-993d-e9d1dc4ee01a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "98"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 8
+              },
+              "y": {
+                "type": "number",
+                "value": 22
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "37fef17c-dcd0-4ee6-85d0-301baefd453c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!A castle...?",
+                "Why the hell is\nthere a castle\ninside a sluppy\ncloset...?",
+                "!S1!  Welcome Heroes!",
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Who's there?!",
+                "!S1!Do not be alarmed\nI'm not your enemy",
+                "Please come\nforward, both of\nyou..."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "e867d1fa-a93b-4c1e-a5e0-8310bb818d7b"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "9e623366-1edf-4e18-a85c-a1e13d182ab5"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 8
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "febb45fc-3631-4f94-b965-ec45548bd00d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Welcome, i'm the\nprince of this\nkingdom...",
+                "The KINGDOM OF\nDARKNESS.",
+                "Kris,Susie, there\nis a LEGEND in\nthis land.",
+                "A legend that one\nday, two HEROES OF\nLIGHTS will arrive",
+                "and fullfill the\nanciant prophecy,\nforetold by time-",
+                "-and space.",
+                "Please Heroes...\nListen to my tale.."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "33f2027f-bba4-45e7-819e-5cd5ef624d41"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
+              "items": 2,
+              "option1": "Listen",
+              "option2": "No",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": false
+            },
+            "id": "877d321f-60d0-4eb6-8a99-89fb5be18797"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Very well,then.."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "f061d15d-f1b9-4190-b7ac-52efeb2e3469"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "98",
+                    "operation": "set",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 7,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": false
+                  },
+                  "id": "afcb0749-8f1f-4254-bd4e-8e05ea3d9495"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "42c65e15-e01a-4f87-afa7-5bd4aa117236"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:...",
+                      "r-really? Are you\nsure?",
+                      "It's fairly\nimportant",
+                      "And in my opinion,\nit's a really nice\nPROPHECY!",
+                      "I think you'd\nquite like it!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3dcfb510-fd82-43cf-8740-ae16b4e80ee0"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "L0",
+                    "items": 2,
+                    "option1": "Listen",
+                    "option2": "We know it.",
+                    "option3": "",
+                    "option4": "",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": true,
+                    "layout": "dialogue"
+                  },
+                  "id": "738bc8dc-112c-44c9-94ec-54b76352d354"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Phew...",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Very well,then.."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "7c09b104-51b5-4a7d-9e48-93c1cdcc2d74"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "98",
+                          "operation": "set",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 7,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": false
+                        },
+                        "id": "57355ad6-315d-4e72-a1db-d5162e974635"
+                      },
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+                          "x": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 10
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "769f5585-75da-4828-bc3d-c954b8a9d738"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!... really?\nYou've heard it\nalready?",
+                            "Oh.Perhaps I\nshouldn't have\nrehearsed it so-",
+                            "-much...",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Look,dude, we\ndidn't come here\nfor a bedtime story",
+                            "Just tell us how\nto get home.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ummm, the\neasiest way would\nbe to seal the-",
+                            "Eastern FOUNTAIN.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Fountain? You\nmean,like the water\nbubbler or somethin",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!THE fountain.",
+                            "That which gives\nthe DARK WORLD\nform.",
+                            "...umm, are you\nsure you actually\nknow the legend?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Look.No. but I\nthink I've got\nenough info.",
+                            "See you two later.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!WAIT! let me at\nleast tell you\nhow..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "8f64517f-1d4a-4e78-b11e-1486d6606058"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5"
+                        },
+                        "id": "2f2d89ec-bdbc-457e-8563-2cffc69c19d2"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_MOVE_TO",
+                        "args": {
+                          "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5",
+                          "x": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "moveType": "horizontal",
+                          "useCollisions": false
+                        },
+                        "id": "0ae22711-a3e4-4a48-a68b-2af00e04cca1"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "f2756025-31e7-4356-9e36-d267fbf4c7e4"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15"
+                        },
+                        "id": "d17351f1-39d5-44f4-b2ef-5088d0d70490"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 5
+                          }
+                        },
+                        "id": "c8c134aa-f205-4132-ba5d-1c0631e6ef78"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ho ho ho!\n",
+                            "The heroes are\nalready running\naway...",
+                            "And they didn't\neven know I was\nhere.",
+                            "My dad's gonna\nmake me Son of the\nMonth!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Who the hell are\nyou!?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I'm...!\n",
+                            "The bad guy.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!The Bad Guy?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!You know.\nTeardrop-\nheaded kid.",
+                            "From the legend?",
+                            "... No?",
+                            "Aw boy.\nThis is gonna be\nhard to explain.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!From the legend?\nI could help\nexplain it...!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Stay out of this,\nkindboy!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!No! I'll protect\nthe heroes with my\nlife!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Actually,can you\nhold off?",
+                            "I wanna hear this\nkid.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!OK, so, long story\nshort.",
+                            "You guys are\nheroes.You wanna\ngo EAST",
+                            "To seal our\nDARK FOUNTAIN.",
+                            "That'll stop\ndarkness from\ncovering the world",
+                            "We,on the other\nhand,don't want\nthat, because:",
+                            "It would rule,\nand be great.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Wait, why DO we\nwant to stop that?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Uhh, I dunno... I\nguess I could go\nask my dad?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I could tell you!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!We GOT this.\nSo the POINT is,\nyou wanna fight us?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Correct-a-mundo!",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Arright, kid..",
+                            "NOW you're telling\nme something I\nunderstand!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "80ab658c-7a61-4090-a5e0-a114463ec8a2"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "98",
+                          "operation": "set",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 8,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": false
+                        },
+                        "id": "3de446cd-6723-4fcb-86c5-8b3729a9c189"
+                      },
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "cef55cca-106e-4e82-b38d-cfe1faac3a91",
+                          "x": {
+                            "type": "number",
+                            "value": 12
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 17
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "16953c2c-5406-4cda-8e08-3a1839e7b13c"
+                      }
+                    ]
+                  },
+                  "id": "b390baba-83ed-4544-bfec-95febc128636"
+                }
+              ]
+            },
+            "id": "3193e5fa-ca7b-4c97-974b-e0f991b769a0"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "98"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 7
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Kris,Susie...",
+                      "Thank you for\nlistening my long\ntale.",
+                      "I deeply believe\nyou two are the\nHEROES of the LEGEND",
+                      "That, despite\nwhatever ennemies\nyou may face...",
+                      "..You two have the\nCOURAGE to SAVE\nTHE WORLD.",
+                      "DELTA WARRIORS!\nPlease won't you\naccept your destiny",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Uhhh...\nNah.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!W-What?!",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Me?Some kind of\nhero or something?",
+                      "You've got the\nwrong person.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!B-but Susie,\nwithout you, th-\nThe world will-",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!So what? If the\nworld gets\ndestroyed...",
+                      "It's none of my\ndamn buisness.",
+                      "Might even be kind\nof fun, honestly.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Anyway Kris...",
+                      "If YOU wanna play\npretend with this\nweirdo...",
+                      "Stick around.",
+                      "I'M going to find\na way out of here.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Susie! WAIT !"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "9017a676-df43-4654-a6ea-221b53fc1981"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "05aa28ad-d70d-4ef3-9e63-9c6324e45f46"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "86788104-573e-4277-be63-7f1f129d04c5"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5"
+                  },
+                  "id": "07d5aff6-16e5-4c23-8de9-318c501cbbe1"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "583ae2b5-3b63-4ec7-9457-65a1feebc292"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "c0bebe51-bf8d-4fec-b066-28fe71022c40"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15"
+                  },
+                  "id": "f326bf16-1572-48cc-9e02-f1846e271b1b"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "25527042-106e-43cf-8647-740c6b0da528"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ho ho ho!\n",
+                      "The heroes are\nalready running\naway...",
+                      "And they didn't\neven know I was\nhere.",
+                      "My dad's gonna\nmake me Son of the\nMonth!",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Who the hell\nare you!?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I'm...!\n",
+                      "The bad guy.",
+                      "You CLOWNS want to\nseal our\nDARK FOUNTAIN,huh!",
+                      "And- STILL\npicturing you\nguys as CLOWNS",
+                      "Save the world\nfrom ETERNAL\nDARKNESS, huh!?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Eh.\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Don't try to deny\nit...!\n",
+                      "We both know\nyou'll go EAST!",
+                      "It's your only way\nhome!",
+                      "But, I, LANCER,\nwon't let you go\nthere!",
+                      "And I've got a\nflawless two step\nplan to ensure it.",
+                      "Step one.\nI thrash you.",
+                      "Step two.\nYou lose!",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Hmm. Nice plan,\nkid.",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!L:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!R-really...?\n",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Yeah, actually...\n",
+                      "Mind if we use\nit on you instead?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "34ed3ec8-63d6-439b-b203-078b7ad921c8"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "98",
+                    "operation": "set",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 8,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": false
+                  },
+                  "id": "b4123c78-5974-4d81-86ad-92997d9e25aa"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "cef55cca-106e-4e82-b38d-cfe1faac3a91",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "d251aae9-eda6-4d11-b976-8d3b9153026e"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "98"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 8
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5"
+                        },
+                        "id": "3a08258f-ff06-42f7-bdf4-095def65c383"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15"
+                        },
+                        "id": "61b8bcda-6fdb-49cb-8fe0-11ca3b6ff7ba"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!...Are you two\nok ?"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "1254b7a4-9ca5-4d76-b43b-be31008879e0"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_MOVE_TO",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15",
+                          "x": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 13
+                          },
+                          "moveType": "horizontal",
+                          "useCollisions": false
+                        },
+                        "id": "bc50bcd4-1d2b-4aa2-940d-3922d5ab69bb"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Um, allow me to\nintroduce myself\nmore properly,i am",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Jeez,can you\ntake off that hood",
+                            "I can barely hear\nyou under there.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!O:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ummm.. Alright.."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "328974b8-c31c-4d51-9e04-2cb6b7c375fd"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_SPRITE",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15",
+                          "spriteSheetId": "c365b50e-a692-4e88-bf0f-b7ed8b3a46bc"
+                        },
+                        "id": "0dc5248c-e99e-4fbc-b093-8500201b3bc3"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Hello everyone,\ni'm Ralsei.",
+                            "Kris, Susie. It's\never so wonderful\nto meet you!",
+                            "I'm certain we're\ngoing to become\ngreat friends and-",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Best way to\nleave is East\nright ?",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Yes! That's\nwhere we will...",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Got it."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "ddde4e47-b0f9-44f2-997e-7392585f52da"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                        "args": {
+                          "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2",
+                          "direction": {
+                            "type": "direction",
+                            "value": "right"
+                          }
+                        },
+                        "id": "7d8b27eb-12d5-4ef6-a65d-e9ccc9bde2f2"
+                      },
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "e560af36-9dd6-44e3-a734-497ec62bbf49"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                        "args": {
+                          "actorId": "$self$",
+                          "direction": {
+                            "type": "direction",
+                            "value": "right"
+                          }
+                        },
+                        "id": "883a589d-9156-499e-aef8-d7f2550603f6"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!See you at\nschool, Kris."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "4c4d7fe9-95c4-43ec-9879-d930cad8dca7"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_MOVE_TO",
+                        "args": {
+                          "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2",
+                          "x": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 25
+                          },
+                          "moveType": "horizontal",
+                          "useCollisions": false
+                        },
+                        "id": "f10a3c9b-c36b-4551-83dd-9c63513cb05e"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2"
+                        },
+                        "id": "47d293ff-e83b-47fd-9013-9ccb4c80fafe"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Ummm...",
+                            "I suppose it's just\nthe two of us then"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "f3c2abd5-50f5-4d01-8383-b12ad8a5989a"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_MOVE_TO",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15",
+                          "x": {
+                            "type": "number",
+                            "value": 12
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 17
+                          },
+                          "moveType": "horizontal",
+                          "useCollisions": false
+                        },
+                        "id": "a27c818e-74ab-4ee8-94bc-00e27aed6daf"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15",
+                          "direction": {
+                            "type": "direction",
+                            "value": "left"
+                          }
+                        },
+                        "id": "726483fd-6316-431c-a225-16116c3015d5"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Kris,I'm a\nPRINCE but",
+                            "I, uh, currently\ndon't have any\nsubject",
+                            "I've been waiting\nalone here...",
+                            "Umm, My whole life\nfor you two to\narrive..",
+                            "So... I'm really\nhappy to meet you.",
+                            "I hope we can be\ngood friends,Kris."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "dedd81b4-9bcc-4910-b0bf-9874e57c7f35"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15",
+                          "direction": {
+                            "type": "direction",
+                            "value": "down"
+                          }
+                        },
+                        "id": "a1c4da6a-fc3c-41f1-a00c-4a9605973823"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Let's Try to\nfind Susie !",
+                            "She must be to the\nsoutheast.",
+                            "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!R:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!You can lead the\nway Kris !"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "c3a2efac-dc27-4b63-bde1-98808fa40cf9"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "(The Demo end here\nfor this update)",
+                            "(You can freely\naccess and explore\nthis zone)",
+                            "We'll update the\ngame more often,\nsorry for the time\nthis update took!",
+                            "Have Fun !"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "2696a678-e57d-46a9-8684-bc8416d3b9e9"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "98",
+                          "operation": "set",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 9,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": false
+                        },
+                        "id": "5802d3d1-7d8e-4f14-9798-5a938809b369"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2"
+                        },
+                        "id": "d6b85fb0-2dc3-4fd6-b93d-6423ebc3302e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "a4950e60-e250-443f-be15-9561cf27a0e2"
+                        },
+                        "id": "d3336553-eb77-4b16-b6ff-acc5c8ed9faa"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "02d4bb2b-1634-42f0-b89d-1779445d9d15"
+                        },
+                        "id": "2c59dfef-411a-490d-ad8b-6869d918ed05"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "2f2caf80-373b-4c15-b351-d934d68744d5"
+                        },
+                        "id": "0f721d59-ab78-4abc-ae74-859163317d96"
+                      }
+                    ]
+                  },
+                  "id": "162b82a6-44db-4d58-a749-1caeeea64fc6"
+                }
+              ]
+            },
+            "id": "8963da63-9cf6-451d-b3bb-00d8a18bfb97"
+          }
+        ]
+      },
+      "id": "21e4bc07-91ae-466d-969a-9cf95b8d53e1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f28+00168+0f6+008+0f6+005+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f!005+"
+}

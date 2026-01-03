@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "761a2351-ab21-4e02-9520-68a632488c36",
+  "name": "Cinématique2",
+  "symbol": "bg_cin_matique2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Cinématique2.png",
+  "tileColors": "",
+  "autoColor": false
+}

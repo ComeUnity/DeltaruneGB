@@ -1,0 +1,124 @@
+{
+  "_resourceType": "actor",
+  "id": "3dcf00dd-29b8-46fe-9610-6bce6badc348",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b4eba4b6-67db-4629-850b-9fbcdfa95fc7",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_55",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "T0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!B:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ask elsewhere,\nKris",
+                "I actually want to\nget an \"A!\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "61058046-2247-4a30-8fc4-6dd04006cc97"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!B:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ask elsewhere,\nKrisAh, Kris, late\nagain, I see.",
+                "Hmmm, you need a\npartner?",
+                "Sorry, I'm already\npartners with the\n2nd smartest\nstudent.",
+                "Though... wait!",
+                "Kris, now that I\nthink about it...",
+                "Your unique\nskillset might\nhelp-",
+                "a LOT on this\nassignment!\n....",
+                "Pfft, NOT! I\nactually want to\nget an \"A!\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "72514615-ff97-48da-8a6f-4d9564925bf4"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "T0",
+              "operation": "set",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 1,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "d88bf790-4fc1-4b48-99c3-e80212066a43"
+          }
+        ]
+      },
+      "id": "bf41f64a-b203-4393-8a04-f1a8abca430e"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 14,
+  "y": 14,
+  "_index": 3
+}

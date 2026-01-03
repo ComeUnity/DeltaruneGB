@@ -1,0 +1,27 @@
+{
+  "_resourceType": "scene",
+  "id": "d69b5f01-94e6-48d4-83c4-483824a3b7eb",
+  "_index": 62,
+  "name": "Scene 64",
+  "backgroundId": "39c5c048-601d-4860-8931-8e1485e3961e",
+  "tilesetId": "",
+  "width": 56,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "56080135-dfdc-4075-bfc9-e564794f73c7",
+    "6cdd0707-f0f2-4333-a044-89537a6805f7",
+    "default-ui"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0012+0f14+0023+0f16+0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0022+0f!0014+0f!0011+0f12+0014+0f12+00e0+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_64",
+  "x": 4696,
+  "y": 856,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "6177ae22-fd88-43f6-b491-37509c85cef4"
+}

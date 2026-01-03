@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "dff03609-2400-4f5a-8f93-822e56f6cb4e",
+  "name": "name_input/Name Vessel",
+  "symbol": "bg_name_input_background_co",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "name_input/Name Vessel.png",
+  "tileColors": ""
+}

@@ -1,0 +1,56 @@
+{
+  "_resourceType": "actor",
+  "id": "c9dbb8ac-39dd-402f-b92e-f8287c3453b8",
+  "name": "Mkid",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1a2a8d8a-2c18-45ff-9b80-87ec2c0d7c62",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_57",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Yo Kris ! Show up\nearlier next time!",
+          "I ended up having\nto partner with\nSnowy, Ahah...",
+          "Now he keeps\nturning to me and\nsaying :",
+          "\"Howdy, Partner!\"\nlike a cowboy..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f3128d81-7bad-4969-8498-6b6ae041f3fd"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 22,
+  "y": 18,
+  "_index": 5
+}

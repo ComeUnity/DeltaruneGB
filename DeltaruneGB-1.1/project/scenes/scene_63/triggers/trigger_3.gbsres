@@ -1,0 +1,169 @@
+{
+  "_resourceType": "trigger",
+  "id": "aeed7d7f-56eb-4d23-b2cd-8d2704c8d78b",
+  "name": "",
+  "prefabId": "",
+  "x": 47,
+  "y": 26,
+  "symbol": "trigger_37",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 6,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "f38658d5-b8a6-42d8-903a-eddaa60777eb",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "a4b80a07-b368-420e-8cab-a6357852c140"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hey Kris, there\nis someone up\nthere waving at us",
+          "Any idea what they\nwant..?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8b1f6caa-ba50-47ba-b6a8-f6ab70ddd55f"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 42
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 1
+      },
+      "id": "bfa83951-17ee-44b4-ab10-abd8c4a26c03"
+    },
+    {
+      "command": "EVENT_CAMERA_LOCK",
+      "args": {
+        "speed": 1,
+        "axis": [
+          "x",
+          "y"
+        ]
+      },
+      "id": "0f8956f7-943d-456e-aad1-764c417975dc"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a6323989-6fa1-48cd-92d5-a37c08093e85"
+      },
+      "id": "171bdf6d-771d-4668-ad75-d39991473bf9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!R-run, Kris!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9b96eed2-d9f7-4b75-a446-24ba2f239fa4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "f38658d5-b8a6-42d8-903a-eddaa60777eb",
+        "x": {
+          "type": "number",
+          "value": 83
+        },
+        "y": {
+          "type": "number",
+          "value": 28
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "24834ef3-a287-49f7-966b-40ea1394780a"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "f38658d5-b8a6-42d8-903a-eddaa60777eb"
+      },
+      "id": "046ce2d0-4826-470f-9879-8229d3c564fe"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 78
+        },
+        "y": {
+          "type": "number",
+          "value": 28
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "f0341df1-9fba-4749-bbd4-272d6ad29913"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2d3f1173-fb52-4916-b5bd-794241adf232",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 40
+        },
+        "direction": "",
+        "fadeSpeed": 6
+      },
+      "id": "115b55b5-20c4-4b23-a895-d9f814fc44b0"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

@@ -1,0 +1,183 @@
+{
+  "_resourceType": "scene",
+  "id": "9f9e4c05-fa61-47ec-a237-f51786a4848d",
+  "_index": 8,
+  "name": "GameOver1",
+  "backgroundId": "2ca75178-e6a3-4e0d-a74b-e360353400ac",
+  "tilesetId": "",
+  "width": 24,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-ui"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 424,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "0d0d6d4b-bac2-4a98-bd9f-d0a3da73f4a9"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "13db5899-95aa-4cbc-9083-615f7f42704e"
+      },
+      "id": "9d3fed28-c135-4f9b-9d9d-379d03dc3acb"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "a00bd02c-c8dc-4bf7-968d-1d2208263a3d"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "84689d26-9feb-4eea-aebf-617bc957fddb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Allez! ça arrive\nà tout le monde\nles mauvais rêves!",
+          "Attrape ta déstiné\net recommence\nmon petit Slimy!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "19c34269-738e-4460-8790-15bef1d2f125"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "On recommence !",
+        "option2": "Ouais nan flemme.",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "bf4db6ec-401b-44d9-9f1a-238faa0e1712"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "78d13ace-5bed-436b-8f52-96ce712bd950"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+              "x": {
+                "type": "number",
+                "value": 5
+              },
+              "y": {
+                "type": "number",
+                "value": 19
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "9142ff41-cfca-440f-b50d-01b12a014f40"
+          }
+        ],
+        "false": []
+      },
+      "id": "826c20e3-e48b-41b4-b4d4-a251dcae96ab"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Comme tu voudras\nHéro...."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "09d2c479-4570-4920-bf4a-323555036c5e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "795c5a29-6401-4945-9cb8-879ab4ba936b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

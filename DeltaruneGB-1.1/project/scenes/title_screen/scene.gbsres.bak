@@ -1,0 +1,160 @@
+{
+  "_resourceType": "scene",
+  "id": "4912bee2-387a-472f-ae4f-6679b6149517",
+  "_index": 4,
+  "type": "TOPDOWN",
+  "name": "Title Screen",
+  "symbol": "scene_title_screen",
+  "x": 96,
+  "y": 464,
+  "width": 23,
+  "height": 18,
+  "backgroundId": "16293a97-9ab2-495e-a92b-c9b24268b64b",
+  "tilesetId": "",
+  "paletteIds": [
+    "default-ui",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "18a59039-f9db-4516-929c-2b05cbda92eb",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "default-bg-5",
+    "default-bg-5"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "script": [
+    {
+      "id": "ff79b819-b435-4ef8-af20-07302038959f",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "acd869fa-86c1-4bdf-b77a-363292347d6d"
+      },
+      "id": "a272f712-abf2-4131-a42f-91c13dc3dd04"
+    },
+    {
+      "id": "41b284dc-047f-4bb1-ad5c-f8ade30d034e",
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b",
+          "start",
+          "select"
+        ]
+      }
+    },
+    {
+      "command": "EVENT_RNG_SEED",
+      "args": {},
+      "id": "11bfc6ff-9528-492b-8b81-b19dcf49f392"
+    },
+    {
+      "id": "19a94599-0006-4e3f-9049-c5087d230ed8",
+      "command": "EVENT_LOOP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "id": "44762258-56af-44bd-abea-f0b9358bc514",
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "10",
+              "trueText": "Nouvelle Partie",
+              "falseText": "Continuer"
+            }
+          },
+          {
+            "id": "9e757f17-62ae-4fb5-990f-a9d337d7f07d",
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "10",
+              "__collapse": false,
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "10"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "aa748757-0252-4604-8a7e-c2e21e69524b"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "79be6625-d28c-42cd-9efb-b8ebef73cd9c",
+                    "x": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "c2a119d2-14d6-4645-885f-2927460bb19a"
+                }
+              ],
+              "false": [
+                {
+                  "id": "d2cd5812-f043-4aa5-b827-475dc79091e7",
+                  "command": "EVENT_IF_SAVED_DATA",
+                  "args": {
+                    "saveSlot": 0
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_MUSIC_STOP",
+                        "args": {},
+                        "id": "8c5d7797-4a5f-45a4-9072-c3805828fcbd"
+                      },
+                      {
+                        "id": "4a922761-48a9-410d-b603-00e7a7dd91ea",
+                        "command": "EVENT_LOAD_DATA",
+                        "args": {
+                          "saveSlot": 0
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "06b8f464-996e-4c51-8918-50d62bb0c02d",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Sale Mytho\nva!"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0019e+"
+}

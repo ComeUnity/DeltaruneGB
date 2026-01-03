@@ -1,0 +1,95 @@
+{
+  "_resourceType": "trigger",
+  "id": "1274d7c0-0d42-4788-a3ee-ca7229742e14",
+  "name": "",
+  "prefabId": "",
+  "x": 63,
+  "y": 8,
+  "symbol": "trigger_11",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 5,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "* Nuh uh"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4d8d631d-ce30-4b8f-96e2-68406526ddd3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Kris...?",
+                "What, realized the\nbaby classroom-",
+                "-was a better fit\nfor you ?",
+                "Hey, actually I\nshould come with\nyou...",
+                "Maybe i'll find a\nbetter partner in\nthere.",
+                "...Nah, actually\nlet's not."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "c0e8e724-767c-48ec-9130-ab14b5e77d58"
+          }
+        ]
+      },
+      "id": "ae9fdcfa-ce54-40ff-aec6-ff4c701367b8"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

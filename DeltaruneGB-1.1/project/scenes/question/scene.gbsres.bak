@@ -1,0 +1,92 @@
+{
+  "_resourceType": "scene",
+  "id": "0dc9c35e-d61c-49b5-a6e0-05375d969dae",
+  "_index": 41,
+  "name": "Question!",
+  "backgroundId": "e6e15559-54bf-40dc-a95e-3a554cba07f6",
+  "tilesetId": "",
+  "width": 24,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    ""
+  ],
+  "spritePaletteIds": [],
+  "collisions": "001b0+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_42",
+  "x": 176,
+  "y": 848,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Bien le bonjour!",
+          "Avant de commencer\nnous devons vous\nposer",
+          "D'importante\nquestions.",
+          "Quel est votre\nnom ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7640712a-ec70-49ea-9c88-6684893b9d32"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "35",
+        "value": {
+          "type": "number",
+          "value": 65
+        }
+      },
+      "id": "5ee9a4a8-158a-4993-a9b6-81e401e293a4"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "#35#",
+        "x": 1,
+        "y": 1,
+        "location": "background"
+      },
+      "id": "dba17fd7-a5ca-41dd-af0c-1db3f642ff48"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "565b7858-9b78-4a83-80f3-fcf67351b0de",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "ffa6e5ab-a110-4eff-81cf-54d636e10a53"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

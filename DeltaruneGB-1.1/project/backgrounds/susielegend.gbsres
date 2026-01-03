@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3cd4c84f-faf0-425a-a7ff-29114f10af66",
+  "name": "SusieLegend",
+  "symbol": "bg_susielegend",
+  "width": 22,
+  "height": 18,
+  "imageWidth": 176,
+  "imageHeight": 144,
+  "filename": "SusieLegend.png",
+  "tileColors": "002+013+003+01!004+01e+002+01!007+01a+003+012+007+01a+004+01!007+019+005+012+006+019+005+012+006+018+006+012+005+019+006+01!006+01a+005+01!006+01a+005+01!006+01a+005+01!007+019+005+01!003+01!003+019+005+012+002+01!002+011e+0058+",
+  "autoColor": false
+}

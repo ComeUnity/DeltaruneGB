@@ -1,0 +1,34 @@
+{
+  "_resourceType": "scene",
+  "id": "31d19a03-aa76-45e4-97b3-6e20d7a59ccf",
+  "_index": 33,
+  "type": "TOPDOWN",
+  "name": "Toilet1",
+  "symbol": "scene_36",
+  "x": 872,
+  "y": 1112,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d6431d84-193a-4528-b9dd-4432c4f223c0",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "ed122b2c-88f6-411b-950a-4372b29891c5"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00d2+0f!00!0f!008+0f9+00!0f5+004+02!0f!00a+0f4+0012+0f2+0012+0f2+0013+0f!0013+0f!004+0f10+004+",
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e"
+}

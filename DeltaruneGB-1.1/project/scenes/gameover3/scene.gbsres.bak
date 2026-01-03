@@ -1,0 +1,178 @@
+{
+  "_resourceType": "scene",
+  "id": "f1541147-5b3c-4d9a-aeed-f75016e40478",
+  "_index": 17,
+  "name": "GameOver3",
+  "backgroundId": "2ca75178-e6a3-4e0d-a74b-e360353400ac",
+  "tilesetId": "",
+  "width": 24,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-ui"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_19",
+  "x": 1880,
+  "y": 152,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "99fe21b8-f3cd-4697-bb08-2aebc4790fe7"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "13db5899-95aa-4cbc-9083-615f7f42704e"
+      },
+      "id": "e8675413-e630-46a4-b6ad-8e074398b765"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "1374447f-1aaf-42a8-a0f6-082cb995cac4"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "2b39c115-f2df-4d8e-89d5-d0f7d7ff85d6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Allez! ça arrive\nà tout le monde\nles mauvais rêves!",
+          "Attrape ta déstiné\net recommence\nmon petit Slimy!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9e9acad6-f92f-4e33-9ec0-aae57d84132c"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "On recommence !",
+        "option2": "Ouais nan flemme.",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "22a1219e-a7a7-4edc-88a6-e381bb972806"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "7333e488-e2c4-402b-85f2-0f6dbdc1fd49",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "62aad9d1-eb39-4cac-9712-8e9ccf5c402c"
+          }
+        ],
+        "false": []
+      },
+      "id": "1537b6ff-c985-40fe-8b09-913cf6fd3c2a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Comme tu voudras\nHéro...."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "505ac670-ce50-4682-a8a1-82ed4efd8e1f"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "eca9890f-bb88-4fdf-a1c3-b13bfc721c3a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

@@ -1,0 +1,566 @@
+{
+  "_resourceType": "scene",
+  "id": "833aefb9-2dce-4412-8230-218538030931",
+  "_index": 8,
+  "name": "Scène 9",
+  "backgroundId": "458c3860-173f-4b94-9d10-0f6c427ddd21",
+  "tilesetId": "",
+  "width": 24,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-2"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "001b0+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_0",
+  "x": 640,
+  "y": 30,
+  "script": [
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
+              "items": 2,
+              "option1": "PistoSlime",
+              "option2": "Slimini",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true,
+              "__collapse": true
+            },
+            "id": "686f39a7-c01c-4e73-8b44-adcded52bc30"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "0cadc3bb-9546-44fb-a2de-bcdeffb3ded9"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    },
+                    "__collapse": true
+                  },
+                  "id": "bdc50104-e5b2-4a38-af4f-21239f931c14"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "14",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 5,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "ae55bf57-d413-4aea-a004-77d0a54cb185"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Slimy utilise\nPistoSlime.",
+                      "Il inflige 5 dégâts."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "641339ee-74b5-42e3-bad3-9cce76930e8f"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "priority": "medium",
+                    "pitch": 2,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "cb3242f8-afa2-439c-9672-14adbb95b6e9"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "4dcfd1f1-5d4d-4381-a209-bd26a804ec2d"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "14",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 2,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "fcab1401-ae86-4dd5-9643-e6e62a63f305"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "add",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 3,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "00f436ae-7255-4c79-b8d4-f390f749c637"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Slimy utilise\nSlimini.",
+                      "Il inflige 2\ndégats et récupère\n3PVs"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "8771c34d-9cc0-45a5-ad44-74aaf97b043f"
+                }
+              ]
+            },
+            "id": "022cd58f-f0bc-4562-9988-3c85d22300d4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Je suis ROUGE",
+                "Rouge vous pose\nune question:",
+                "Rouge!:Qui est \nrouge et détesté\npar tout le monde?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "317a31cf-3a26-45ca-8f3a-100c3d07eb79"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
+              "items": 3,
+              "option1": "Rouge!",
+              "option2": "Slimy",
+              "option3": "Une Brique Rouge",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true,
+              "__collapse": true
+            },
+            "id": "d5cf47ef-dcd4-47ac-9d6b-e425584cb243"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Rouge!: Oui :3"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "0deabe23-fd8e-422d-bab1-64c0e803eb9b"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Rouge!: C'était\nmoi :)",
+                      "Vous perdez 4PVs."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "67be024b-6007-48c6-a834-03252df1f259"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 4,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true
+                  },
+                  "id": "3e940da7-a098-4fb4-863e-bb2fcf510ddc"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "13"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Vous petit à petit\nvos repaires.",
+                            "Vous vous\neffondrez.",
+                            "(Enfin comme un\nslime s'éffondre\ndonc je sais pas\nvous glissez ??)"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "d046a5ff-cd06-4872-a98c-8bc8f39aec02"
+                      },
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "9f9e4c05-fa61-47ec-a237-f51786a4848d",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "b9240110-c073-401f-9562-6d8367b368ce"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "5",
+                          "value": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        },
+                        "id": "f9f8fd29-dfed-4502-9116-6865675bffe2"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "14"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Vous avez battu\nRouge!",
+                                  "Vous obtenez 1PV\net une pièce."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "03663c8d-8db7-4d49-9b49-35c56a17b0a5"
+                            },
+                            {
+                              "command": "EVENT_INC_VALUE",
+                              "args": {
+                                "variable": "13"
+                              },
+                              "id": "2ea7da08-8d8c-4833-8988-872bfc29a5ca"
+                            },
+                            {
+                              "command": "EVENT_INC_VALUE",
+                              "args": {
+                                "variable": "15"
+                              },
+                              "id": "25b9b3c0-e70e-4ac4-bb27-7806f84eaaf8"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "4",
+                                "value": {
+                                  "type": "true"
+                                }
+                              },
+                              "id": "fd9990a3-4bd6-4dcc-b012-bd9fdd879aa7"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "5",
+                                "value": {
+                                  "type": "number",
+                                  "value": 2
+                                }
+                              },
+                              "id": "6e6d549d-270a-44de-9383-08d7ebecab52"
+                            },
+                            {
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+                                "x": {
+                                  "type": "number",
+                                  "value": 0
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 0
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
+                              },
+                              "id": "74dca405-5ff3-4dca-9186-c964cf3bb50c"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "263dc908-2266-4f8c-858c-109075a11275"
+                      }
+                    ]
+                  },
+                  "id": "89bb778c-ce18-4eb3-a233-d74e089f0627"
+                }
+              ]
+            },
+            "id": "742df669-6f17-48d6-8d1e-07f6398b9aa2"
+          }
+        ]
+      },
+      "id": "92404766-6fdd-4663-8d1d-e9ceb392eb67"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "autoFadeEventCollapse": true
+}

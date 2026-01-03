@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "3bc52c10-980e-4e9c-b9fe-baf49890e553",
+  "name": "Bee",
+  "symbol": "bg_bee",
+  "width": 21,
+  "height": 18,
+  "imageWidth": 168,
+  "imageHeight": 144,
+  "filename": "Bee.png",
+  "tileColors": "",
+  "autoColor": false
+}

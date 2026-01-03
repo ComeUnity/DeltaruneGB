@@ -1,0 +1,45 @@
+{
+  "_resourceType": "trigger",
+  "id": "0748b487-dab4-4b7a-83d4-10c03f9e0530",
+  "name": "",
+  "prefabId": "",
+  "x": 7,
+  "y": 15,
+  "symbol": "trigger_21",
+  "prefabScriptOverrides": {},
+  "width": 12,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "* Here is the end\nof this demo !",
+          "You can do a\nSaveState and\nre-using it with\nthe next update",
+          "* See you\n\"Next Time\" !",
+          "*...Like..Like\nthe name of the\nSong",
+          "* The...The ending\nof... Chapter 2-3\n\"Until Next Time\"!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9bed4ab6-a436-4cc7-bf0c-faa06b163d9a"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "bd0406bb-8db5-491b-b963-127182b56ffb",
+  "name": "TheCas",
+  "symbol": "bg_the_castle_copie",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "TheCas.png",
+  "tileColors": "00168+",
+  "autoColor": false
+}

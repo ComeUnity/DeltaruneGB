@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "62282455-bb58-4e36-964c-c4871522eb2e",
+  "name": "Legend10",
+  "symbol": "bg_legend10",
+  "width": 53,
+  "height": 39,
+  "imageWidth": 424,
+  "imageHeight": 313,
+  "filename": "Legend10.png",
+  "tileColors": "00813+",
+  "autoColor": false
+}

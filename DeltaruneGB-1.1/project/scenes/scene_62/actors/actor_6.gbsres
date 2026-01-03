@@ -1,0 +1,157 @@
+{
+  "_resourceType": "actor",
+  "id": "14d784c0-3138-434f-8cca-329c8e61b1fe",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "04f257ad-7da4-4e52-813a-a5311addd65d",
+  "prefabId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_79",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "$self$",
+        "spriteSheetId": "04f257ad-7da4-4e52-813a-a5311addd65d"
+      },
+      "id": "1248ce39-871e-45da-b4ff-5e4a7a6b7d83"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "338db20a-1cfa-407d-b924-f6944cbae5f3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hey!B..back off!\ncome any closer\nand I....",
+          "K..Kris?!\nPhew...",
+          "...Hey don't scare\nme like that\ndumbass!",
+          "Unless you WANT to\nget clocked in the\nface, heh.",
+          "Anyway, enough\nscrewing around.",
+          "We gotta have to\nfind a way outta\nhere."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2d8f0ac4-cf6f-4390-954a-5df9260f9fd7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "e0d72d49-d124-43c4-ac04-39547a42987a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "1e50f289-3c67-49aa-bcd8-25457de4ab37"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "7926dca2-0aea-498b-8f4c-4c860bf72bbe"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ummm...\nWhere is \"here\"\nanyway...?",
+          "It does not matter\nYOU got us into\nthis mess-",
+          "YOU get us out!",
+          "Lead the way Kris."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0f599618-b2a5-432e-ab8b-47e851fcbf91"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "74e3bc1d-7a7e-49f8-84f4-4e92dbc5d164"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "fd1fc7bf-a31a-4e9c-a698-4d7d110fa01e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "18c47ed7-ea60-4aef-938d-4a357bcd7f65"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 72,
+  "y": 38,
+  "_index": 5
+}

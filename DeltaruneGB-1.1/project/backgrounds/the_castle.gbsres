@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "6a9ffddb-957a-4620-8f78-dfaa2aad0b93",
+  "name": "THE CASTLE",
+  "symbol": "bg_the_castle",
+  "width": 20,
+  "height": 32,
+  "imageWidth": 160,
+  "imageHeight": 256,
+  "filename": "THE CASTLE.png",
+  "tileColors": "",
+  "autoColor": false
+}

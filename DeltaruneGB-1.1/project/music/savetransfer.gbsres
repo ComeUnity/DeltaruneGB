@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "b4af12ef-bc0a-4de3-bfd8-01d03e27fcc1",
+  "name": "SaveTransfer",
+  "symbol": "song_savetransfer",
+  "filename": "SaveTransfer.uge",
+  "settings": {},
+  "type": "uge"
+}

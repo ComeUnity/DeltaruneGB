@@ -1,0 +1,884 @@
+{
+  "_resourceType": "scene",
+  "id": "cef55cca-106e-4e82-b38d-cfe1faac3a91",
+  "_index": 27,
+  "type": "TOPDOWN",
+  "name": "BattleTestSusie",
+  "symbol": "scene_29",
+  "x": 1640,
+  "y": 776,
+  "width": 27,
+  "height": 28,
+  "backgroundId": "ddb146e8-f251-402d-af10-a46cb8627c42",
+  "tilesetId": "",
+  "paletteIds": [
+    "37439072-72d1-4465-9093-d247d47a4312",
+    "",
+    "default-bg-4",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "b09f4d90-7dae-4540-b13f-8447654b8599",
+    "dc234996-22f5-4637-adad-fbd4fed68c79",
+    "default-bg-1",
+    "default-bg-4",
+    "92f02c0f-b003-444e-98b2-260612d565ac"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "60dee6e7-b027-4b8f-9250-7530262d275e"
+      },
+      "id": "8389a19e-c234-4ecc-934a-86aa030c874f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "24",
+        "value": {
+          "type": "number",
+          "value": 35
+        }
+      },
+      "id": "a63a9ce7-e534-48e3-8106-08c324e9556c"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "28",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 7,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
+      },
+      "id": "ab39a9b7-3645-49ec-bb29-ba1168927e80"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "25",
+        "value": {
+          "type": "number",
+          "value": 50
+        }
+      },
+      "id": "568efb33-0d24-4daf-acdd-7aea93aecc63"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "26",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "8e88915e-340b-4bf1-b943-fead72f313df"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "27",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
+      },
+      "id": "fddef711-1958-48ae-903b-a403137b373f"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L0",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": 2,
+        "clamp": false
+      },
+      "id": "e7670cf3-e15c-4a3c-ab50-384ab964cdfb"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "27"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
+              "items": 4,
+              "option1": "Attack",
+              "option2": "Act",
+              "option3": "Item",
+              "option4": "Spare",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true
+            },
+            "id": "6295dab0-8dab-4001-842b-b18b36552a67"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "26"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 99
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Kris won !"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "adee88d5-8047-4355-bc37-499680cf97f9"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "27",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "94cd4a60-e84f-4dde-9c4b-57022a49b8f1"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You tried to\nspare him...",
+                            "But he wasn't\nready yet."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "d55972cf-bd27-40de-bf10-da002036367d"
+                      }
+                    ]
+                  },
+                  "id": "e7515b96-9715-4a17-a863-fd7bed9737e2"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Kris deals 3\ndamage."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "5fec33ee-dfd4-4d66-b5a5-c6954d29ab50"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "24",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 3,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "3026e07a-a94e-48e4-ae30-6a551ba36b8c"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "L0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 2
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_MENU",
+                              "args": {
+                                "variable": "L0",
+                                "items": 3,
+                                "option1": "Check",
+                                "option2": "Warning",
+                                "option3": "Compliment",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": false,
+                                "layout": "dialogue"
+                              },
+                              "id": "0cef9680-18a8-4951-b470-c602fd7793b1"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 1
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "LANCER - AT7 DEF1",
+                                        "Not to call a\nspade a spade,",
+                                        "but he is a spade.",
+                                        "Not old enough to\nride a motorcycle,",
+                                        "so he set his\nbike on fire."
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "c26c0d1d-47a7-43f6-9b7b-af54ae206f33"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "L0"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 2
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "You tell Lancer to\nwatch out Susie's",
+                                              "attacks.He readies\nhimself (+20P)"
+                                            ],
+                                            "__section": "text",
+                                            "avatarId": "",
+                                            "minHeight": 4,
+                                            "maxHeight": 7,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 5,
+                                            "position": "bottom",
+                                            "clearPrevious": true,
+                                            "showFrame": "true",
+                                            "speedIn": -1,
+                                            "speedOut": -1,
+                                            "closeWhen": "key",
+                                            "closeButton": "a",
+                                            "closeDelayTime": 0.5,
+                                            "closeDelayFrames": 30
+                                          },
+                                          "id": "12c6f729-b46e-49c2-b7d6-271c4ab8f499"
+                                        },
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "3",
+                                            "operation": "set",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 1,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "6efe891e-125d-4047-af62-3e013fc1407a"
+                                        },
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "26",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 20,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "c3e6e179-6450-4007-b288-186de1fd0466"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "You tell lancer\nyou can't tell the\ndifference",
+                                              "Between his\nclothes and his\nbody.",
+                                              "He seems flattered\nHis attack went\ndown. (+15P)"
+                                            ],
+                                            "__section": "text",
+                                            "avatarId": "",
+                                            "minHeight": 4,
+                                            "maxHeight": 7,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 5,
+                                            "position": "bottom",
+                                            "clearPrevious": true,
+                                            "showFrame": "true",
+                                            "speedIn": -1,
+                                            "speedOut": -1,
+                                            "closeWhen": "key",
+                                            "closeButton": "a",
+                                            "closeDelayTime": 0.5,
+                                            "closeDelayFrames": 30
+                                          },
+                                          "id": "4d303a3f-34a1-4591-a072-d19ac91aa0fc"
+                                        },
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "28",
+                                            "operation": "set",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 5,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "bd7dcda0-aa74-4dda-96d4-8686fd1a1717"
+                                        },
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "26",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "6515c17d-f67a-47f1-b0e2-bb5c329720f6"
+                                        }
+                                      ]
+                                    },
+                                    "id": "0a620ca5-a251-4577-a7b7-a2fe34f404ec"
+                                  }
+                                ]
+                              },
+                              "id": "44aeb7a0-9cae-47db-b68e-a2699e731cbe"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You don't have any\nitems..."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "744e8ae1-989e-4583-a4c2-2293dc3c2d04"
+                            }
+                          ]
+                        },
+                        "id": "9635b77a-e077-4b6c-a3e1-71774bffff5d"
+                      }
+                    ]
+                  },
+                  "id": "e8bc69b4-1995-4523-9c44-da4f6a441c86"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "26"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 95
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_SET_SPRITE",
+                        "args": {
+                          "actorId": "16be298b-20b9-4f2c-b6d6-c657be2bbbf4",
+                          "spriteSheetId": "4026afb7-32be-4fb9-b001-0f2fdda8f46e"
+                        },
+                        "id": "ee2359e9-a62c-457a-9a2b-c269de1601ad"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "3271a359-3516-446d-a7f8-ab685da7a2e8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Susie deals 5\nDamage."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "b2cd9c50-45ee-42a0-aff4-a73ebd204f1b"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "3"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "But she missed."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "fa94dd69-c901-44ee-a7ea-21a1117f7a36"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "24",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 5,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": false
+                        },
+                        "id": "9618f7e0-10a0-4f38-8069-aeda6632b4fa"
+                      }
+                    ]
+                  },
+                  "id": "b1fc49db-9e43-4acf-82b0-b152a8c5e6cc"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "24"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Kris became\nstronger."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": false
+                        },
+                        "id": "35922b8d-5ec3-4d12-b1a5-6fac81d796fd"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "27",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "f1f3a1ea-87b6-472c-a9ab-6685b5b0b7dc"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Lancer deals $28$\ndamage to Kris."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "61e36eee-e2eb-42a5-97cc-c6c3b6f7f1e9"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "25",
+                          "operation": "sub",
+                          "other": "var",
+                          "vectorY": "28",
+                          "value": 6,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "4f873919-e476-4c52-87bd-f32cdfc380c5"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "25"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "3b759359-e1f5-432f-a552-2e535c42a8f7",
+                                "x": {
+                                  "type": "number",
+                                  "value": 11
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 11
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
+                              },
+                              "id": "a7692eb0-b392-488b-be82-71d4bb9be3ce"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "aace9abe-ad64-4842-a349-9b7b9b6a44eb"
+                      }
+                    ]
+                  },
+                  "id": "fb48a1b8-7da4-4994-a4b3-8e08b54e73f6"
+                }
+              ]
+            },
+            "id": "13a3ba1b-f681-46b0-821b-55dc3772290c"
+          }
+        ]
+      },
+      "id": "a85ef752-93df-478f-86ea-29e15b5adef1"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "98",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 8,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
+      },
+      "id": "2a0b4e15-bdf2-4129-8ac7-0a5cd56efc08"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "b6bcb0aa-0649-457a-9c6b-86de29d264eb"
+      },
+      "id": "9d5d7e3c-d06e-4fb7-be7d-c74ad6c8521e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "64daa024-36f1-4050-853c-a2d17bf29ad1",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "d548e3bf-accd-4586-863d-d33012782631"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

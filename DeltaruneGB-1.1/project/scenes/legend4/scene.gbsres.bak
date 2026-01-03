@@ -1,0 +1,93 @@
+{
+  "_resourceType": "scene",
+  "id": "3f21ce37-eb41-4be7-8d5f-42f5db1590ff",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "Legend4",
+  "symbol": "scene_6",
+  "x": 922,
+  "y": 392.6666564941406,
+  "width": 20,
+  "height": 19,
+  "backgroundId": "db5d823c-ad1d-439e-b844-e3de13061b4e",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "script": [
+    {
+      "id": "575087b7-ccf4-44dc-8d12-b5c8757cd5a3",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "252be868-ba1c-4d80-aa35-d2c67035372f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "But if this\nharmony were to\nshatter...."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "799492a3-ff68-4769-b707-f9f1058f7c4e"
+    },
+    {
+      "id": "1bbd3371-4157-45eb-80d2-b5b7e1af8ae7",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "34e92775-3c4f-43ab-81e5-65c7bfafccd9",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

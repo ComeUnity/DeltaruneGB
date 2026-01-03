@@ -1,0 +1,64 @@
+{
+  "_resourceType": "actor",
+  "id": "e807b22f-7477-471b-b3b3-53b699df82ab",
+  "_index": 3,
+  "symbol": "actor_10",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Hey ! Chuis Bob,\nlà bas c'est mon\nfrère Billy !"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b2196b98-0744-461f-b004-10ca5b1df31a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "f7279c25-0098-43cf-8916-a070cc0a3813"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

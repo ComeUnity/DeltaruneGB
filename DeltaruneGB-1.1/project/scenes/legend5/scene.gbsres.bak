@@ -1,0 +1,82 @@
+{
+  "_resourceType": "scene",
+  "id": "7f8b553e-fd48-4da5-b2a6-38915d5e06e3",
+  "_index": 7,
+  "type": "TOPDOWN",
+  "name": "Legend5",
+  "symbol": "scene_8",
+  "x": 1528,
+  "y": 208,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f5293235-881e-4fd0-a2b7-cbf8e40a1262",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "3ac99fa7-b77f-4bf2-8156-ebc8bd9e9747",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "script": [
+    {
+      "id": "cd4e7884-aafb-4825-b2ad-8ef9f78de4c7",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Only then with\nshining hope."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8a8722c7-baff-4044-8543-0424b8b1368f"
+    },
+    {
+      "id": "962f918d-f765-4a48-8ee3-4d6db4b2bfbf",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "37732a90-2ae5-47a1-8f25-23615567bf37",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

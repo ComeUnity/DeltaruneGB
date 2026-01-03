@@ -1,0 +1,99 @@
+{
+  "_resourceType": "scene",
+  "id": "c84f4da2-3803-4ae8-8f18-ad7c6678ad1b",
+  "_index": 43,
+  "type": "TOPDOWN",
+  "name": "Scène 46",
+  "symbol": "scene_46",
+  "x": 3200,
+  "y": 1144,
+  "width": 76,
+  "height": 18,
+  "backgroundId": "0063a68a-91d0-4520-8e71-447afe47189f",
+  "tilesetId": "",
+  "paletteIds": [
+    "97930b8d-f3ac-4efd-a1a2-a1faf79d2bf3",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "spritePaletteIds": [
+    "08a8b14e-0bc4-4d74-a2d6-5ac9a5b0228c",
+    "",
+    "",
+    "",
+    "2a01f30d-2e3b-4576-99db-997f2cc9cf90"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!:Well, here is\nthe closet.Too bad.",
+          "We were just\nstarting to have\nfun."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "c8130c64-6584-4024-9707-977d498668fd"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 35
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "e1de4881-a73a-4e85-b60f-148da3889fc1"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "61899194-6926-4095-9d64-977259bac922",
+        "x": {
+          "type": "number",
+          "value": 36
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "direction": "up",
+        "fadeSpeed": 1
+      },
+      "id": "3ea2f741-0465-4682-8c6c-651995d1354e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "004c0+0f23+006+0f46+006+0f23+"
+}

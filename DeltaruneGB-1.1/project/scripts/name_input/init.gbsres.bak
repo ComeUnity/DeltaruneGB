@@ -1,0 +1,86 @@
+{
+  "_resourceType": "script",
+  "id": "a969e347-42d0-4778-ba07-c5bba51c6e65",
+  "name": "name_input/Init",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": false
+    }
+  },
+  "actors": {},
+  "symbol": "script_9",
+  "script": [
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "V0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<",
+        "to": {
+          "type": "number",
+          "value": 5
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "add",
+                "valueA": {
+                  "type": "number",
+                  "value": 4
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "V0"
+                }
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "tilesetId": "e36fb847-c8ae-4a98-8f0b-377471ae1fad",
+              "tileIndex": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": false,
+              "__comment": false
+            },
+            "id": "9f0637a3-d37a-4ea4-8c5f-1d93c7053358"
+          }
+        ]
+      },
+      "id": "f46c0325-47ac-412b-afef-5b6aed2686bc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "4ecf8d47-2c9b-4212-8633-9d6351df58f0"
+    }
+  ]
+}

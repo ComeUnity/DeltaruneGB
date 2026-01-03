@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "9069ccf9-7031-4200-af0e-b6b8fafe4096",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_12",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There are crayons\nin the drawer.",
+          "Their labels have\nlong faded, and\nthere's no green."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__presetId": "f72614b3-cf77-4ce8-97ff-7624d5e1b746"
+      },
+      "id": "b351b5a9-14bc-4f96-8842-23e5c7f36919"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 20,
+  "y": 11,
+  "_index": 3
+}

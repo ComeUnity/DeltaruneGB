@@ -1,0 +1,74 @@
+{
+  "_resourceType": "scene",
+  "id": "8435caac-1620-4d8c-a386-5bfe50850d5e",
+  "_index": 41,
+  "name": "Explication",
+  "backgroundId": "fd5eda98-c0ad-4b4d-a1ca-834482402a47",
+  "tilesetId": "",
+  "width": 23,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "1515f879-e834-4eea-aa22-c680a48c145d"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_13",
+  "x": 2264,
+  "y": 648,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This menu is used\nto transfer save\ndata from one game\nto another.",
+          "Its primary purpose\nis to transfer a\nsave to a\nnewer version of\nthe game--",
+          "but it can also be\nused to simply\ntransfer a save\nfrom one cartridge\nto another.",
+          "You just need to:",
+          "Click\n\"Transfer Data\" on\nthe game withe the\nSave,",
+          "And \"Retrieve\nData\" for the\nogame that recieve",
+          "Connect the two\ngames with a\nLink Cable---",
+          "And you're good!\nIt'll finish\nby itself !"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0e99b984-b438-4ae1-86fb-dea8510299a9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4899f0af-653f-42a1-a418-00d29b7c48d3",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "56add9c7-9633-4e6e-9987-b853a86ea2df"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

@@ -1,0 +1,75 @@
+{
+  "_resourceType": "scene",
+  "id": "a0313a4a-e02d-42ce-87ca-7b26ca195bec",
+  "_index": 35,
+  "type": "TOPDOWN",
+  "name": "Scène 38",
+  "symbol": "scene_38",
+  "x": 1376,
+  "y": 1048,
+  "width": 21,
+  "height": 18,
+  "backgroundId": "a5096dff-101a-4c9d-9f46-b7521c2e6a94",
+  "tilesetId": "",
+  "paletteIds": [
+    "18a59039-f9db-4516-929c-2b05cbda92eb",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1515f879-e834-4eea-aa22-c680a48c145d"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Will he still\nenjoy coming home\nto this little\ntown...?  "
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "281c51ff-d211-4cd3-89b2-4b0dd76396a2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0bb12c63-3a90-4b7f-8a0e-df4ba696f358",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "e567bfd1-eb7f-4614-8469-e21c6c8ee337"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0017a+",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

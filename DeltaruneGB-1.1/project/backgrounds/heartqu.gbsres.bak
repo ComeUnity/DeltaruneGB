@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "935e71af-35cc-474f-af10-ce26a18f4a0f",
+  "name": "HeartQu",
+  "symbol": "bg_black_copie",
+  "width": 21,
+  "height": 18,
+  "imageWidth": 168,
+  "imageHeight": 144,
+  "filename": "HeartQu.png",
+  "tileColors": "009c+013+0012+013+0012+013+00b1+",
+  "autoColor": false
+}

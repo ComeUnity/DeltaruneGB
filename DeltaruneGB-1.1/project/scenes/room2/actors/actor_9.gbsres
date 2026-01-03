@@ -1,0 +1,123 @@
+{
+  "_resourceType": "actor",
+  "id": "caf200bb-af16-443e-8ef7-208dfed4d366",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_17",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "There's no time to\nread anything\nright now."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "415c2408-8f74-4657-817c-58bbd533db39"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "There are many books",
+                "Tales of Snails\n- A Story Book.",
+                "Snails Do Not Have\nTails -",
+                "A Scientific\nRefutation.",
+                "Can Snails Help\nYour Garden?",
+                "Um, Not Really.",
+                "And a signed copy\nof...",
+                "The History of\nHumans and Monsters\nby Gerson Boom."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "440c3c26-41ac-410b-9b90-e2cd2fce1ab9"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "L0",
+              "operation": "set",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 3,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "6490777c-de21-4db3-af62-7fe8c93eef27"
+          }
+        ]
+      },
+      "id": "7b719e10-cbf2-4269-8468-155ddf73b86f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 46,
+  "y": 11,
+  "_index": 8
+}

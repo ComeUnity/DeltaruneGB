@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "736e3b6c-0932-4ebb-b832-ed4d53d13d31",
+  "name": "Base",
+  "symbol": "bg_base",
+  "width": 122,
+  "height": 255,
+  "imageWidth": 978,
+  "imageHeight": 2275,
+  "filename": "Base.png",
+  "tileColors": ""
+}

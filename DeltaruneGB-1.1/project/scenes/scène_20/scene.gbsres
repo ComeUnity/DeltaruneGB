@@ -1,0 +1,117 @@
+{
+  "_resourceType": "scene",
+  "id": "8247dfed-2efb-41a9-ab80-d5d052a7b78b",
+  "_index": 14,
+  "type": "TOPDOWN",
+  "name": "Scène 17",
+  "symbol": "scene_3",
+  "x": 2842,
+  "y": 165.33333206176758,
+  "width": 21,
+  "height": 23,
+  "backgroundId": "16b92c62-d2ad-4de0-a196-afd38885512e",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "3ac99fa7-b77f-4bf2-8156-ebc8bd9e9747",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Today,The FOUNTAIN\nOF DARKNESS--"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0446dccc-0519-4f03-95b0-c2bc84032158"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "speed": 0.5,
+        "__collapse": false
+      },
+      "id": "1573368f-4d3e-4ccc-b67d-c609c1a68417"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The geyser that\ngive land form--",
+          "Stand tall at the\ncenter of the\nKingdom."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "666caaf3-57ef-4cec-9ab7-aebcb9ab18b4"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a4494094-c51c-4407-8ee3-866a1560c3f1",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "6037f883-be4e-4cca-bbc5-69b748152576"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

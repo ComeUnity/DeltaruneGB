@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "31154929-2b56-4ddb-8ce7-c6aa4bcf7bf4",
+  "name": "LegendSealFountain",
+  "symbol": "bg_legendsealfountain",
+  "width": 23,
+  "height": 23,
+  "imageWidth": 184,
+  "imageHeight": 184,
+  "filename": "LegendSealFountain.png",
+  "tileColors": "0164+002+01!004+0110+007+0111+006+0112+005+0112+005+0112+005+0112+003+0111+004+01c+002+012+006+014+00!013+002+012+00b+013+0013+015+0012+015+0012+015+0012+015+007c+",
+  "autoColor": false
+}

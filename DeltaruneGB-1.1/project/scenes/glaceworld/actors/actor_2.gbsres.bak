@@ -1,0 +1,98 @@
+{
+  "_resourceType": "actor",
+  "id": "7e8536a5-a42c-4616-869b-3ef20fda8862",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "_index": 1,
+  "symbol": "actor_16",
+  "x": 7,
+  "y": 7,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "8859700d-abdb-42b5-8957-e162cfe587b6",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Deux squelettes en\norgy."
+              ],
+              "__collapse": true
+            }
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "850114e1-9cb5-4fff-84c4-3185b8c16474"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Terres de\nDes-Primes"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "891bf7bd-7e94-475c-81f2-6f5891da1a91"
+          }
+        ]
+      },
+      "id": "4311fb4c-1bb1-4744-8cae-90c91c8a0ecb"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

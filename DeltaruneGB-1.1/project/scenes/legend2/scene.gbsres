@@ -1,0 +1,125 @@
+{
+  "_resourceType": "scene",
+  "id": "7af9a902-1817-4262-a252-6cd2ff4b3827",
+  "_index": 3,
+  "type": "TOPDOWN",
+  "name": "Legend2",
+  "symbol": "scene_4",
+  "x": 424,
+  "y": 416,
+  "width": 33,
+  "height": 27,
+  "backgroundId": "0d388a0b-fbf7-47d9-8057-3b51014423d9",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "script": [
+    {
+      "id": "3e6abe5c-d8da-441f-bd9e-43271b94dd24",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "54c8e6b3-374e-45b4-ac80-5d16ce5503a3"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0,
+        "__collapse": false
+      },
+      "id": "289c8da1-ce67-4dde-959b-f5d615676ab1"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "speed": 3
+      },
+      "id": "f8883969-760a-48cd-b858-b9c4a4321271"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It was    It was\na legend  a legend\nof Light  of Dark",
+          "This is the Legend\nof  DELTA RUNE"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "718b8ed9-1e80-435b-bdab-b6e86f21ea34"
+    },
+    {
+      "id": "5c708f7d-b4b9-4301-b926-5139314c6c9d",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a5298d20-63ad-4bb4-a648-9c0b90aa814a",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 2
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

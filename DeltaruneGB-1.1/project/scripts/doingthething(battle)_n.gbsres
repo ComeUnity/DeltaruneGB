@@ -1,0 +1,59 @@
+{
+  "_resourceType": "script",
+  "id": "e847bf73-690f-4caf-b298-91973d2bca76",
+  "name": "$DoingTheThing(Battle) [N]",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_9",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "34"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Kris deals $35$\ndamage."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "13a136cd-ea7d-4cd5-b08a-e4bdf07294dd"
+          }
+        ],
+        "false": []
+      },
+      "id": "f07f2e95-8aa9-4dab-aa39-048e92672282"
+    }
+  ]
+}

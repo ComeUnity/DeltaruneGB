@@ -1,0 +1,44 @@
+{
+  "_resourceType": "scene",
+  "id": "8a52b387-2a88-4741-8d4e-ca56acea4672",
+  "_index": 2,
+  "type": "TOPDOWN",
+  "name": "GlaceWorld",
+  "symbol": "scene_stars",
+  "x": 829,
+  "y": 485,
+  "width": 32,
+  "height": 26,
+  "backgroundId": "7109dbde-9f8e-44ee-ac1a-01c1259da44d",
+  "tilesetId": "",
+  "paletteIds": [
+    "default-ui"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "872f61cf-bd62-4e58-92ee-a751e7335fe9"
+      },
+      "id": "58ccd46d-1e5e-40a3-9836-bd05b85553a2"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "984f48f5-b6c2-455a-baa2-d3b2d8d818c2"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "4de81b35-79c9-4f03-81fb-aaa6e6188b10"
+      },
+      "id": "426214c4-06b0-4d76-82ff-66de88df56cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00e+0fa+0016+0f!007+0f2+0016+0f!007+0f2+0016+0f!006+0f3+0016+0f!005+0f4+0016+0fa+0016+0fa+0016+0fa+0016+0f3+004+0f3+00147+0f!001f+0f!007f+0f!0040+"
+}

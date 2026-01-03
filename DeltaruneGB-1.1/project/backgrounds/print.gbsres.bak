@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "31c8d6df-0159-45aa-9449-49aca1c5bc45",
+  "name": "PRINT",
+  "symbol": "bg_print",
+  "width": 23,
+  "height": 18,
+  "imageWidth": 184,
+  "imageHeight": 144,
+  "filename": "PRINT.png",
+  "tileColors": "",
+  "autoColor": false
+}

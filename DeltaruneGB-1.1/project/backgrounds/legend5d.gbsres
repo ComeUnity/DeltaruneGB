@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "6430955c-6dca-46b6-8bb8-57e2d52b52c3",
+  "name": "Legend5D",
+  "symbol": "bg_legend5d",
+  "width": 24,
+  "height": 21,
+  "imageWidth": 192,
+  "imageHeight": 168,
+  "filename": "Legend5D.png",
+  "tileColors": "",
+  "autoColor": false
+}

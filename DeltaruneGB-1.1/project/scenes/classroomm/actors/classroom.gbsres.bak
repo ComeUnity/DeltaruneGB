@@ -1,0 +1,615 @@
+{
+  "_resourceType": "actor",
+  "id": "14051c91-3c28-4cb8-8c23-65699cb302e8",
+  "name": "classroom",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6588c745-0dd7-4c4d-b839-4abd0d383d98",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_62",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "98"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!N:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hey Kris! What's\nUp ?",
+                "Didja lose your\npencil again ?",
+                "Here, you want the\ncandy-cane one or\nthe one with light\non it ?",
+                "Uh? You want to be\npartner ?",
+                "Ummm... Sorry",
+                "Berdly already\nasked me...",
+                "But I could ask\nMs.Alphys if we\ncould make a group\nof 3 ?",
+                "I'll Ask if you're\nsure!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "045a0d3e-751f-4028-8cd8-43754ef7035c"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
+              "items": 2,
+              "option1": "Not yet",
+              "option2": "Yes. Ask.",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": false
+            },
+            "id": "b92de3f9-f069-4ac8-bd29-603a30c7c1fb"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!N:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ok, i'll ask.",
+                      "Miss Alphys,Umm is\nit OK if we have\na group of 3?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!B:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hey! What ? No!",
+                      "I do NOT approve\nthis! ABORT !",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!N:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!What? B-but\ndoesn't have a...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Noelle? What were\nyou asking ?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!B:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!She was just\nsaying we're FINE\nbeing alone!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "b3aba3e1-8c10-420a-9c72-b70c7a2d9f5e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!N:!F:ee50d404-69f5-4453-a2af-a2c4af76c0b8!ACTUALLY..I JUST\nWANTED TO KNOW IF"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 2,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 2,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": true,
+                    "speedIn": 2,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__presetId": ""
+                  },
+                  "id": "48fb7c08-45d4-4d42-89ce-618f60cced67"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Noelle can you\nPLEASE SPEAK UP"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "0bd872b3-ee60-45e4-a51f-a6a13d52144a"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "8f7b5acc-36b5-4f29-a832-361e2482e254"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "be04c649-a4a5-4159-b146-a98b90283c58"
+                  },
+                  "id": "1bd226b0-45d0-4552-ae24-9c592c4b220e"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "speed": 2
+                  },
+                  "id": "ad76376d-3490-4a64-a937-061ba969bae2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "__presetId": "31175dc7-fa8c-47a9-a10b-7806d854593d",
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:ee50d404-69f5-4453-a2af-a2c4af76c0b8!H-HI SUSIE..."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 2,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 2,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": true,
+                    "speedIn": 2,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "e7f4ed31-b86b-4757-903f-6292f6b44750"
+                },
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "ed0a2857-bafe-409e-8932-479e53028cce"
+                  },
+                  "id": "a4b0a74e-8f8b-4e85-8f6c-fe71ee0225f2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!...",
+                      "Am i late?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ohh, n-no you're\nfine ! W-we were\njust, uh...",
+                      "Choosing partner\nfor next group\nproject, and...",
+                      "Ummm, Susie,you're\nwith Kris!",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!...",
+                      "...great."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "0c9ffed3-39d6-48c0-a524-08e25111a529"
+                },
+                {
+                  "command": "EVENT_CAMERA_LOCK",
+                  "args": {
+                    "speed": 0.5,
+                    "axis": [
+                      "x",
+                      "y"
+                    ]
+                  },
+                  "id": "ced285a8-1812-42f5-bafb-b1b9abd9e268"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "b44a304e-5247-4870-a32a-9a94dd08ce2a",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "eda2e955-b2a4-4016-80fb-6ca59f3f4ac8"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "30cc611a-28d2-48ad-a401-877ee4e5b6a1"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "b44a304e-5247-4870-a32a-9a94dd08ce2a",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
+                    }
+                  },
+                  "id": "73d633a6-b4d4-4b56-8a19-88f267b5f5f9"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "6e9145dc-bee6-40c4-bd63-e2504bfac2e9"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "b44a304e-5247-4870-a32a-9a94dd08ce2a",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    }
+                  },
+                  "id": "8bd01d85-65c8-49a1-9ee8-bc0a34ca4ecd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!...",
+                      "Uhh... Has anyone\nseen the chalk ?",
+                      "It's the third\ntime it's gone\nmissing and...",
+                      "Y-you all know I\ncan't start class\nwithout some!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "dd575113-89b5-44f2-98b5-768a9ba0223a"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1,
+                    "frames": 30
+                  },
+                  "id": "f2022e2b-c858-4014-b13b-854ad35482db"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "How about this, if\nno one speaks up..",
+                      "E-Everyone gets in\ntrouble !"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "17b11421-3d4b-43d2-b207-2956146e352a"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "b44a304e-5247-4870-a32a-9a94dd08ce2a",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
+                    }
+                  },
+                  "id": "a7216cb9-4675-48db-9ab4-093cbd5d0dae"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 2,
+                    "frames": 30
+                  },
+                  "id": "a389365f-1bba-4f3a-86b3-3e583b753daf"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "b44a304e-5247-4870-a32a-9a94dd08ce2a",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    }
+                  },
+                  "id": "b47c78e3-5cf5-4c02-bcb6-c4940fbf3793"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "A...Anyone?\nP...Please?",
+                      "Hey, there might\nbe a box in the\nsupply closet...",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!N:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ms.Alphys,why\ndon't Susie and I-",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!G-Good Idea\nNoelle !",
+                      "S-Susie, since you\nhave come in last-",
+                      "Why don't you get\nit for us ?",
+                      "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!...",
+                      "...Whatever"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "e44eb1db-d5fc-442f-81fb-f97c21ccce72"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "speed": 3
+                  },
+                  "id": "e87fbd53-f23e-483e-9758-f5d6d4794ff6"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "be04c649-a4a5-4159-b146-a98b90283c58",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "8ba9786a-74ab-4992-91fe-7df495c4ea40"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "5a4f4d76-1db7-49b1-b638-60b35dd1c036"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "be04c649-a4a5-4159-b146-a98b90283c58"
+                  },
+                  "id": "12dc9357-ac5d-44d0-b101-d938edc0597f"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "85435e66-d69d-474c-8607-fd48c339afab"
+                },
+                {
+                  "command": "EVENT_CAMERA_LOCK",
+                  "args": {
+                    "speed": 2,
+                    "axis": [
+                      "x",
+                      "y"
+                    ]
+                  },
+                  "id": "74eec487-e02f-4bc9-b68f-ece6581aad81"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:dd197f0a-b50c-4167-9461-34c35f75e88f!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!A-and Kris,can\nyou go with her\nand make sure she.",
+                      "Um actually get it\nAnd stays out of\ntroubles...?",
+                      "Thank Kris !\nSee you later ?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "8f74c899-c15f-48ed-958b-2e5667d3bae1"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "98",
+                    "operation": "set",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 1,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": false
+                  },
+                  "id": "e44ac71c-9b14-4723-b0e7-65d1679c4ee1"
+                }
+              ]
+            },
+            "id": "a46dd1e6-44f0-4d99-866e-08cd54ee1d58"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "*... Maybe later.\n\n"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "cf561200-a63f-4257-bec2-9b2616fcee66"
+          }
+        ]
+      },
+      "id": "dd11d01a-6480-4b8c-8335-27305825459a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 5,
+  "y": 14,
+  "_index": 8
+}

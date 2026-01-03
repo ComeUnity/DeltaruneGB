@@ -1,0 +1,39 @@
+{
+  "_resourceType": "script",
+  "id": "3f95bff0-4db2-4232-ba97-351d458c9cc2",
+  "name": "BattleChoice",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_7",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "76f21f71-a716-4c1e-9017-991f51a95c1b"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "_resourceType": "script",
+  "id": "590aebf2-ba05-4b9b-bd03-80a66647cf28",
+  "name": "$BattleChoiceRalsei (NF)",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_8",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "32"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Ralsei has $32$\nWhat should he do?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "78b549c3-30da-49bb-a3d5-f7b33736c2c6"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "V0",
+              "items": 5,
+              "option1": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Fight!F:aad41666-0487-4159-b718-979dd3a5e8ef!D",
+              "option2": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Act. !F:aad41666-0487-4159-b718-979dd3a5e8ef!AB",
+              "option3": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Item !F:aad41666-0487-4159-b718-979dd3a5e8ef!C",
+              "option4": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Spare!F:aad41666-0487-4159-b718-979dd3a5e8ef!E",
+              "option5": "!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!Def. !F:aad41666-0487-4159-b718-979dd3a5e8ef!F",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "menu"
+            },
+            "id": "177ab0b8-6421-435d-873a-4849e0b8623a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Ralsei doesn't\nhave any PVs left."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "7d646871-82ef-4fcd-a9c5-b5e905dc6486"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e847bf73-690f-4caf-b298-91973d2bca76"
+            },
+            "id": "acdbb9fe-5f8a-4de4-821c-dbe9cf57b021"
+          }
+        ]
+      },
+      "id": "9d55491b-8e1b-4596-8bbc-b4d8e5da4b4d"
+    }
+  ]
+}

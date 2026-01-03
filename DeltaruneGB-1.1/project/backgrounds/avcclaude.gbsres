@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "1786378e-8feb-4452-a9a9-3b8303682a3a",
+  "name": "AvcClaude",
+  "symbol": "bg_avcclaude",
+  "width": 24,
+  "height": 19,
+  "imageWidth": 192,
+  "imageHeight": 152,
+  "filename": "AvcClaude.png",
+  "tileColors": "001c8+",
+  "autoColor": false
+}

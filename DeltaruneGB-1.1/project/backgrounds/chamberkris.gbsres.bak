@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "1135fe72-499a-4f05-83a8-9bf0d116e5fc",
+  "name": "ChamberKris",
+  "symbol": "bg_chamberkris",
+  "width": 30,
+  "height": 23,
+  "imageWidth": 240,
+  "imageHeight": 184,
+  "filename": "ChamberKris.png",
+  "tileColors": "",
+  "autoColor": false
+}

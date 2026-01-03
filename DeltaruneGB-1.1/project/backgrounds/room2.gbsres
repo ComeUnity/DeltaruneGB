@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "c2c1a95a-11a5-422c-b00d-25ebf3caf9c4",
+  "name": "Room2",
+  "symbol": "sprite_room2",
+  "width": 68,
+  "height": 18,
+  "imageWidth": 544,
+  "imageHeight": 144,
+  "filename": "Room2.png",
+  "tileColors": "003+02!006+023a+002+0242+00!029e+003+02!017+0236+015+00!02!017+0236+015+022+01!02!015+023f+015+023f+014+0240+014+0223+003+028+00!025+002+02!01!027+002+022+004+027+003+028+0021+029+002+022+001bc+",
+  "autoColor": false
+}

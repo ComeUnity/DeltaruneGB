@@ -1,0 +1,66 @@
+{
+  "_resourceType": "scene",
+  "id": "408da4cc-fe10-46cc-8564-81b77d4acda5",
+  "_index": 29,
+  "name": "Scène 30",
+  "backgroundId": "4655acac-d5ba-433b-8eea-a72d33634ca0",
+  "tilesetId": "",
+  "width": 20,
+  "height": 21,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "001a4+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_30",
+  "x": 2879.6666259765625,
+  "y": 554,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Slimy: Quel drôle\nde rêve!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e21d5a82-c6cb-4d6e-b1fa-c652d949e741"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "ea8e0bce-5d83-4502-ae86-c32f4fba6f7d",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "ab336680-0069-4857-bb8d-116bd02af3c6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

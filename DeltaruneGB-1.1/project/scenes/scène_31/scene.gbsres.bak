@@ -1,0 +1,73 @@
+{
+  "_resourceType": "scene",
+  "id": "23160789-afc1-4de7-aa84-f545bac453fc",
+  "_index": 29,
+  "name": "Scène 31",
+  "backgroundId": "a5096dff-101a-4c9d-9f46-b7521c2e6a94",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "18a59039-f9db-4516-929c-2b05cbda92eb"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0017a+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_31",
+  "x": 1880,
+  "y": 528,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a6323989-6fa1-48cd-92d5-a37c08093e85"
+      },
+      "id": "94b317a5-6bd9-43de-a52c-a4b6aabb0af2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Then the world was\ncovered...",
+          "in Darkness"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": 5,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "c55decac-6e2e-43fb-aa6c-197b47a14a88"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30
+      },
+      "id": "438ddc72-65d9-4ce2-938f-89cd83bb2ab0"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "98380a64-c1f9-48e7-9623-d3f19a49a8a1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

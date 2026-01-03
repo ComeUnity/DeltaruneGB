@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "db63f269-15db-42b1-b9ac-44b72f54a15d",
+  "name": "SchoolInt",
+  "symbol": "bg_schoolint",
+  "width": 30,
+  "height": 24,
+  "imageWidth": 242,
+  "imageHeight": 194,
+  "filename": "SchoolInt.png",
+  "tileColors": "005+0110+00e+0110+004+054+006+0110+004+054+006+0110+004+054+001a+054+009+03!0010+054+0063+02b+0013+02b+00e+805+004+805+0073+805+00fd+",
+  "autoColor": false
+}

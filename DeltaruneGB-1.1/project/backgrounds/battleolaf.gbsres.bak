@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "6422e073-9b7f-44cf-a1f3-e9f92017563b",
+  "name": "BattleOLAF",
+  "symbol": "bg_battleolaf",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 162,
+  "imageHeight": 144,
+  "filename": "BattleOLAF.png",
+  "tileColors": "",
+  "autoColor": false
+}

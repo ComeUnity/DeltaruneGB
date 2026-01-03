@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "81c61531-2032-488c-8b91-ced4ff474681",
+  "name": "GBEx",
+  "symbol": "bg_gbex",
+  "width": 23,
+  "height": 18,
+  "imageWidth": 184,
+  "imageHeight": 144,
+  "filename": "GBEx.png",
+  "tileColors": "0010e+03!008f+",
+  "autoColor": false
+}

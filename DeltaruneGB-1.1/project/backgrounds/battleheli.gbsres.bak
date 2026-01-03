@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "bd5af925-023d-4e21-b3a4-041bfa9263bf",
+  "name": "BattleHeli",
+  "symbol": "bg_image_png_0",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 149,
+  "filename": "BattleHeli.png",
+  "tileColors": "",
+  "autoColor": false
+}

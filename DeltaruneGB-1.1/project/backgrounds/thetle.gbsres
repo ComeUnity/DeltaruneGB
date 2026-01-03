@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "78af9ee7-08d7-4c7b-ac46-f4975a10008e",
+  "name": "theTle",
+  "symbol": "bg_thetle",
+  "width": 20,
+  "height": 20,
+  "imageWidth": 160,
+  "imageHeight": 162,
+  "filename": "theTle.png",
+  "tileColors": "007+80!004+80!00e+80!004+80!0013+80!0022+80!004+80!00e+80!004+80!00e+80!004+80!0057+806+008+806+00a0+",
+  "autoColor": false
+}

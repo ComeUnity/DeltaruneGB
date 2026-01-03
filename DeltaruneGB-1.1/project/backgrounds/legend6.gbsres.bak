@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "55f587c8-687f-4292-9448-2764d8c583c9",
+  "name": "Legend6",
+  "symbol": "bg_legend6",
+  "width": 53,
+  "height": 39,
+  "imageWidth": 427,
+  "imageHeight": 319,
+  "filename": "Legend6.png",
+  "tileColors": "01594+003+01!004+0128+008+01!00c+01d+00c+013+0021e+"
+}

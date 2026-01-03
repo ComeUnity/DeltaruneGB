@@ -1,0 +1,87 @@
+{
+  "_resourceType": "actor",
+  "id": "79c59500-c003-47b6-bfd3-2d481e1550d3",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "_index": 1,
+  "symbol": "actor_13",
+  "x": 14,
+  "y": 6,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "cabaa65c-938d-44d5-9eb7-dc9d2be5fe3b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Une fois, y avait\nun autre\nchandelier.",
+          "Un cahndelier très\nméchant, qui a\nmerité de perdre\nla vie."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f1f19720-e664-47c0-bc58-b0eb6675fc23"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "7b0ec3c0-178d-4ffe-b234-3bbb40b348c9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

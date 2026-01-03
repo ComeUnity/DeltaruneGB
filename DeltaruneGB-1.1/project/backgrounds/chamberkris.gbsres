@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "1135fe72-499a-4f05-83a8-9bf0d116e5fc",
+  "name": "ChamberKris",
+  "symbol": "bg_chamberkris",
+  "width": 30,
+  "height": 23,
+  "imageWidth": 240,
+  "imageHeight": 184,
+  "filename": "ChamberKris.png",
+  "tileColors": "038+004+036+00c+036+00!032+00!038+00c+036+002+03a+00c+037+002+039+003+059+037+00!033+002+035+002+05a+003+03!009+035+056+0018+056+0018+056+006+047+00b+056+006+047+00b+056+006+047+0017+047+005e+058+0016+055+00!052+0016+058+0016+058+0016+058+0083+",
+  "autoColor": false
+}

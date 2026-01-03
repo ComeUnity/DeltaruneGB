@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "75f94d8c-d729-45c7-8ce3-792e1bb0c503",
+  "name": "SecoundFountain",
+  "symbol": "bg_secoundfountain",
+  "width": 23,
+  "height": 24,
+  "imageWidth": 190,
+  "imageHeight": 194,
+  "filename": "SecoundFountain.png",
+  "tileColors": "01e+004+0113+005+0113+004+0113+002+0115+002+0115+002+0115+002+0115+002+0115+002+0115+002+0115+003+0114+003+0114+003+0114+003+0114+003+0114+003+01bd+",
+  "autoColor": false
+}

@@ -1,0 +1,27 @@
+{
+  "_resourceType": "scene",
+  "id": "7f0b442b-725c-4b7a-8f1a-bf456fec0f21",
+  "_index": 39,
+  "name": "Scène 40",
+  "backgroundId": "9f9214bd-a9ba-4341-b6ea-fbb60a2a3905",
+  "tilesetId": "",
+  "width": 25,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "18a59039-f9db-4516-929c-2b05cbda92eb",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "default-ui"
+  ],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_40",
+  "x": 60,
+  "y": 664,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

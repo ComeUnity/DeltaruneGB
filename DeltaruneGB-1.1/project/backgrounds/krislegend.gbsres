@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "310ef93f-5866-43f7-b4cc-b4d7a81ac055",
+  "name": "KrisLegend",
+  "symbol": "bg_krislegend",
+  "width": 22,
+  "height": 18,
+  "imageWidth": 176,
+  "imageHeight": 144,
+  "filename": "KrisLegend.png",
+  "tileColors": "012e+005+0111+005+0111+005+0110+006+0110+006+0110+006+0110+006+0110+006+0110+006+0110+006+0111+005+0125+0058+",
+  "autoColor": false
+}

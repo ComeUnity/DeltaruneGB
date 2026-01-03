@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "dd730972-c197-4d29-9596-92c3b29dd8aa",
+  "name": "Legend8",
+  "symbol": "bg_legend8",
+  "width": 53,
+  "height": 39,
+  "imageWidth": 424,
+  "imageHeight": 318,
+  "filename": "Legend8.png",
+  "tileColors": "00805+012+00c+"
+}

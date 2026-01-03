@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "8504ff95-e2ca-40a3-b873-e61e7a834968",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b4931d6c-83ac-4cdf-b728-4e1d9e0872d4",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_56",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Part'ner ?\nI hardly know'er !",
+          "Ha ha ha! Whaddya\nthink of that one!",
+          "Funny, Right ???\n..... No ?",
+          "Well, i got news\nfor you PAL!",
+          "I already got a\npartner!! SCRAM!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f84a68ed-ac6b-4e78-9a10-e6a259412241"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 22,
+  "y": 23,
+  "_index": 4
+}

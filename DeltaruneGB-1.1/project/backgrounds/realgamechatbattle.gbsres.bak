@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "6fa30d65-53ca-4883-b391-e224c0b4136b",
+  "name": "RealGameChatBattle",
+  "symbol": "bg_realgamechatbattle",
+  "width": 21,
+  "height": 18,
+  "imageWidth": 168,
+  "imageHeight": 144,
+  "filename": "RealGameChatBattle.png",
+  "tileColors": "",
+  "autoColor": false
+}

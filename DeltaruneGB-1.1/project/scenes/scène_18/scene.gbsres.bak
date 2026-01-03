@@ -1,0 +1,68 @@
+{
+  "_resourceType": "scene",
+  "id": "003e92b5-17cc-48e2-87d4-1decfe00e385",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "Scène 16",
+  "symbol": "scene_18",
+  "x": 2368,
+  "y": 176,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "a4610eec-b6a6-4949-8fa7-e24b32aba1e0",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "3ac99fa7-b77f-4bf2-8156-ebc8bd9e9747",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "And a prince\nfrom the dark",
+        "x": 8,
+        "y": 14,
+        "location": "background"
+      },
+      "id": "681edb94-eb39-476c-8316-b9aee1870673"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "6702f0f8-a2e0-46fd-9a95-7a3d9e06f6f5"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "5ec19f8a-050e-4215-80de-f181e31a5390",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "45b9f406-20eb-49fa-9b4d-d17a9b45824b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

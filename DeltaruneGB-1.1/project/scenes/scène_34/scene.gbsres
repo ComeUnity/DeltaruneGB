@@ -1,0 +1,35 @@
+{
+  "_resourceType": "scene",
+  "id": "6df76f34-9412-4e58-82bc-56dded047a1c",
+  "_index": 31,
+  "type": "TOPDOWN",
+  "name": "Scène 33",
+  "symbol": "scene_34",
+  "x": 808,
+  "y": 904,
+  "width": 32,
+  "height": 20,
+  "backgroundId": "81de0781-5302-4538-8a49-259c414cf2f0",
+  "tilesetId": "",
+  "paletteIds": [
+    "97930b8d-f3ac-4efd-a1a2-a1faf79d2bf3",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "ed122b2c-88f6-411b-950a-4372b29891c5"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00146+0f8+0018+0f!006+0f6+0013+0f!006+0f!004+0f!005+0f3+005+0f4+00!0f!007+0f!004+0f2+004+0f!00!0f2+004+0f!002+0f2+00e+0f5+003+0f4+001f+0f!001f+0f!001f+0f2+001e+0f2+0020+",
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e",
+  "autoFadeEventCollapse": false
+}

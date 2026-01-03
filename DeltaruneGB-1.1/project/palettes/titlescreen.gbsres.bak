@@ -1,0 +1,11 @@
+{
+  "_resourceType": "palette",
+  "id": "18a59039-f9db-4516-929c-2b05cbda92eb",
+  "name": "TitleScreen",
+  "colors": [
+    "F8F8F8",
+    "00A0F8",
+    "F80000",
+    "000000"
+  ]
+}

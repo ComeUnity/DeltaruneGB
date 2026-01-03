@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "2c8add33-0712-4a2e-8be8-7e3ba5682545",
+  "name": "FALLLS",
+  "symbol": "bg_dogchecksavedata_copie_0",
+  "width": 25,
+  "height": 21,
+  "imageWidth": 204,
+  "imageHeight": 170,
+  "filename": "FALLLS.png",
+  "tileColors": "00c1+014+0015+015+0014+015+0014+015+0017+012+0017+012+00ca+",
+  "autoColor": false
+}

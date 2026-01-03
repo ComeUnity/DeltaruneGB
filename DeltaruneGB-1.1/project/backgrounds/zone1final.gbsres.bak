@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "07595874-0537-4e95-94ac-55ebeac7b14e",
+  "name": "Zone1FINAL",
+  "symbol": "bg_outside_1_png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256,
+  "filename": "Zone1FINAL.png",
+  "tileColors": "00129+03!0079+03!002a+03!0060+04d+00f+0412+00c+0414+00c+0414+00c+0414+00f+0411+0011+04d+0049+023+001f+022+0020+023+0020+022+0020+022+0020+022+00f+",
+  "autoColor": false
+}

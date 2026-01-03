@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "39c5c048-601d-4860-8931-8e1485e3961e",
+  "name": "castle_town_map2",
+  "symbol": "bg_castle_town_map2",
+  "width": 56,
+  "height": 18,
+  "imageWidth": 448,
+  "imageHeight": 144,
+  "filename": "castle_town_map2.png",
+  "tileColors": "0112+0214+0124+0214+0124+0014+0124+0014+0124+0014+0124+0014+0124+0014+0124+0014+0124+008+055+007+0124+008+055+007+0124+008+055+007+0124+008+054+008+0124+00a+05!009+0124+0014+0112+00e0+",
+  "autoColor": false
+}

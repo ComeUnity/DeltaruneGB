@@ -1,0 +1,46 @@
+{
+  "_resourceType": "script",
+  "id": "7c8aaad0-0340-4cac-8984-18126bdda1a3",
+  "name": "name_input/Set Cursor Position",
+  "description": "",
+  "variables": {
+    "V1": {
+      "id": "V1",
+      "name": "currentChar",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_12",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "add",
+          "valueA": {
+            "type": "variable",
+            "value": "V1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "y": {
+          "type": "property",
+          "target": "0",
+          "property": "ypos"
+        },
+        "__collapse": true
+      },
+      "id": "32ed33bd-fe04-4611-a4eb-f7823c8ea688"
+    }
+  ]
+}

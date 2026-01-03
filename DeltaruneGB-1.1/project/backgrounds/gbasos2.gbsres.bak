@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "c389b563-9404-4962-99f0-81251ac4634e",
+  "name": "GBASOS2",
+  "symbol": "bg_gbasos2",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 195,
+  "imageHeight": 144,
+  "filename": "GBASOS2.png",
+  "tileColors": "0095+02!0011a+"
+}

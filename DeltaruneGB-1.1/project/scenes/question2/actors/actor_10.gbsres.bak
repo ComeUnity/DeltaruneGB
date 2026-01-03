@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "7bdfa209-e4ea-478c-bde3-eb7764d3132a",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f6617398-b624-4f6b-9e2d-944d05cc7e6b",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_29",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The drawer is mostly\nempty, except for...",
+          "A school cross\ncountry shirt with\na tear in it."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3917e8bf-d856-48ce-a451-f7d039e174c9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 10,
+  "_index": 10
+}

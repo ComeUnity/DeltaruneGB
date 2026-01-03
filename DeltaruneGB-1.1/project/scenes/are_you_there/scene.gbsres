@@ -1,0 +1,84 @@
+{
+  "_resourceType": "scene",
+  "id": "2bce92f2-7716-4caf-9921-352b21fb714d",
+  "_index": 19,
+  "type": "TOPDOWN",
+  "name": "Are you there",
+  "symbol": "scene_20",
+  "x": 2552,
+  "y": 720,
+  "width": 21,
+  "height": 18,
+  "backgroundId": "a5096dff-101a-4c9d-9f46-b7521c2e6a94",
+  "tilesetId": "",
+  "paletteIds": [
+    "1515f879-e834-4eea-aa22-c680a48c145d",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "dd2e4c14-ee0d-45a4-86a4-c7b2962ad781"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "075f6eed-c30a-447f-9668-4b59f5d33faa"
+      },
+      "id": "1c9ff2a3-4b83-4517-8d4e-f795a0260208"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!ARE YOU THERE",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!ARE WE CONNECTED ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": 4,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e715ef7b-1be8-415a-b097-112f3fd95085"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "00c8e594-029a-4ae1-a910-2ec5e7561c84",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": 3
+      },
+      "id": "38f06b58-8fdb-40e6-a79b-550b38670eb4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0017a+",
+  "autoFadeEventCollapse": false,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

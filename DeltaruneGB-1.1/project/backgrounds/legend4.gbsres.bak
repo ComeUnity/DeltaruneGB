@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "db5d823c-ad1d-439e-b844-e3de13061b4e",
+  "name": "Legend4",
+  "symbol": "bg_legend4",
+  "width": 18,
+  "height": 19,
+  "imageWidth": 149,
+  "imageHeight": 158,
+  "filename": "Legend4.png",
+  "tileColors": "00120+",
+  "autoColor": false
+}

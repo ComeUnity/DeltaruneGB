@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8f384113-843a-4670-8484-90a1fb92cc8c",
+  "name": "Schoolcorridor1",
+  "symbol": "bg_schoolcorridor1",
+  "width": 65,
+  "height": 32,
+  "imageWidth": 526,
+  "imageHeight": 259,
+  "filename": "Schoolcorridor1.png",
+  "tileColors": "0045+012+003e+013+004+052+0037+014+004+052+004+01d+0025+015+00a+01d+0024+016+00a+01d+0024+016+00a+01d+0024+016+00a+01d+0024+016+003b+015+003c+014+003d+013+003e+012+00512+",
+  "autoColor": false
+}

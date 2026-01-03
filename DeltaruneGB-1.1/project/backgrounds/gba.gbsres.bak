@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "da766e81-f5b2-4d69-95dc-47ff3385fa55",
+  "name": "GBA",
+  "symbol": "bg_gba",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 194,
+  "imageHeight": 144,
+  "filename": "GBA.png",
+  "tileColors": "06!053+0615+05a+0649+07a+06c+05d+06c+05c+06b+05d+06b+054+068a+058+0610+058+0638+"
+}

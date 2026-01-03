@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "ab55d420-fbc7-4080-bbbc-9755b7f3592b",
+  "_index": 31,
+  "name": "EXEnigme",
+  "backgroundId": "81c61531-2032-488c-8b91-ced4ff474681",
+  "tilesetId": "",
+  "width": 23,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f2+0013+0f4+0013+0f4+003+0f5+002+0f7+002+0f4+003+0f5+002+0f7+002+0f4+003+0f5+002+0f7+002+0f4+003+0f4+004+0f6+002+0f4+003+0f4+004+0f6+002+0f4+003+0f4+004+0f6+002+0f4+003+0f5+002+0f7+002+0f4+003+0f5+002+0f7+002+0f4+005+0f2+003+0f7+002+0f4+00f+0f2+002+0f4+003+0f!009+0f2+004+0f4+002+0f3+008+0f2+004+0f4+003+0f!00f+0f4+0013+0f4+0013+0fc+004+0f9+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 1624,
+  "y": 72,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "value": {
+          "type": "number",
+          "value": 35
+        }
+      },
+      "id": "e562bb7a-f8fa-4992-8458-33a1a097ceae"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "c6e2b22c-ee94-4ae6-930c-19b228f3bc05"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "5d0dcaf2-c4ed-4139-900d-e4bc4eac63ed"
+      },
+      "id": "36c77b71-1904-4558-8b9c-cead126b30c4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "add484c6-3906-41a4-b985-a4919373688f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "04c08f74-e232-4e9a-9188-e0aa89571db9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "c628cf46-4888-4877-9c88-ab6592f34c9c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

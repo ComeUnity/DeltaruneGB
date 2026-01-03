@@ -1,0 +1,102 @@
+{
+  "_resourceType": "scene",
+  "id": "a5298d20-63ad-4bb4-a648-9c0b90aa814a",
+  "_index": 5,
+  "type": "TOPDOWN",
+  "name": "Legend3",
+  "symbol": "scene_5",
+  "x": 703,
+  "y": 412.3333435058594,
+  "width": 22,
+  "height": 19,
+  "backgroundId": "4291a12e-2e06-484e-8cc1-a58186f29a73",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "script": [
+    {
+      "id": "a3cf0720-b1ff-4c71-9879-87fbc6bd9405",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5ff6815d-9880-4600-8fb6-5ebfd52c9010"
+    },
+    {
+      "id": "f6f2f5bc-ac7f-4527-ba66-3b9188997b10",
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2
+      }
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "For millenia,\nLIGHT and DARK",
+          "have lived in\nbalance,",
+          "Bringing peace\nto the WORLD."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "74ff5b2f-9311-430d-844d-31f3a9b0ef14"
+    },
+    {
+      "id": "746c3b88-64c3-465e-9b2c-139a075e52f3",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3f21ce37-eb41-4be7-8d5f-42f5db1590ff",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

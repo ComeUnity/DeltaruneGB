@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "5ec19f8a-050e-4215-80de-f181e31a5390",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "Scène 16",
+  "symbol": "scene_1",
+  "x": 2613.1428571428573,
+  "y": 162.28571428571428,
+  "width": 23,
+  "height": 23,
+  "backgroundId": "31154929-2b56-4ddb-8ce7-c6aa4bcf7bf4",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "3ac99fa7-b77f-4bf2-8156-ebc8bd9e9747",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Only they can\nseal the fountains",
+          "And banish the\nANGEL'S HEAVEN.",
+          "Only then, the\nbalance will be\n   restored,"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "bfd81802-8068-40eb-bc23-9a17eaad501f"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "edea0211-8406-4338-b45e-5bc96d6600bc",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "82010101-4f08-47b1-87aa-8428f3336849"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00211+",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

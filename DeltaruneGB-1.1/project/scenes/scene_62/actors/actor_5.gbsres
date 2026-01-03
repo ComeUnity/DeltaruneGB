@@ -1,0 +1,159 @@
+{
+  "_resourceType": "actor",
+  "id": "6449fed1-2b9a-4430-90cf-470608939610",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "864006f4-ccb7-4257-b325-cbb5d53f496d",
+  "prefabId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_78",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "14d784c0-3138-434f-8cca-329c8e61b1fe"
+      },
+      "id": "33cf3fda-821e-4299-8f0d-7f0fd68cc377"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "6dc88f28-8766-48d1-b24f-d655bf91be7f"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "14d784c0-3138-434f-8cca-329c8e61b1fe",
+        "emoteId": "da932101-c304-4f21-8dc9-0f5dc6178727"
+      },
+      "id": "d27e4f08-3db0-40d8-8e3e-753ff95ad982"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Hey!B..back off!\ncome any closer\nand I....",
+          "K..Kris?!\nPhew...",
+          "...Hey don't scare\nme like that\ndumbass!",
+          "Unless you WANT to\nget clocked in the\nface, heh.",
+          "Anyway, enough\nscrewing around.",
+          "We gotta have to\nfind a way outta\nhere."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "178e0998-0e48-4064-9a28-e19b7acdbf45"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "7b481bd7-3d7e-4cad-8c03-6ec0385f45ef"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "14d784c0-3138-434f-8cca-329c8e61b1fe",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "f3df3c0d-fe3f-41e7-973c-16dbd795e78c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "915ea0ce-2eba-43d4-858a-80eed551b1f9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "14d784c0-3138-434f-8cca-329c8e61b1fe",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "faef5f3a-846d-40c5-94f7-6b0c99fad9d7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!S:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Ummm...\nWhere is \"here\"\nanyway...?",
+          "It does not matter\nYOU got us into\nthis mess-",
+          "YOU get us out!",
+          "Lead the way Kris."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "75b36495-f866-4789-bc04-af5bf49b6786"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "14d784c0-3138-434f-8cca-329c8e61b1fe"
+      },
+      "id": "b9dd6442-5caa-4e86-8251-33aabd36168e"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "14d784c0-3138-434f-8cca-329c8e61b1fe"
+      },
+      "id": "298ab465-edcf-4d30-a496-e010d5c59734"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 70,
+  "y": 39,
+  "_index": 4
+}

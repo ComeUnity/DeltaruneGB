@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "aa48b452-e08c-426a-950e-7a0fd765d729",
+  "name": "GameChatPreview",
+  "symbol": "bg_gamechatpreview",
+  "width": 21,
+  "height": 18,
+  "imageWidth": 170,
+  "imageHeight": 144,
+  "filename": "GameChatPreview.png",
+  "tileColors": ""
+}

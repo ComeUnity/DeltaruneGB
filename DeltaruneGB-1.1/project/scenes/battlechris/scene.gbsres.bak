@@ -1,0 +1,25 @@
+{
+  "_resourceType": "scene",
+  "id": "7efeeddb-ce21-4963-a858-591a84f92bf4",
+  "_index": 10,
+  "name": "BattleChris",
+  "backgroundId": "bf40333a-e411-4df3-bc18-c938b70f52e8",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-3"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_11",
+  "x": 680,
+  "y": 216,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

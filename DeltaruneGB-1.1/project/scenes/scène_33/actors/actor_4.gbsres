@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "82a687b9-61e7-4c57-95a2-30e2fc463470",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f6617398-b624-4f6b-9e2d-944d05cc7e6b",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_41",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There's some...",
+          "cinnamony batter\ncaked on the\nstovetop."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "10f5fba0-df18-42fc-b6b5-740bf69ac143"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 26,
+  "y": 11,
+  "_index": 3
+}

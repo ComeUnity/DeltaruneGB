@@ -1,0 +1,91 @@
+{
+  "_resourceType": "scene",
+  "id": "acba6321-631f-4972-befa-dc4bc923853a",
+  "_index": 64,
+  "type": "TOPDOWN",
+  "name": "Scene 66",
+  "symbol": "scene_66",
+  "x": 4496,
+  "y": 928,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "78af9ee7-08d7-4c7b-ac46-f4975a10008e",
+  "tilesetId": "",
+  "paletteIds": [
+    "56080135-dfdc-4075-bfc9-e564794f73c7"
+  ],
+  "spritePaletteIds": [
+    "b09f4d90-7dae-4540-b13f-8447654b8599",
+    "",
+    "62b1bb7b-571b-4424-b7a9-aa1d5dd58bab",
+    "",
+    "1c76dcdd-3e93-41a4-8093-0ab59d10d371"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6177ae22-fd88-43f6-b491-37509c85cef4",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "b6bcb0aa-0649-457a-9c6b-86de29d264eb"
+      },
+      "id": "0d53b022-3dc9-42f5-87ad-36e4bdbd0763"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "98"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 9
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "6beb92ad-2093-4505-8475-74fcc1677123"
+            },
+            "id": "2bcd104d-2b1a-40b0-b358-89241b8931cd"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "6beb92ad-2093-4505-8475-74fcc1677123"
+            },
+            "id": "d934c5d3-9f67-4889-ab77-66f32f1170ee"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "6beb92ad-2093-4505-8475-74fcc1677123"
+            },
+            "id": "23c5b9de-afa7-4e00-abc2-73c5e968199a"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "6beb92ad-2093-4505-8475-74fcc1677123"
+            },
+            "id": "bc29e81b-3e85-427d-a51b-56f3eb2d32d8"
+          }
+        ]
+      },
+      "id": "3c903de8-0cfe-4382-add6-a61b6aa038ab"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "006+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!009+0f4+006+0f!006+0f3+00a+0f7+0028+0f6+008+0fc+008+0f6+003c+0f6+008+0f6+005+0f!008+0f!00a+0fa+005+"
+}

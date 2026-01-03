@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "2fdff45f-51fe-4c73-b0f6-a4d83587b42a",
+  "name": "Quelesttonnom",
+  "symbol": "bg_quelesttonnom",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 192,
+  "imageHeight": 144,
+  "filename": "Quelesttonnom.png",
+  "tileColors": "0111+003+013+00!015f+00!01138+",
+  "autoColor": false
+}

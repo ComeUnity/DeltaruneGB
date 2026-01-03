@@ -1,0 +1,39 @@
+{
+  "_resourceType": "script",
+  "id": "7cd06a4c-5e78-4455-9349-23dcb90ae3c2",
+  "name": "$Win(Battle) [N]",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_19",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "3dec4571-1fcc-4c46-a244-3f9b70f642d2"
+    }
+  ]
+}

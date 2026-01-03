@@ -1,0 +1,28 @@
+{
+  "_resourceType": "scene",
+  "id": "a9558962-78c7-4016-aef8-276d496f925b",
+  "_index": 52,
+  "name": "CLIFF2",
+  "backgroundId": "bec575f8-6a42-4715-8835-30aad291c2f4",
+  "tilesetId": "",
+  "width": 54,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-3",
+    "0d0464ce-6af3-4603-8b8a-bfcfdebe27d4"
+  ],
+  "spritePaletteIds": [
+    "b09f4d90-7dae-4540-b13f-8447654b8599"
+  ],
+  "collisions": "00153+0f14+0022+0f2+0011+0f!0022+0f2+0011+0f!0013+0f10+0012+0f14+0010e+0f11+0010+0f15+0010+0f!0022+0f3+0010+0f!0035+0f4+00a+0f3+0028+0fc+0017+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_53",
+  "x": 4080,
+  "y": 360,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "c8d6245c-22c5-4a36-abac-c477396ebe08"
+}

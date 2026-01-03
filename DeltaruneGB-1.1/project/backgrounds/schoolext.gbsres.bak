@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d0ba5c24-0281-4a1d-ba33-99f91e65edfc",
+  "name": "SchoolExt",
+  "symbol": "bg_schoolext",
+  "width": 25,
+  "height": 18,
+  "imageWidth": 205,
+  "imageHeight": 149,
+  "filename": "SchoolExt.png",
+  "tileColors": "019+053+0116+053+0116+053+0116+053+0116+053+014a+055+0114+05!004+05!0113+05!004+05!017+00!05!012+05!012+052+01!053+004+05!018+05c+004+05!018+05c+004+059+007d+",
+  "autoColor": false
+}

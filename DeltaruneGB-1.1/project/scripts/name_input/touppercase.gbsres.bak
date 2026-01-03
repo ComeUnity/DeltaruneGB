@@ -1,0 +1,41 @@
+{
+  "_resourceType": "script",
+  "id": "ad756cdf-af26-42fc-9a2c-8e29d741b189",
+  "name": "name_input/ToUpperCase",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "lowerCase",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_7",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V0",
+        "value": {
+          "type": "false"
+        },
+        "__collapse": true
+      },
+      "id": "43790695-e360-4d79-8117-c77a305355dd"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "06594a96-af0e-49d3-a113-16a5c7ebae04"
+    }
+  ]
+}

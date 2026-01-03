@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "65b7d937-ceef-4379-82e1-e7c7def3a429",
+  "name": "New Piskel(21)",
+  "symbol": "bg_new_piskel_21_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "New Piskel(21).png",
+  "tileColors": "008+034+005+02!00a+034+004+024+008+034+002+012+024+008+034+00!01!022+002+02!00d+024+005+032+005+01!003+01!023+00!032+00!014+008+023+01!024+014+00c+024+00c8+",
+  "autoColor": false
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "11979f82-1d2b-4f41-8a61-2bc9299d97b8",
+  "name": "Legend7F",
+  "symbol": "bg_legend7f",
+  "width": 26,
+  "height": 23,
+  "imageWidth": 208,
+  "imageHeight": 184,
+  "filename": "Legend7F.png",
+  "tileColors": "00a4+017+002b+015+0012+0110+007+01b6+009c+",
+  "autoColor": false
+}

@@ -1,0 +1,533 @@
+{
+  "_resourceType": "scene",
+  "id": "5cb55931-201a-4d13-9b09-bfbb06eadaea",
+  "_index": 22,
+  "type": "TOPDOWN",
+  "name": "Scène 23",
+  "symbol": "scene_24",
+  "x": 2544,
+  "y": 928,
+  "width": 24,
+  "height": 18,
+  "backgroundId": "2fdff45f-51fe-4c73-b0f6-a4d83587b42a",
+  "tilesetId": "",
+  "paletteIds": [
+    "116975a1-6c36-47f6-ac49-5fb89eb5fbef",
+    "18a59039-f9db-4516-929c-2b05cbda92eb",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "variable",
+          "value": "10"
+        }
+      },
+      "id": "860a18c9-cc78-4436-9df3-1ce8d41884a1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "variable",
+          "value": "11"
+        },
+        "__collapse": false
+      },
+      "id": "599efdd1-a652-40a4-ac89-2f7d328895d4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "variable",
+          "value": "12"
+        },
+        "__collapse": false
+      },
+      "id": "c8e61e05-22f5-41ea-91b5-7f87f613ca6d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "variable",
+          "value": "13"
+        },
+        "__collapse": false
+      },
+      "id": "0fa2ab83-a094-40fe-9dd9-533cf15560d3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "4",
+        "value": {
+          "type": "variable",
+          "value": "14"
+        },
+        "__collapse": false
+      },
+      "id": "aa40ced5-a319-4fea-b8f7-d36158f58c07"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false
+      },
+      "id": "812653bd-5f9e-4905-8921-5961d867fcbd"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false
+      },
+      "id": "c004cde2-2cf3-4818-a224-eeba966e1b23"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false
+      },
+      "id": "baca71c2-cbc8-4033-bc38-086778641636"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "3",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 0,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": false
+      },
+      "id": "9cbb14c9-b287-41ea-9e55-b9e6403057a6"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "4",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 0,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": false
+      },
+      "id": "97408eaa-f3fc-4865-a102-2dfab1654cd9"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "32",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 3,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false,
+        "__collapse": false
+      },
+      "id": "ef38ab12-3600-445a-88a3-d689cc20d580"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Excellent.",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Truly Excellent.",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Let us shape its\nmind as your own.",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!What is its\nfavorite food ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e9fc09d2-11b9-46db-8ce5-33ce4f953229"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 6,
+        "option1": "Sweet",
+        "option2": "Soft",
+        "option3": "Sour",
+        "option4": "Salty",
+        "option5": "Pain",
+        "option6": "Cold",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "2df55fca-592c-4780-be5e-7f211f21a9e1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "510",
+        "value": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "4ff4ba7e-5c7f-4b1b-aa1b-8caf0e7636c3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Your favorite\nBLOOD Type ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8b696544-064d-4504-9650-b4f7b77d2a7b"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 5,
+        "option1": "A",
+        "option2": "AB",
+        "option3": "B",
+        "option4": "C",
+        "option5": "D",
+        "option6": "Cold",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "5778cb5d-0b35-45be-8284-214984fdb286"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "511",
+        "value": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "cfa682be-bfaf-4d20-bc7f-8bf122af9860"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!What color does it\nlike most ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e66138f4-80a8-4130-95ff-d9a2ab0c2478"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "Red",
+        "option2": "Blue",
+        "option3": "Green",
+        "option4": "Cyan",
+        "option5": "D",
+        "option6": "Cold",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "8a3c8b07-2150-413b-96dd-8270736a02a7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "509",
+        "value": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "c4e4cf90-74f1-4a74-b77f-8fbf7fc83659"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!PLEASE GIVE IT\nA GIFT."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "64315b37-3a94-4a92-8422-15a468365935"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 5,
+        "option1": "Kindness",
+        "option2": "Mind",
+        "option3": "Ambition",
+        "option4": "Bravery",
+        "option5": "Voice",
+        "option6": "Cold",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue"
+      },
+      "id": "24a4a630-617d-40f6-ade6-970002acd953"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "508",
+        "value": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "52a7395a-ddb5-403a-b83f-3536be1c954d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!How do you feel\nabout your\ncreation ?",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!(IT WILL NOT HEAR)"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b0e7a06e-6ddf-42bd-a07d-ea400ba443cd"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "LOVE",
+        "option2": "HOPE",
+        "option3": "DISGUST",
+        "option4": "FEAR",
+        "option5": "Voice",
+        "option6": "Cold",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue"
+      },
+      "id": "370f149b-5090-4096-8e1f-7224a541690c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "507",
+        "value": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "a8be1ec8-1fa1-48a9-8034-3cca00425fcc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!You acknoledge the\npossibilty of\nPAIN an seizure."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0ebeb920-0931-48cf-ae25-52ed21449449"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Yes",
+        "option2": "No",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "3fc069bc-2541-4ee6-a958-ac3619038578"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!UNDERSTOOD.",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!But, what about\nthe creator ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "536f29f6-a4ee-446e-ac8a-e6ab06174b9b"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "849bff4b-bc8d-4284-b9f0-4416ffb3640f",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "bb28e9cd-5e1e-466d-805c-3153d69b882b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001b0+",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

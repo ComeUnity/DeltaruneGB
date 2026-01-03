@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "fd5eda98-c0ad-4b4d-a1ca-834482402a47",
+  "name": "TransferDataEx",
+  "symbol": "bg_dogchecksavedata_copie",
+  "width": 23,
+  "height": 18,
+  "imageWidth": 184,
+  "imageHeight": 144,
+  "filename": "TransferDataEx.png",
+  "tileColors": "0052+05!0016f+"
+}

@@ -1,0 +1,142 @@
+{
+  "_resourceType": "scene",
+  "id": "3b759359-e1f5-432f-a552-2e535c42a8f7",
+  "_index": 28,
+  "type": "TOPDOWN",
+  "name": "GameOver",
+  "symbol": "scene_30",
+  "x": 1528,
+  "y": 488,
+  "width": 27,
+  "height": 28,
+  "backgroundId": "7241c457-aaf2-4777-ac2c-eb57c13b9fc9",
+  "tilesetId": "",
+  "paletteIds": [
+    "1515f879-e834-4eea-aa22-c680a48c145d",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1515f879-e834-4eea-aa22-c680a48c145d"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "0620d7be-023e-46dd-92e6-07f8784c3150"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It appears you\nhave reached...",
+          "An end.",
+          "Will you try\nagain ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5f9ae742-cffb-4c2f-8889-cf3ee27d9c38"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Yes",
+        "option2": "No",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "6a2a1c7c-0c8a-42ec-b995-166323c8094f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "23160789-afc1-4de7-aa84-f545bac453fc",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e98826a7-9a51-49ba-84a2-10e919bf8338"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "bdec53ee-c362-4494-9c46-27cfcfbc6db0",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "64355613-20b4-4095-ba13-7d734243545a"
+          }
+        ]
+      },
+      "id": "3a902e29-61a4-4ccf-869e-50298e12871a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

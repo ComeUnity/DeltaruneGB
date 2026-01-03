@@ -1,0 +1,98 @@
+{
+  "_resourceType": "actor",
+  "id": "e63a0fb5-2d9e-4a85-9ba0-e711e6de6cdc",
+  "_index": 1,
+  "symbol": "actor_1",
+  "prefabId": "",
+  "name": "",
+  "x": 27,
+  "y": 23,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "149845e1-e0b4-4a2e-97e3-4a59c8bc2634",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Tu veux pas\nte casser ?",
+                "J'ai envie de toi."
+              ]
+            }
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "60da4068-b10e-492b-849b-bbcfbb5808da"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Terre de\nCourte-Récré."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8e437419-9d71-401e-a6df-45463969fbcb"
+          }
+        ]
+      },
+      "id": "60037243-eb0b-4963-8ecf-13287276985b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

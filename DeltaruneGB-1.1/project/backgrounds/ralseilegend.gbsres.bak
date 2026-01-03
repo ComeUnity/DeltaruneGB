@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a4610eec-b6a6-4949-8fa7-e24b32aba1e0",
+  "name": "RalseILEGEND",
+  "symbol": "bg_ralseilegend",
+  "width": 22,
+  "height": 18,
+  "imageWidth": 176,
+  "imageHeight": 144,
+  "filename": "RalseILEGEND.png",
+  "tileColors": "006+019+009+01c+008+014+002+01d+002+015+00!01d+002+014+002+01c+002+016+00!01d+00!016+00!01d+00!016+00!01d+00!016+00!01d+00!016+00!01d+00!016+00!01d+00!016+00!01d+002+015+00!017+00!015+0054+",
+  "autoColor": false
+}

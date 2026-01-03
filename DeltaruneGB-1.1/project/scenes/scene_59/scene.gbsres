@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "46213c0a-0bf3-427e-a9b7-5fab8e97a180",
+  "_index": 54,
+  "type": "TOPDOWN",
+  "name": "Scene 57",
+  "symbol": "scene_57",
+  "x": 6544,
+  "y": 512,
+  "width": 64,
+  "height": 24,
+  "backgroundId": "18734dbd-3399-4530-b427-95cfb47a27db",
+  "tilesetId": "",
+  "paletteIds": [
+    "6cdd0707-f0f2-4333-a044-89537a6805f7"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "f2131582-6dab-4751-9a94-cd8eb20f4a64"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6177ae22-fd88-43f6-b491-37509c85cef4",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00340+0f40+00100+0f40+00140+"
+}

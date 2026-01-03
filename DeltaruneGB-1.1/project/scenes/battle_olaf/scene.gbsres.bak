@@ -1,0 +1,1194 @@
+{
+  "_resourceType": "scene",
+  "id": "ed4d0bb7-3de2-45a1-a167-767da7b970ae",
+  "_index": 16,
+  "name": "Battle OLAF",
+  "backgroundId": "6422e073-9b7f-44cf-a1f3-e9f92017563b",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-ui"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_18",
+  "x": 1832,
+  "y": 456,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "9af11e11-05aa-49e1-8d17-c01d50d7e5f8"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "21f5c33a-0876-4fb2-b823-587bee6362a5"
+      },
+      "id": "72662ba2-3068-425f-a1f5-d6d7ee15c38c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "OLAF est en pause\nclope."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7ae673ad-60e6-4b33-be2c-3cc9b12b58ab"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "fb77fcd2-226e-454d-abd0-fdf0c3be6780"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "id": "d5afb88f-b782-4db0-aeef-962c9554526b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "d9a4ac4e-150d-454f-b296-4fd72f0f93a6"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "OLAF:Oups...\nJe crois que j'ai\njeté un froid!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "b111b217-3695-4beb-ac90-ca14aa94edf2"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "23361df5-ef02-4279-8513-0bbabb7c04ab"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "OLAF:C'est le\nfroid monde du \ntravail.."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "64fc2063-22f0-4665-a80a-4f325ca9a68f"
+                }
+              ]
+            },
+            "id": "df113a2f-02f1-4505-8d8b-ac27612b4748"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Pv:$13$",
+              "x": 1,
+              "y": 7,
+              "location": "background"
+            },
+            "id": "28ef08cb-3a2c-4ee7-8422-496e76f7fe26"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Pv:$14$",
+              "x": 13,
+              "y": 4,
+              "location": "background"
+            },
+            "id": "7d051352-99bc-40c3-9487-f997f8f5e109"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
+              "items": 2,
+              "option1": "PistoSlime",
+              "option2": "Slimini",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "cancelOnLastOption": true,
+              "__collapse": false
+            },
+            "id": "ad26d5f4-6209-4488-8e80-8fe84dc7057a"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "8eb718cf-37dd-4097-934c-4c093b8908c0"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    },
+                    "__collapse": true
+                  },
+                  "id": "0df3cdd1-63cd-414e-a454-2227bbf1c156"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "14",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 5,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "eb1694ca-a385-4db7-8835-1d7b26cf6fd2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Slimy utilise\nPistoSlime.",
+                      "Il inflige 5 dégâts."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "724fbe0d-7087-45c2-99b1-9dd00cfd0541"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "f1739d62-3e66-4633-93b5-ad46d3a6edf1"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "priority": "medium",
+                    "pitch": 2,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "619c7f7a-9941-4475-838f-e4726b63573c"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    }
+                  },
+                  "id": "92bf8822-c801-4824-9f3d-b6ae550ae05f"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "14",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 2,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "e2880111-89a2-44b8-b3e8-3b640ef86dd1"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "add",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 3,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "a6583c0e-e56d-4a5e-b735-6802549a73f8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Slimy utilise\nSlimini.",
+                      "Il inflige 2\ndégats et récupère\n3PVs"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "57f4e382-37c9-42ea-8499-476f821ac344"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "eb6bd34b-af9f-43da-97cd-3493209707dc"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "ba931849-3344-481b-8b1a-07d619ea8a6f"
+                }
+              ]
+            },
+            "id": "1a277a5f-2790-4084-b8ef-a836dcb8104b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "14"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "c646be8b-a8fb-4cc4-b761-2b23b6cf51da"
+                },
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "99ca6ab6-db02-4523-a47a-131592958f8d"
+                  },
+                  "id": "b684029a-8387-469c-9380-e603a0f5d001"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "OLAF retourne au\nTaff.",
+                      "Vous obtenez 2PVs\net 1pièce."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "09c4da00-61ef-4412-8d44-7e8c79529ecc"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "add",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 2,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": false
+                  },
+                  "id": "7075ce66-4236-4015-a95e-dcb53c24115b"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "15"
+                  },
+                  "id": "a420321a-2381-49dc-8120-2ecbbf64c179"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "1e5e5154-2cc9-4259-8128-10eece779c8e"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "7333e488-e2c4-402b-85f2-0f6dbdc1fd49",
+                    "x": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 5
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "9bdc2bea-a540-43e4-92f5-b69f060f4a1b"
+                }
+              ],
+              "false": []
+            },
+            "id": "62d7595d-649b-4ded-a2ac-ec2ba411f48a"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "id": "08feaffe-4e95-4a24-8863-06dc1d786fbb"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "L0",
+                    "value": {
+                      "type": "rnd",
+                      "value": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "id": "ad66ba55-5160-4ce4-b152-2885d7bc6663"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "number",
+                        "value": 0
+                      },
+                      "valueB": {
+                        "type": "variable",
+                        "value": "L0"
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "OLAF:En réalité je\nsuis castMember\nchez Disney..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "6d0808dc-2332-498c-993e-dde65d6069db"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "e0ee04b5-a08c-47f4-97a2-eaabe5fb1543"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "fd18b879-624c-4515-972e-8478ce91f156"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "OLAF: Je crois que\nj'ai besoin de\nquelques jours de\ncongé..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "2e54226f-6061-4a28-94d0-06280c0972e5"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "babab718-f6f4-4e24-997a-93a6acf10152"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "cb0e2fc6-be4c-4f0f-a3f8-b6e4d3478d54"
+                      }
+                    ]
+                  },
+                  "id": "e3b811bb-b4f8-46f4-bd48-b73c53cece83"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 170,
+                    "duration": 1,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "24bd8546-6c93-4efd-853d-7db8cc349f1f"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "ca229636-ba29-4004-8c00-5bca5dd7f036"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "56c2f940-4174-4e4e-9433-53cf6b61d89f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "OLAF vous fume sa\nclope dessus.",
+                      "la fumée vous fait\nperdre 2PVs"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "791db8b4-28d9-4fae-ab02-ccbc6e16b0a5"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 2,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true
+                  },
+                  "id": "00cbcd25-696e-43b2-9954-34b21bb3d089"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "e1fded69-b782-43a1-a006-7d3bd259e370"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "ca3f0e84-09ad-4c55-9c55-bc401eee5f31"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "182c2a48-9e1b-4300-88d9-7a50622aba36"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "bd982c9c-ed97-4571-93a1-06376c8650ef"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "OLAF:J'arrive sans\nprévenir,on peut\ny retomber...",
+                      "Je suis pourtant\nbien plus\nmeurtirier qu'un\ntrou. Qui suis-je?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "6ef159fe-8b38-4a97-943e-df98a99b92c8"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "ed0d28dc-6948-48c5-a792-b79388034f0e"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "d67a2865-e5d4-49ed-bf99-ee27ee8a91f3"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "L0",
+                    "items": 3,
+                    "option1": "Un très gros trou",
+                    "option2": "La dépression",
+                    "option3": "Un meurtrier",
+                    "option4": "",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": true,
+                    "layout": "dialogue"
+                  },
+                  "id": "b6699bfc-c0c5-4fb3-8e94-234e86840068"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "2e34d390-a8a2-43dc-b4bf-f0b1fd52618f"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "2d60d556-a091-4b2b-b005-f25f14d9b629"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "OLAF:Eh oui\nmon grand..",
+                            "Le fait que tu ais\neu la réponse te\nmet mal-à-l'aise..",
+                            "Tu perds 1PV"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "bc5fcd76-0b41-4a91-9201-76c7e9110e48"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "13",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 1,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "ac5cf268-d01d-4bf8-bd31-27fad66da2b3"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "bbf05e44-6008-494f-89e8-02c526afa5d1"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "fbaa881b-ba06-4ab0-bd16-aaee3dc67832"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "13"
+                        },
+                        "id": "ab7f0821-87c8-4e7d-b419-7beb4462590e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "priority": "medium",
+                          "pitch": 1,
+                          "frequency": 127,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0
+                        },
+                        "id": "eafad7b6-9acd-4498-befc-5112eee958fa"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "11f1f7da-3a6a-49e3-8f1f-ed3ceb64dcb7"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "36937711-6e94-4692-8018-07fd8cbc6079"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Et non, c'était la\ndépression :)...",
+                            "La réponse te mets\nmal-à-l'aise.",
+                            "Tu perds 3PVs."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "d203de63-ef3e-4bfc-b2f5-e5013dbb2050"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "13",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 3,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "3520bf40-c2ae-4d43-9d7c-c052cf0c2ce6"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "1c1a6982-96ec-4fd6-8e93-5f5c5fef01f7"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "8b1e8ce7-229a-4df6-9507-5284fc82e9d0"
+                      }
+                    ]
+                  },
+                  "id": "20270b6a-ac6b-42d2-8f87-6daf88f5c376"
+                }
+              ]
+            },
+            "id": "f29d599b-29f4-4646-9b9d-ffafdcae6972"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "13"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "52ec2261-969e-408e-8492-9a198db793a8"
+                },
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "566df651-e09c-4dad-8178-2478703d2895"
+                  },
+                  "id": "7de8d5c0-d3e9-4541-a540-5b580f7c4330"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Vous perdez petit\nà petit vos\nrepaires.",
+                      "Vous vous\neffondrez.",
+                      "(Enfin comme un\nslime s'éffondre\ndonc je sais pas\nvous glissez ??)"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "752d21c7-368e-43ca-a100-b9f25fc15b8f"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "f1541147-5b3c-4d9a-aeed-f75016e40478",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "ca08f424-d4bc-4803-b568-ff451b7d3506"
+                }
+              ],
+              "false": []
+            },
+            "id": "1d83197c-2639-49f4-8e10-f458ce28ce39"
+          }
+        ]
+      },
+      "id": "a24f2f89-70ba-4b69-99af-c97d3280a7a5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "autoFadeEventCollapse": true
+}

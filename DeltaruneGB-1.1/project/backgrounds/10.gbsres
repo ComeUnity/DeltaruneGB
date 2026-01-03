@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "fb54c99c-0594-49f0-878a-949f7b1f4ea6",
+  "name": "10",
+  "symbol": "bg_10",
+  "width": 32,
+  "height": 50,
+  "imageWidth": 256,
+  "imageHeight": 400,
+  "filename": "10.png",
+  "tileColors": "",
+  "autoColor": false
+}

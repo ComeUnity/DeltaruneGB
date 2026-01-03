@@ -1,0 +1,89 @@
+{
+  "_resourceType": "script",
+  "id": "1954940c-21e8-42a2-ac08-3cacf2e6aad6",
+  "name": "name_input/Back",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "currentChar",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    },
+    "1": {
+      "id": "1",
+      "name": "Actor B"
+    }
+  },
+  "symbol": "script_0",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "6cc30d0a-a0b6-4afc-9cfe-1d9f83052a81"
+          }
+        ],
+        "false": []
+      },
+      "id": "263d85aa-9238-4204-9997-7feffe340ab8"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "V0",
+        "__collapse": true
+      },
+      "id": "7366ac93-c291-4d1c-a8a5-1ed834d60ebf"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e7a2b19f-8544-4027-b70e-05065709667b",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "$actor[0]$": "0",
+        "$actor[1]$": "1"
+      },
+      "id": "77270e45-3428-46ba-8d13-7e93d5e66122"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "V0",
+        "__collapse": true
+      },
+      "id": "e27aced5-d996-4d0a-b778-a0adb4f6d312"
+    }
+  ]
+}

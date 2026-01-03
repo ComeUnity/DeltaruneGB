@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f5293235-881e-4fd0-a2b7-cbf8e40a1262",
+  "name": "Legend6D",
+  "symbol": "bg_legend6d",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Legend6D.png",
+  "tileColors": "01a4+00c4+",
+  "autoColor": false
+}

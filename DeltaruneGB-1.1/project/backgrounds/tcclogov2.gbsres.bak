@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "b21d53b8-1e88-45bc-836c-b3a166c240a7",
+  "name": "TccLogoV2",
+  "symbol": "bg_tcclogov2",
+  "width": 21,
+  "height": 18,
+  "imageWidth": 168,
+  "imageHeight": 144,
+  "filename": "TccLogoV2.png",
+  "tileColors": "0072+054+00b+05!005+055+00a+05!006+058+006+05!00!07!006+056+006+05!00!07!006+05!00!054+006+053+005+054+00!05!02!007+05d+00a+053+005+053+00c+059+00d+057+0044+",
+  "autoColor": false
+}

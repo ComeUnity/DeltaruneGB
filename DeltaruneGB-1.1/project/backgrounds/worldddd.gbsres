@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "0063a68a-91d0-4520-8e71-447afe47189f",
+  "name": "WORLDDDD",
+  "symbol": "bg_worldddd",
+  "width": 76,
+  "height": 18,
+  "imageWidth": 615,
+  "imageHeight": 144,
+  "filename": "WORLDDDD.png",
+  "tileColors": "",
+  "autoColor": false
+}

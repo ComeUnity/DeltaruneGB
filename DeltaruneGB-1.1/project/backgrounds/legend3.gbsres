@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "4291a12e-2e06-484e-8cc1-a58186f29a73",
+  "name": "Legend3",
+  "symbol": "bg_legend3",
+  "width": 22,
+  "height": 19,
+  "imageWidth": 176,
+  "imageHeight": 152,
+  "filename": "Legend3.png",
+  "tileColors": "00150+",
+  "autoColor": false
+}

@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "342ff79e-a84d-46ba-9ade-aa38000191ac",
+  "_index": 52,
+  "type": "TOPDOWN",
+  "name": "Scene 54",
+  "symbol": "scene_21",
+  "x": 4224,
+  "y": 40,
+  "width": 182,
+  "height": 56,
+  "backgroundId": "ebec41ff-fa0d-4303-a678-d2de412484a3",
+  "tilesetId": "",
+  "paletteIds": [
+    "6cdd0707-f0f2-4333-a044-89537a6805f7"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "",
+    "",
+    "f2131582-6dab-4751-9a94-cd8eb20f4a64"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "6177ae22-fd88-43f6-b491-37509c85cef4",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001a4e+0f15+00b5+0f!00b5+0f!0040+0f1e+0057+0f!0040+0f!001c+0f!0057+0f19+0028+0f!001c+0f!0043+0fe+001e+0f!0028+0f!001c+0f!0050+0f!001e+0f!001e+0fb+001c+0f17+0014+0f19+00d+0f!001e+0f!001e+0f!00e+0f14+001a+0f!0014+0f!0025+0f!001e+0f!001e+0f!00e+0f!0012+0f!001a+0f!0014+0f!0025+0f1b+004+0f!001e+0f!00e+0f!0012+0f!001a+0f!0014+0f!003f+0f!004+0f20+00e+0f!0012+0f!001a+0f16+003f+0f!0028+0fb+0012+0f17+001e+0f14+0027+0f!0028+0f!0032+0f!001e+0f!003a+0f!0028+0f!0032+0f20+003a+0f!0028+0f!008c+0f2a+00287+"
+}

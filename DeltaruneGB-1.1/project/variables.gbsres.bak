@@ -1,0 +1,200 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Toilet???",
+      "symbol": "var_toilet_"
+    },
+    {
+      "id": "10",
+      "name": "Lettre1",
+      "symbol": "var_lettre1"
+    },
+    {
+      "id": "11",
+      "name": "Lettre2",
+      "symbol": "var_lettre2"
+    },
+    {
+      "id": "12",
+      "name": "Lettre3",
+      "symbol": "var_lettre3"
+    },
+    {
+      "id": "13",
+      "name": "Lettre5",
+      "symbol": "var_lettre5"
+    },
+    {
+      "id": "14",
+      "name": "Lettre6",
+      "symbol": "var_lettre6"
+    },
+    {
+      "id": "15",
+      "name": "Lettre7",
+      "symbol": "var_lettre7"
+    },
+    {
+      "id": "16",
+      "name": "Lettre1-2",
+      "symbol": "var_lettre1_2"
+    },
+    {
+      "id": "17",
+      "name": "Lettre2-2",
+      "symbol": "var_lettre2_2"
+    },
+    {
+      "id": "18",
+      "name": "Lettre3-2",
+      "symbol": "var_lettre3_2"
+    },
+    {
+      "id": "19",
+      "name": "Lettre4-2",
+      "symbol": "var_lettre4_2"
+    },
+    {
+      "id": "20",
+      "name": "Lettre5-2",
+      "symbol": "var_lettre5_2"
+    },
+    {
+      "id": "21",
+      "name": "Lettre6-2",
+      "symbol": "var_lettre6_2"
+    },
+    {
+      "id": "22",
+      "name": "Lettre7-2",
+      "symbol": "var_lettre7_2"
+    },
+    {
+      "id": "23",
+      "name": "Lettre4",
+      "symbol": "var_lettre4"
+    },
+    {
+      "id": "24",
+      "name": "PVEn",
+      "symbol": "var_pven"
+    },
+    {
+      "id": "25",
+      "name": "PVKr",
+      "symbol": "var_pvkr_0"
+    },
+    {
+      "id": "26",
+      "name": "PacifistBar",
+      "symbol": "var_pacifistbar"
+    },
+    {
+      "id": "27",
+      "name": "QuitBattle",
+      "symbol": "var_quitbattle"
+    },
+    {
+      "id": "28",
+      "name": "LancerAtk",
+      "symbol": "var_lanceratk"
+    },
+    {
+      "id": "29",
+      "name": "INTDOOR",
+      "symbol": "var_intdoor"
+    },
+    {
+      "id": "30",
+      "name": "Glowshard",
+      "symbol": "var_glowshard"
+    },
+    {
+      "id": "31",
+      "name": "BattleNumber",
+      "symbol": "var_battlenumber"
+    },
+    {
+      "id": "32",
+      "name": "PVRalsei",
+      "symbol": "var_pvralsei"
+    },
+    {
+      "id": "33",
+      "name": "Equip",
+      "symbol": "var_equip"
+    },
+    {
+      "id": "34",
+      "name": "Actions",
+      "symbol": "var_actions"
+    },
+    {
+      "id": "35",
+      "name": "Kris's Atk",
+      "symbol": "var_kris_s_atk"
+    },
+    {
+      "id": "36",
+      "name": "TP",
+      "symbol": "var_tp"
+    },
+    {
+      "id": "37",
+      "name": "NumberOpposant",
+      "symbol": "var_numberopposant"
+    },
+    {
+      "id": "38",
+      "name": "ActionRalsei",
+      "symbol": "var_actionralsei"
+    },
+    {
+      "id": "39",
+      "name": "FinishWith",
+      "symbol": "var_finishwith"
+    },
+    {
+      "id": "97",
+      "name": "SusieQu",
+      "symbol": "var_susiequ_0"
+    },
+    {
+      "id": "98",
+      "name": "AV",
+      "symbol": "var_av"
+    },
+    {
+      "id": "99",
+      "name": "Jevil?",
+      "symbol": "var_jevil_"
+    },
+    {
+      "id": "100",
+      "name": "Room",
+      "symbol": "var_room"
+    },
+    {
+      "id": "101",
+      "name": "EnnemyKilled",
+      "symbol": "var_ennemykilled"
+    },
+    {
+      "id": "224",
+      "name": "GameTransfer",
+      "symbol": "var_gametransfer"
+    },
+    {
+      "id": "5b8605d8-78ec-492d-9934-dd790fb9c0bf__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "cef55cca-106e-4e82-b38d-cfe1faac3a91__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
+    }
+  ]
+}

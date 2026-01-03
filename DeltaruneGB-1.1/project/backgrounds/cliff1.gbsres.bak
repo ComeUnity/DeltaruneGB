@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "e865d76e-8b74-4f51-ba94-657e84ec76d6",
+  "name": "Cliff1",
+  "symbol": "bg_cliff1",
+  "width": 42,
+  "height": 20,
+  "imageWidth": 341,
+  "imageHeight": 166,
+  "filename": "Cliff1.png",
+  "tileColors": "0080+011b+00f+011b+00f+0128+002+0128+002+0128+002+0128+002+0128+002+0128+002+011b+00f+011b+00f+011b+0012+0115+0015+0115+0015+0115+008e+"
+}

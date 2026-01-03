@@ -1,0 +1,43 @@
+{
+  "_resourceType": "scene",
+  "id": "52580b66-81bf-4359-8843-782bf6cc4aac",
+  "_index": 29,
+  "type": "TOPDOWN",
+  "name": "Room2",
+  "symbol": "scene_32",
+  "x": 80,
+  "y": 688,
+  "width": 68,
+  "height": 18,
+  "backgroundId": "c2c1a95a-11a5-422c-b00d-25ebf3caf9c4",
+  "tilesetId": "",
+  "paletteIds": [
+    "97930b8d-f3ac-4efd-a1a2-a1faf79d2bf3",
+    "ad34ae2a-9fb7-44ca-8bc2-9aa1e1596db8",
+    "default-bg-1",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "ed122b2c-88f6-411b-950a-4372b29891c5"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 15
+      },
+      "id": "82c2693a-4498-4c06-b150-9ab4e89a061a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0018e+0f8+003c+0f!006+0f!003c+0f!006+0f!003c+0f!006+0f!003c+0f!006+0f!003+021d+0f3+0219+0f!006+0f!022+001dc+",
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e"
+}

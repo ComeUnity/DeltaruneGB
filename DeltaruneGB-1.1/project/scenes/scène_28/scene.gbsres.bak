@@ -1,0 +1,81 @@
+{
+  "_resourceType": "scene",
+  "id": "fdf760f9-6962-4b0b-9724-23d02045dd2b",
+  "_index": 25,
+  "name": "Scène 27",
+  "backgroundId": "a5096dff-101a-4c9d-9f46-b7521c2e6a94",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "d7647498-fd65-4f3b-8f47-17f72bb33444",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0017a+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_27",
+  "x": 3408,
+  "y": 952,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "a64798f5-ee1e-4973-9259-25172d5e7fcd"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Will now be\ndiscarded.",
+          "No one can choose\nwho they are in\nthis world.",
+          "      Your\n      Name\n       is..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "6303b426-cf08-4041-8cdc-6615b93c8bb1"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4461c7f2-d28d-44b0-a6f2-ec6361e6fb9b",
+        "x": {
+          "type": "number",
+          "value": 25
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": 4
+      },
+      "id": "fe63d251-c27a-410b-a043-d1f17145b0fc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

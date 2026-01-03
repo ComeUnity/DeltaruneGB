@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "925e7598-2a14-4b70-ba35-45c356e98ea2",
+  "name": "SliGen",
+  "symbol": "bg_sligen",
+  "width": 20,
+  "height": 21,
+  "imageWidth": 160,
+  "imageHeight": 169,
+  "filename": "SliGen.png",
+  "tileColors": ""
+}

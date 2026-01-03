@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "e36fb847-c8ae-4a98-8f0b-377471ae1fad",
+  "name": "name_input/gbs-mono",
+  "symbol": "tileset_gbs_mono",
+  "width": 16,
+  "height": 14,
+  "imageWidth": 128,
+  "imageHeight": 112,
+  "filename": "name_input/gbs-mono.png"
+}

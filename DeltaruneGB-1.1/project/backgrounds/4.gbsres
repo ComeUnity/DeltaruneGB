@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "87f1b30f-0678-47de-9492-b136529bfb74",
+  "name": "4",
+  "symbol": "bg_4",
+  "width": 76,
+  "height": 92,
+  "imageWidth": 608,
+  "imageHeight": 736,
+  "filename": "4.png",
+  "tileColors": "071b50+",
+  "autoColor": false
+}

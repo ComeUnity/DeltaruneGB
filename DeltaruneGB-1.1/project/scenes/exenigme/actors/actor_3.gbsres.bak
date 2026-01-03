@@ -1,0 +1,175 @@
+{
+  "_resourceType": "actor",
+  "id": "b4c0cc31-4549-4313-855b-bb110c0ff5ea",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3939e8d2-3987-4a22-953e-f1d82134eccf",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "_index": 2,
+  "symbol": "actor_26",
+  "x": 5,
+  "y": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Cayou:Heyy c'est\nl'heure du Quiz!",
+          "Qu'est-ce qui a\n4 pattes le matin.",
+          "3 pattes le midi\net 2 le soir."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "694c4d33-f9bd-4529-9474-664293212443"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "L'Homme",
+        "option2": "Le Chat",
+        "option3": "Un cascadeur",
+        "option4": "Une GameBoy",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue"
+      },
+      "id": "5aba3a68-355e-4a07-8fb8-47a1ed88b72c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Cayou: Et oui, un\ncascadeur!",
+                "En réalisant son\nrêve, il accepte\nde tout donner...",
+                "Quelle résiliance.",
+                "ClochArt:Euh,Slimy\nPourquoi tu parles\navec un caillou ??"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "9958838b-a7d3-47fa-a3c8-7d9eae7a207d"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "10b93252-1a11-449a-93f3-c73351eca30b"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -25
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "9f9c3089-c0bb-4469-aa9e-c2770806334b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Cayou:Nanhanhan!\nC'est pas ça !",
+                "Allez je suis\ngentil, si t'as la\nréponse, fais moi\nsigne."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "42494263-e0ab-434a-bdd2-c0e6b0fceb37"
+          }
+        ]
+      },
+      "id": "19e14c45-804e-4802-b2a9-20e658a9ba95"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

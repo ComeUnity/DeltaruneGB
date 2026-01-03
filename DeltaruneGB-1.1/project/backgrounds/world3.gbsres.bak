@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8b2617d9-93a6-4de9-be7e-f82a549468c4",
+  "name": "World3",
+  "symbol": "bg_image_1_png",
+  "width": 21,
+  "height": 18,
+  "imageWidth": 168,
+  "imageHeight": 144,
+  "filename": "World3.png",
+  "tileColors": "0058+012+0033+012+0065+01!0085+",
+  "autoColor": false
+}

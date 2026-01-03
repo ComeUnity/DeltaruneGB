@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "90bd6a9f-817e-4a83-8e59-1f153f2f88cc",
+  "name": "DogCheckSaveData",
+  "symbol": "bg_dogchecksavedata",
+  "width": 25,
+  "height": 18,
+  "imageWidth": 204,
+  "imageHeight": 148,
+  "filename": "DogCheckSaveData.png",
+  "tileColors": ""
+}

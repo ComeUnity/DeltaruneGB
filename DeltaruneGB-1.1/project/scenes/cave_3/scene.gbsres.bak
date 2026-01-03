@@ -1,0 +1,73 @@
+{
+  "_resourceType": "scene",
+  "id": "1cc3724e-4314-45dc-91eb-ef949f7fa138",
+  "_index": 15,
+  "name": "Cave",
+  "backgroundId": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "003d+0f12+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f8+002+0f8+009+0f!002+0f!008+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_17",
+  "x": 1456,
+  "y": 536,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "872f61cf-bd62-4e58-92ee-a751e7335fe9"
+      },
+      "id": "ea1256ee-aefc-4903-a95b-e1af1dc3f05a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "058085b4-9371-46a9-b469-7e2ac9f94714"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Slimy: Woaw, c'est\nplus grand que ça\nen a l'air...",
+          "ClochArt:ET OUI!\nC'est la sale du\nVoyeurisme!",
+          "Slimy:????",
+          "ClochArt:Grâce au\npouvoir de cet\nendroit, je peux\nte rendre plus\npuissant !",
+          "ClochArt:Viens\net tu comprendras!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "58a20816-4bf7-43f9-b515-f46f3159efb2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "53bc6900-17ed-45ba-b50f-fe30c5045359"
+}

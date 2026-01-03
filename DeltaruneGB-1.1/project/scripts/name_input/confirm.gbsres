@@ -1,0 +1,170 @@
+{
+  "_resourceType": "script",
+  "id": "d5667693-9a48-457e-bc79-b05db74f5a93",
+  "name": "name_input/Confirm",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_5",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "2f88cfb6-3cb2-4797-a8b7-384b5135c437"
+          }
+        ],
+        "false": []
+      },
+      "id": "1ad7f0d2-44cf-4efe-829f-8c7f401eccea"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Your vessel name\nis : %c$00$%c$01$%c$02$%c$03$%c$04$ ?",
+          "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Is that correct?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "c585254b-d75b-47f0-b8c5-14bc5cf73f87"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "V0",
+        "items": 2,
+        "option1": "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Yes",
+        "option2": "!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!No",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "b5d89354-dab0-4a48-8e4d-9ad37a4535b6"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "32"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "96d9fa9a-1f7d-403e-a996-98d28f42e3bf",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "a0ba4949-f8b9-4a36-a0e7-2733fb8a2ab1"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "5cb55931-201a-4d13-9b09-bfbb06eadaea",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "de691deb-ba91-4a97-978b-1961c684e20e"
+                }
+              ]
+            },
+            "id": "e803f4d7-0030-4b81-8946-a133507b6201"
+          }
+        ],
+        "false": []
+      },
+      "id": "433d7aa4-d001-49e1-a557-78944281869d"
+    }
+  ]
+}

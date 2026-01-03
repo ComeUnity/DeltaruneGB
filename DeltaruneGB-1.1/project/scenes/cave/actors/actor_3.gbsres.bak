@@ -1,0 +1,621 @@
+{
+  "_resourceType": "actor",
+  "id": "15d7cf30-df3a-427b-883a-996b605edb40",
+  "_index": 2,
+  "symbol": "actor_9",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ff60f924-2517-4302-94ea-07ae1f6444ca",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "353bee92-fd23-468b-bf09-99a098d1629d",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "ClochArt:Bienvenue\nHéro !",
+          "Ici, tu pourras te\nreposer, Sauvgard.",
+          "et je pourrais te\ndonner des indices\nsur tes futurs\nadversaires !",
+          "Cependant, cela te\ncoûtera bonbon !"
+        ]
+      }
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "Des indices ?",
+        "option2": "Sauvegarder.",
+        "option3": "Obt. de l'Argent",
+        "option4": "Nan rien oubliez.",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "c6fb1b4f-73f9-40fc-b3b0-4440e73efb28"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Quoi ? Mais j'en\nsais quoi\ndébrouille toi ?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "205aff01-8323-49d2-93e0-02a6530967c7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Je sais pas,\ntabasse quelqu'un?",
+                "J'ai vu un uluberlu\ndevant la grotte\ny a pas longtemps.",
+                "Occupe toi de lui\net ça fera l'affa."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "094ef202-2d37-4a01-9548-17a7c5459388"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "15"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "L0",
+                          "value": {
+                            "type": "rnd",
+                            "value": {
+                              "type": "number",
+                              "value": 5
+                            }
+                          }
+                        },
+                        "id": "94f7524d-e50b-4213-bbe5-7301dfe4b9cf"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "L0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Biensûr Voici un \nindice pr Abeille",
+                                  "Tu savais que Coca\navait un frère ?",
+                                  "Pepsi! Krkrkrk"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "31ecb4f5-0fa3-4625-b1a1-a66b12ab5376"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "15",
+                                "operation": "sub",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 1,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true
+                              },
+                              "id": "7558c890-8a91-467e-b4e3-c08c85c0f42c"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 2
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Biensûr Voici un\nindice pr Abeille!",
+                                        "Parfois il faut\nlire les noms...",
+                                        "Et parfois pas !"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "53aa86f6-7bf2-4760-99ee-fb381a67fce4"
+                                  },
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "15",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "vectorY": "L0",
+                                      "value": 1,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": true
+                                    },
+                                    "id": "49a94dec-3620-4d74-ac91-9c0de9d1c6a3"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "L0"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 3
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Biensûr Voici un\nindice pr Heliboul",
+                                              "J'y tombe souvent\nen hiver, même au\nChaud!"
+                                            ],
+                                            "__section": "text",
+                                            "avatarId": "",
+                                            "minHeight": 4,
+                                            "maxHeight": 7,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 5,
+                                            "position": "bottom",
+                                            "clearPrevious": true,
+                                            "showFrame": "true",
+                                            "speedIn": -1,
+                                            "speedOut": -1,
+                                            "closeWhen": "key",
+                                            "closeButton": "a",
+                                            "closeDelayTime": 0.5,
+                                            "closeDelayFrames": 30
+                                          },
+                                          "id": "8f56cbe7-169c-47a1-96d2-ffe685826c0a"
+                                        },
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "15",
+                                            "operation": "sub",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 1,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": true
+                                          },
+                                          "id": "1dd78475-2896-4dd4-94da-f25b56414178"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "variable",
+                                                "value": "L0"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 4
+                                              }
+                                            },
+                                            "__collapseElse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "La dernière enigme\na 9 Vies et\nretombe sur ses\npattes."
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "841a63b8-8331-4309-85b1-2737483dd84a"
+                                              },
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "15",
+                                                  "operation": "sub",
+                                                  "other": "val",
+                                                  "vectorY": "L0",
+                                                  "value": 1,
+                                                  "minValue": "0",
+                                                  "maxValue": "32767",
+                                                  "clamp": true
+                                                },
+                                                "id": "7b7bcce4-c181-43fe-be93-6e25e3a21298"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Voici! 6PV pour\nle Jeune Homme!"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "f7c82ff8-a00c-42c1-9013-debb65f0ab42"
+                                              },
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "15",
+                                                  "operation": "sub",
+                                                  "other": "val",
+                                                  "vectorY": "L0",
+                                                  "value": 1,
+                                                  "minValue": "0",
+                                                  "maxValue": "32767",
+                                                  "clamp": true
+                                                },
+                                                "id": "c9d4920a-4e0d-4da0-86ea-dd89c458d791"
+                                              },
+                                              {
+                                                "command": "EVENT_VARIABLE_MATH",
+                                                "args": {
+                                                  "vectorX": "13",
+                                                  "operation": "add",
+                                                  "other": "val",
+                                                  "vectorY": "L0",
+                                                  "value": 6,
+                                                  "minValue": "0",
+                                                  "maxValue": "32767",
+                                                  "clamp": true
+                                                },
+                                                "id": "91810433-a4c6-4c18-8de2-53afe48c66a3"
+                                              }
+                                            ]
+                                          },
+                                          "id": "c3e0c834-b733-431f-952c-44635454f40d"
+                                        }
+                                      ]
+                                    },
+                                    "id": "1f43d5bb-28d2-436c-a8ec-80f45fea6aec"
+                                  }
+                                ]
+                              },
+                              "id": "46e01a0c-f597-42d4-a91d-54a0b7997e7f"
+                            }
+                          ]
+                        },
+                        "id": "41ae8f75-bd1d-4a79-816a-fb3ddb196dee"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "EH NON, comme le\ndit l'expression:",
+                            "Pas d'pièces, pas\nd'indices !",
+                            "Reviens quand tu\nseras un peu plus\nhmm Riche ! "
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "c9ab4d23-fb18-45e1-a0ae-6f8c0d888d23"
+                      }
+                    ]
+                  },
+                  "id": "94b5ba45-6973-4288-a0f6-1d7c1b33c7ce"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SAVE_DATA",
+                        "args": {
+                          "saveSlot": 0,
+                          "__scriptTabs": "save"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Voilà champion!\nC'est fait !"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "faf070ce-6133-4d0b-b927-049fcab742a4"
+                            }
+                          ],
+                          "load": []
+                        },
+                        "id": "ed8bf8fd-9802-4916-99e1-91c9cc40d897"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "6f294305-fb56-4dc3-adbf-c43717b0c2c6"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Eh bah bonne chance\nhéro ! Que la DS\nveille sur toi !"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "0b673d6e-c840-4bd2-81e0-a6400488d88d"
+                }
+              ]
+            },
+            "id": "d80d6498-3fc6-4d40-95bd-6db1fd2ac2be"
+          }
+        ]
+      },
+      "id": "001e40ed-23af-4515-837a-b09cfe8d0b54"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

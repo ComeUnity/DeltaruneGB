@@ -1,0 +1,239 @@
+{
+  "_resourceType": "scene",
+  "id": "4461c7f2-d28d-44b0-a6f2-ec6361e6fb9b",
+  "_index": 3,
+  "type": "TOPDOWN",
+  "name": "BedroomKris",
+  "symbol": "scene_44",
+  "x": 1112,
+  "y": 480,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "03fa28af-27e9-4496-bb65-dc703dcbc932",
+  "tilesetId": "",
+  "paletteIds": [
+    "9e6f8fa0-0377-4fe1-9954-00841ecfb1f9",
+    "cc7e9b52-f04c-4498-9f78-119f89dfc29f",
+    "1724e12d-eb28-41d3-9892-ddba3c7cc600",
+    "99c8b25a-90da-4622-9b53-aefafcffae4a",
+    "62fb75a3-e6e8-46fb-ab4f-52fbca5aa762",
+    "106b7372-149e-4fcc-9e28-c53e701c1c2a",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [
+    "ed122b2c-88f6-411b-950a-4372b29891c5",
+    "default-bg-1",
+    "05939ccb-fc04-4b56-a5fb-e009f749a0e6",
+    "5d81df56-2252-40f8-8aec-cf3b3a763de7",
+    "01c4d8ef-38b7-47aa-8ab0-68547cecdf76",
+    "01c4d8ef-38b7-47aa-8ab0-68547cecdf76"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 15
+      },
+      "id": "622dfc75-6ffc-4705-b3d5-439f37159198"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "9a53451c-7dcd-401e-abfa-ffbc56136341"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "6331702c-23c2-43df-b6f5-00e1d69902f8"
+            },
+            "id": "9ffc0f82-0516-41cd-a335-aeabc24b52f5"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "9af156c4-4b1a-4de3-8131-23b11ce3b356"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!U:!F:82f9479f-7c40-453f-9d4c-9859c590e6bf!KRIS !",
+                "If you do not wake\nup, we will be\nlate for school!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "9d0e8b78-9098-4b4e-8965-7130e97d7295"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "6331702c-23c2-43df-b6f5-00e1d69902f8",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "ecd37a00-7069-4531-8d48-5f6aba7ff606"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "6331702c-23c2-43df-b6f5-00e1d69902f8",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "ee6a5d91-298a-4d9b-9afd-5c773f611399"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I will wait oustide\nfor you, Okay ?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "0e6b4629-6889-4130-af35-36d3d55a5372"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "6331702c-23c2-43df-b6f5-00e1d69902f8",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "89b978a2-ab14-45d0-87ed-6f17e22970ee"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "6331702c-23c2-43df-b6f5-00e1d69902f8"
+            },
+            "id": "1089c8a0-891b-42a0-ace3-85f72d3bbb53"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "6331702c-23c2-43df-b6f5-00e1d69902f8"
+            },
+            "id": "2f104558-8c75-4eb6-9ae0-3867266dab54"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "5a07c7a6-ae09-4383-bc11-f641b2b580b5"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "df083c70-5f18-459a-af2c-4be4d93f3afc"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "L3",
+              "operation": "set",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 1,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "32d8aad7-0efe-47bd-9190-63d883ff9944"
+          }
+        ]
+      },
+      "id": "ff62fd6d-2d20-4ed0-8bab-0b4eb9a9549a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "006b+0f6+00e+0f!004+0f!00a+0f5+004+0f5+006+0f!00c+0f!006+0f!00c+0f!003+0f4+00c+0f4+0038+0f3+00!0f4+00c+0f3+00!0f8+004+0f10+004+0f10+004+0f8+"
+}

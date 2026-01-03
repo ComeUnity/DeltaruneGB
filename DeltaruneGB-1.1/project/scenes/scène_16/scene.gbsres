@@ -1,0 +1,68 @@
+{
+  "_resourceType": "scene",
+  "id": "3f0be711-fc57-44c7-9566-95b81a4dca79",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "Scène 16",
+  "symbol": "scene_16",
+  "x": 1992,
+  "y": 208,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "310ef93f-5866-43f7-b4cc-b4d7a81ac055",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "3ac99fa7-b77f-4bf2-8156-ebc8bd9e9747",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "A Human",
+        "x": 0,
+        "y": 14,
+        "location": "background"
+      },
+      "id": "83369855-3989-4635-a3e2-24cd5a1574a7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "8d40a47e-56ad-4cfc-861c-161073c484cc"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "daf631b1-230f-4c17-9fc1-9480d4ad3a4a",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "b33b4027-2c5a-40a7-a079-44a308da6260"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

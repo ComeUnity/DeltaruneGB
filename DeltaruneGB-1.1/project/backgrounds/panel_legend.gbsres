@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9f5d4f79-1b7a-4923-aa29-befa15807ef4",
+  "name": "Panel Legend",
+  "symbol": "bg_panel_legend",
+  "width": 41,
+  "height": 255,
+  "imageWidth": 329,
+  "imageHeight": 2618,
+  "filename": "Panel Legend.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "62f89fa9-f73f-4090-82cc-717909a1f458",
+  "name": "BattleBee",
+  "symbol": "bg_battlebee",
+  "width": 20,
+  "height": 15,
+  "imageWidth": 160,
+  "imageHeight": 122,
+  "filename": "BattleBee.png",
+  "tileColors": ""
+}

@@ -1,0 +1,1321 @@
+{
+  "_resourceType": "scene",
+  "id": "0c5733ee-bd28-4f17-9bfd-41d6f0326b05",
+  "_index": 20,
+  "name": "Battle ScratchCat",
+  "backgroundId": "88c7e49d-dc4b-4eb4-ae05-a5099f909096",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_22",
+  "x": 2088,
+  "y": 30,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "ac93abc2-056c-4aa9-a01c-4280f222cdb6"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "86ab41d5-434f-46d0-adf1-f96100a599ec"
+      },
+      "id": "f8e3e243-e0cd-4192-b8d7-c56d328e4468"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "ScratchCat veux\nvous donner une\nbonne leçon"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f7904264-b2c6-4277-880a-185025a98cd9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d3a5a8a1-ded2-42a2-a831-f32ba5da45d6"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 4
+                }
+              }
+            },
+            "id": "cbd274d2-abee-4565-846d-e236e7917cd3"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.6,
+                    "frames": 30,
+                    "shakeDirection": "vertical",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 8
+                    }
+                  },
+                  "id": "7dfb8294-1bb4-4dff-acdb-224e7e829541"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "ScratchCat utilise\ndes blocs scratch.",
+                      "Vous perdez 9PVs"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "5c1b10a0-1504-4a00-b851-c1533fe7ed89"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 9,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true
+                  },
+                  "id": "c1613789-4f38-4bb9-a128-47448376cb50"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "24e5f319-a2bd-47f6-b76f-8cae8e9a3177"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "ScratchCat utilise\nGrifFlag.",
+                            "Vous perdez 4PVs"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "fdf6d942-6dd8-48b4-a354-0d46df2df875"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "13",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 4,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "c29d138b-acd5-4b10-9ee9-0a4eb23583b7"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "L0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 2
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$14$",
+                                "x": 13,
+                                "y": 4,
+                                "location": "background"
+                              },
+                              "id": "d534d271-8762-4312-9371-c4a4432dceba"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$13$",
+                                "x": 1,
+                                "y": 7,
+                                "location": "background"
+                              },
+                              "id": "3c69c88c-88b6-413e-b6c2-be0fa359bda8"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "ScratchCat relis\nson code et patch\nles brèches.",
+                                  "Il récupère 5PVs"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "7a2ccc89-af3b-49dc-adfe-a32da3f1b6c1"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$13$",
+                                "x": 1,
+                                "y": 7,
+                                "location": "background"
+                              },
+                              "id": "2c355536-2916-4622-be47-b09143de4662"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$14$",
+                                "x": 13,
+                                "y": 4,
+                                "location": "background"
+                              },
+                              "id": "e5a89a11-9068-49e3-b79c-3424a7c24281"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "14",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 5,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true
+                              },
+                              "id": "17814b9d-4069-4e25-9895-052c87de505f"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.4,
+                                "frames": 30,
+                                "shakeDirection": "vertical",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 7
+                                }
+                              },
+                              "id": "beab81a2-76df-4b73-be12-a8a3a2bfe9e3"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$14$",
+                                "x": 13,
+                                "y": 4,
+                                "location": "background"
+                              },
+                              "id": "e59a2784-d40f-4dd1-8d04-548d18bd5ddf"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$13$",
+                                "x": 1,
+                                "y": 7,
+                                "location": "background"
+                              },
+                              "id": "a49e42c6-3730-4209-8f00-92e686740d2f"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "ScratchCat utilise\ndes blocs scratch.",
+                                  "Mais le CPU ne\nsuis plus !",
+                                  "Il s'inflige\n4 Dégats."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "e8357eb0-8254-4ce9-bc58-d0a8a7b06774"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$14$",
+                                "x": 13,
+                                "y": 4,
+                                "location": "background"
+                              },
+                              "id": "e58bef3a-d359-4310-b828-93180e6550a3"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$13$",
+                                "x": 1,
+                                "y": 7,
+                                "location": "background"
+                              },
+                              "id": "8f7a0fb9-69e0-4130-82ac-62423f341572"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "14",
+                                "operation": "sub",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 4,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true
+                              },
+                              "id": "c43b2501-7234-41a1-8e2e-e04f34d5b275"
+                            }
+                          ]
+                        },
+                        "id": "3afb01ce-445b-4891-ae8e-69d9b3e9d007"
+                      }
+                    ]
+                  },
+                  "id": "acb78168-db50-438c-be43-2b036af29f1b"
+                }
+              ]
+            },
+            "id": "555c6640-836e-4416-ae1a-6acc218d3894"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "13"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "6ce8d644-6f42-4793-9c0f-72b784a80aad"
+                },
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "566df651-e09c-4dad-8178-2478703d2895"
+                  },
+                  "id": "d3e5b0ba-629d-4971-a863-539d6a9b5cad"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Vous perdez petit\nà petit vos\nrepaires.",
+                      "Vous vous\neffondrez.",
+                      "(Enfin comme un\nslime s'éffondre\ndonc je sais pas\nvous glissez ??)"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "85cc0543-4b30-4904-86b7-1ec0a05ff657"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "f1541147-5b3c-4d9a-aeed-f75016e40478",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "cfce9e73-3d5d-44ba-a660-98df499b616b"
+                }
+              ],
+              "false": []
+            },
+            "id": "16589270-d64e-4f12-b4e4-56845de1d74b"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Pv:$13$",
+              "x": 1,
+              "y": 7,
+              "location": "background"
+            },
+            "id": "1b603bee-3ad4-4a12-a6c8-dd3b62aa1134"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Pv:$14$",
+              "x": 13,
+              "y": 4,
+              "location": "background"
+            },
+            "id": "d85162b7-1dad-4b3d-b20f-383e66fcbe85"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "26"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "L0",
+                    "items": 4,
+                    "option1": "PistoSlime",
+                    "option2": "Slimini",
+                    "option3": "Rêves et Espoir",
+                    "option4": "PistoLame",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": true,
+                    "layout": "dialogue",
+                    "cancelOnLastOption": true
+                  },
+                  "id": "c5657713-b6b6-4a7c-983e-6dc158e68054"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "24"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_MENU",
+                        "args": {
+                          "variable": "L0",
+                          "items": 3,
+                          "option1": "PistoSlime",
+                          "option2": "Slimini",
+                          "option3": "Rêves et Espoir",
+                          "option4": "",
+                          "option5": "",
+                          "option6": "",
+                          "option7": "",
+                          "option8": "",
+                          "cancelOnB": true,
+                          "layout": "dialogue"
+                        },
+                        "id": "5809374b-3808-40c8-94c7-48a047e908e3"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "25"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_MENU",
+                              "args": {
+                                "variable": "L0",
+                                "items": 3,
+                                "option1": "PistoSlime",
+                                "option2": "Slimini",
+                                "option3": "PistoLame",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue",
+                                "cancelOnLastOption": true
+                              },
+                              "id": "39c6b91a-5279-4541-a372-e7eb9dabc46a"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_MENU",
+                              "args": {
+                                "variable": "L0",
+                                "items": 2,
+                                "option1": "PistoSlime",
+                                "option2": "Slimini",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": false,
+                                "layout": "dialogue",
+                                "cancelOnLastOption": false,
+                                "__collapse": false
+                              },
+                              "id": "4a4eb56f-7dfa-4016-8ad5-548b3b9aa2a8"
+                            }
+                          ]
+                        },
+                        "id": "c217be39-9927-40cc-863b-c054fb689016"
+                      }
+                    ]
+                  },
+                  "id": "644603f5-e315-43ba-a8b8-00afd47c1068"
+                }
+              ]
+            },
+            "id": "c395daff-6423-44d9-a821-611de49dd89b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "ac48e52e-0836-46c4-b415-a2e816b18408"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 1,
+                    "frames": 30,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 5
+                    },
+                    "__collapse": true
+                  },
+                  "id": "1e545181-7c01-4e2d-ad53-5c414a987bbe"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "14",
+                    "operation": "sub",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 5,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": true
+                  },
+                  "id": "e26b115d-6bb1-4aae-8f8d-044d4b19dbd0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Slimy utilise\nPistoSlime.",
+                      "Il inflige 5 dégâts."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "fab133a5-534c-4dd1-97e8-c44013baa847"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "1590da98-e870-494b-9bdc-c39d730d2de2"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 1,
+                          "frames": 30,
+                          "shakeDirection": "vertical",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 8
+                          }
+                        },
+                        "id": "b8e3eded-84af-4086-9276-853166f95cf9"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "9cdcaaa3-afa7-41f1-9716-48f8ea330d77"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Slimy utilise\nPistoLame.",
+                            "Il inlige 15Dégats\nmais s'inglige\n9PVs."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "c7fd7e56-4c32-4233-9858-c7e5e55dc77b"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "13",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 9,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "81a721ce-3692-4aac-a6f4-5f76db045fbf"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "14",
+                          "operation": "sub",
+                          "other": "val",
+                          "vectorY": "L0",
+                          "value": 15,
+                          "minValue": "0",
+                          "maxValue": "32767",
+                          "clamp": true
+                        },
+                        "id": "abfcb89e-1d2d-43ba-b4bc-51a8776a5cf4"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$14$",
+                          "x": 13,
+                          "y": 4,
+                          "location": "background"
+                        },
+                        "id": "ba272fa3-8e75-4ef2-82d0-01efeb4f4726"
+                      },
+                      {
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "Pv:$13$",
+                          "x": 1,
+                          "y": 7,
+                          "location": "background"
+                        },
+                        "id": "b4474eaa-6ef2-4174-9417-44345026949c"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "L0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Slimy utilise\nRêves et Espoir."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "079d4b99-a091-4592-81e8-f072336e54fe"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.5,
+                                "frames": 30,
+                                "shakeDirection": "diagonal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 10
+                                }
+                              },
+                              "id": "ad724a3d-efa1-4b6c-8e4e-d99db65317ec"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Il inflige 10Dégats et\nregagne 4PVs"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "aea7b267-1447-4048-9468-3fc5dfdc4866"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "13",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 4,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true
+                              },
+                              "id": "027390aa-bc8a-41b3-a3f8-1ac4d83acaf4"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "14",
+                                "operation": "sub",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 10,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true
+                              },
+                              "id": "d591035a-2c2a-47b9-846b-129c376d5c43"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$14$",
+                                "x": 13,
+                                "y": 4,
+                                "location": "background"
+                              },
+                              "id": "333f7cec-c456-48a3-be83-b7124b36916a"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$13$",
+                                "x": 1,
+                                "y": 7,
+                                "location": "background"
+                              },
+                              "id": "6d27eea2-c530-4c76-9a1c-f75670419d09"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "beep",
+                                "priority": "medium",
+                                "pitch": 2,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": false,
+                                "effect": 0,
+                                "__collapse": true
+                              },
+                              "id": "868eb155-f6d0-42bd-83e5-b7045660e8b9"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "14",
+                                "operation": "sub",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 2,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true,
+                                "__collapse": true
+                              },
+                              "id": "e19778ac-cc7f-4210-9dbb-4882e40d05e1"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 1,
+                                "frames": 30,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 5
+                                }
+                              },
+                              "id": "085777a4-5f32-4983-b559-ca060f8937b8"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "13",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "L0",
+                                "value": 3,
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": true,
+                                "__collapse": true
+                              },
+                              "id": "5e16edf6-525f-481b-8b00-548555d7050a"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Slimy utilise\nSlimini.",
+                                  "Il inflige 2\ndégats et récupère\n3PVs"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": true
+                              },
+                              "id": "721ce91e-4f60-45e2-95ce-a35a4750d06e"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$14$",
+                                "x": 13,
+                                "y": 4,
+                                "location": "background"
+                              },
+                              "id": "25da9c4a-086d-4a2a-8ca1-557dbfe56b73"
+                            },
+                            {
+                              "command": "EVENT_TEXT_DRAW",
+                              "args": {
+                                "text": "Pv:$13$",
+                                "x": 1,
+                                "y": 7,
+                                "location": "background"
+                              },
+                              "id": "759a4c8a-7bca-425c-ad22-4a7145be96bc"
+                            }
+                          ]
+                        },
+                        "id": "37ba0577-7738-420d-8ccd-3264fb688210"
+                      }
+                    ]
+                  },
+                  "id": "84c7dd69-f1d2-40a1-9384-ba2c3634ad46"
+                }
+              ]
+            },
+            "id": "8292c0a3-4451-4347-aea9-10c3647a0aff"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "14"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "44e451e2-7a0a-4d60-96c0-989b129e8136"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "aca94196-464b-4bd8-8a5e-739344f60ea2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "ScratchCat:\nN4NN C-35T P45 PO-",
+                      "P000%£/§?.\"#551BL3\n!!!!!",
+                      "Vous vous emparez\nde la cloche."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "d4ca772c-e03e-4527-81c8-f53a946bb1f4"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$14$",
+                    "x": 13,
+                    "y": 4,
+                    "location": "background"
+                  },
+                  "id": "ac62a232-6bd8-45ed-9a31-c8bd0d87e094"
+                },
+                {
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "Pv:$13$",
+                    "x": 1,
+                    "y": 7,
+                    "location": "background"
+                  },
+                  "id": "612c18e1-6698-4771-991b-06340d06dee7"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "c591b8fa-b233-410c-97fa-16397a658d09"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "13",
+                    "operation": "add",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 2,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": true,
+                    "__collapse": false
+                  },
+                  "id": "01525a15-51bf-4ec6-8fee-9b79dca84a29"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "15"
+                  },
+                  "id": "349b0963-d9ce-46e4-a30a-f5196ddf5257"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "3",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "a7dd140e-1588-4854-bef1-55037abb3700"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "47cbcb59-bd81-4abe-ae71-f0bc4f791e5f",
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "34e6e228-af4e-4302-9610-9eeeb213d54e"
+                }
+              ],
+              "false": []
+            },
+            "id": "95244b43-7b85-40b5-a5d1-59e1397ea2bc"
+          }
+        ]
+      },
+      "id": "31c1cac8-b02c-4b72-a41a-c9e8692cf582"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "autoFadeEventCollapse": true
+}

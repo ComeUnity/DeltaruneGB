@@ -1,0 +1,82 @@
+{
+  "_resourceType": "trigger",
+  "id": "9dd98bca-4e5e-4a3c-9191-5608639fc42f",
+  "name": "",
+  "prefabId": "",
+  "x": 25,
+  "y": 4,
+  "symbol": "trigger_13",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "98"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "* Nope !"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "86ab2ffb-b787-41e2-8e7e-f3dfd6e2d166"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "02247b2d-2cbd-4d67-94b6-411f63cc20ad",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "10130dc8-2c03-434d-ace8-64584ac7d931"
+          }
+        ]
+      },
+      "id": "becf6955-82bc-469c-96d6-8a93b6841567"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

@@ -1,0 +1,68 @@
+{
+  "_resourceType": "scene",
+  "id": "daf631b1-230f-4c17-9fc1-9480d4ad3a4a",
+  "_index": 11,
+  "type": "TOPDOWN",
+  "name": "Scène 16",
+  "symbol": "scene_17",
+  "x": 2176,
+  "y": 200,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "3cd4c84f-faf0-425a-a7ff-29114f10af66",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "3ac99fa7-b77f-4bf2-8156-ebc8bd9e9747",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "A MONSTER",
+        "x": 6,
+        "y": 14,
+        "location": "background"
+      },
+      "id": "1f5df6e3-196e-405e-9bb7-ffd1ac1bfc4a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "347a831b-180b-48dc-badb-adfd41263c44"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "003e92b5-17cc-48e2-87d4-1decfe00e385",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "401699a5-a9d2-41c1-937f-ede98db60b6b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

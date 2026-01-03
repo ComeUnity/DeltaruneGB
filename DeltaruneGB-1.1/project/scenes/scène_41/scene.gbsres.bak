@@ -1,0 +1,25 @@
+{
+  "_resourceType": "scene",
+  "id": "c7e30602-360c-40e6-89fc-14af07b879ea",
+  "_index": 40,
+  "name": "Scène 41",
+  "backgroundId": "d0ba5c24-0281-4a1d-ba33-99f91e65edfc",
+  "tilesetId": "",
+  "width": 25,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "83d2f2eb-5149-43ad-b03c-e40a3d410869",
+    "2c5b22bc-2ecb-45a8-b4b4-53e73093de31"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "001c2+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_41",
+  "x": 2157.904715401786,
+  "y": 977.5237862723213,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

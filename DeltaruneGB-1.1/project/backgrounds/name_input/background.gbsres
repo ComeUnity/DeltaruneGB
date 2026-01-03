@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "48acdb21-10f0-44c1-8932-7ec41dc720a5",
+  "name": "name_input/background",
+  "symbol": "bg_name_input_background",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "name_input/background.png",
+  "tileColors": "00168+",
+  "autoColor": false
+}

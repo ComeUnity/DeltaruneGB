@@ -1,0 +1,234 @@
+{
+  "_resourceType": "actor",
+  "id": "5ce71fe1-d830-45fe-aff7-57c848bbf1c1",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "04f257ad-7da4-4e52-813a-a5311addd65d",
+  "prefabId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_59",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "29"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "That's weird... I\ncan't find a\nswitch.",
+                "Guess it's further\nin..."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "57c7fea5-0af5-4a67-a65f-f7f9499cd0b6"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 55
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "dfff7293-bd33-40f1-9318-c53dae5cac22"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "29",
+              "operation": "set",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 2,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "39a42ae0-3c6f-4c7e-84d7-f5683c5d34a1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "...",
+                "Hey Kris. I think\nthis closet's, uh",
+                "Is broken. There\naren't any walls.",
+                "...",
+                "Well, we worked\nhard enough.",
+                "If Alphys wants\nchalk so bad...",
+                "She can get it\nherself.",
+                "Let's Split"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4d484979-2d53-4cfc-9063-e310f157eedf"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 15
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "bac33afc-5597-4c73-b90d-af1dc0e65499"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "17a1283f-faaf-42b5-8bb0-919aad19ca8c",
+              "x": {
+                "type": "number",
+                "value": 18
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "left",
+              "fadeSpeed": "2"
+            },
+            "id": "2f6a99a4-bd82-4924-b715-fbb246391e8e"
+          }
+        ]
+      },
+      "id": "afa12735-a018-417f-b550-5f943474bf7e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "See? Why are you\nso scared ?",
+          "There's nothing in\nthere but papers.",
+          "Let's try to find\nthe lightswitch."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e3a6d1b5-6ed5-4a00-81b8-3b0e5996d5e8"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 36
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "99207324-0d16-4469-809f-30418f7eb0d6"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "29",
+        "operation": "set",
+        "other": "val",
+        "vectorY": "L0",
+        "value": 1,
+        "minValue": "0",
+        "maxValue": "32767",
+        "clamp": false
+      },
+      "id": "14f178fa-6d82-4aef-a083-110fc4ea068c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 8,
+  "y": 11,
+  "_index": 0
+}

@@ -1,0 +1,25 @@
+{
+  "_resourceType": "background",
+  "id": "88e12b2d-e4b5-4721-b291-2bf36916d50a",
+  "name": "image-removebg-preview (16)",
+  "symbol": "sprite_image_removebg_previ",
+  "numFrames": 31.1875,
+  "filename": "image-removebg-preview (16).png",
+  "checksum": "d1424a1c2d9a9c18cdf6cf087afe145e7122c32f",
+  "width": 62,
+  "height": 35,
+  "states": [
+    "34fbb96b-1495-4628-96d9-13bfbed4c77e"
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "imageWidth": 499,
+  "imageHeight": 287,
+  "tileColors": ""
+}

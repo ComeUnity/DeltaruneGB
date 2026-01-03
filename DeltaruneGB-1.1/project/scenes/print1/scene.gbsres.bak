@@ -1,0 +1,213 @@
+{
+  "_resourceType": "scene",
+  "id": "6607aa6e-1b5b-4522-b700-efa8a6894eae",
+  "_index": 34,
+  "name": "PRINT1",
+  "backgroundId": "9e6fe31d-388e-496e-a224-ad24b4d8b9bc",
+  "tilesetId": "",
+  "width": 20,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00190+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_35",
+  "x": 1656,
+  "y": 632,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "ClochArt: Cette\nimage te convient?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "ef528925-1d2d-4294-91dc-c6f9a14af80f"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Oui",
+        "option2": "Autre",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "37b67f10-fe9d-4829-b692-9235866b2112"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PRINT",
+            "args": {
+              "source": "background",
+              "margin": 2,
+              "y": 0,
+              "height": 18,
+              "__collapseSuccess": false,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Il semble que ça\na marché !",
+                      "J'éspère que\nl'autre monde\ngardera ce fragm.\nde souvenir..."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "bb8c6711-2678-475c-b834-cdb21179a6bd"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "1cc3724e-4314-45dc-91eb-ef949f7fa138",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "61c56ca8-31a3-4020-b1f5-0d73113ae6be"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "ClochArt: Il\nsemble que mon\npouvoir a échoué..",
+                      "Peut-être que\nl'autre monde\nn'est juste pas\nencore prêt!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "f3b22f5b-66d0-4033-8cc7-8ef7cb59863b"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "1cc3724e-4314-45dc-91eb-ef949f7fa138",
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "4244f7f5-f68d-4fbe-b77c-c8c7bc8a3b6a"
+                }
+              ]
+            },
+            "id": "fdc72174-bb23-4208-8186-63a6b133784e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "ccb9138c-8262-44ce-bcec-46effda1fe8c",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "90aebffd-466a-4971-81f8-d76799ad8b69"
+          }
+        ]
+      },
+      "id": "f677dc14-c827-43a8-aca6-7b8485a1d29c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

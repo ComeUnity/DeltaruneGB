@@ -1,0 +1,72 @@
+{
+  "_resourceType": "actor",
+  "id": "c9afb8a3-5d54-4932-8a2a-2471c269ef2e",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e3c884cf-6444-4d8c-bc3b-dca807ff9abf",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 0.25,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_0",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The game isn't\nfinish yet...",
+          "Do you want to\ntest Battle ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e8fe0cf5-6263-4896-b127-221038691e3b"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Yes",
+        "option2": "No",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "2ea542e2-a43e-4e99-8a13-582de0f7e37c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 26,
+  "y": 14,
+  "_index": 0
+}

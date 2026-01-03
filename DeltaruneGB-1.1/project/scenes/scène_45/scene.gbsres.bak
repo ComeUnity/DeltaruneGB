@@ -1,0 +1,133 @@
+{
+  "_resourceType": "scene",
+  "id": "fa305f94-8dd0-4cde-bd0a-f9f7d2976715",
+  "_index": 44,
+  "type": "TOPDOWN",
+  "name": "Scène 45",
+  "symbol": "scene_45",
+  "x": 2920,
+  "y": 1216,
+  "width": 30,
+  "height": 24,
+  "backgroundId": "db63f269-15db-42b1-b9ac-44b72f54a15d",
+  "tilesetId": "",
+  "paletteIds": [
+    "97930b8d-f3ac-4efd-a1a2-a1faf79d2bf3",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "spritePaletteIds": [
+    "08a8b14e-0bc4-4d74-a2d6-5ac9a5b0228c",
+    "05939ccb-fc04-4b56-a5fb-e009f749a0e6",
+    "75cfe382-6300-4985-b4ec-0991ebad8077",
+    "29de28fa-8472-48af-a5ea-b3cd01c065f7",
+    "2a01f30d-2e3b-4576-99db-997f2cc9cf90",
+    "0d0464ce-6af3-4603-8b8a-bfcfdebe27d4",
+    "0f8395c6-ea0f-4555-8775-75a9333fde55",
+    "d6f61107-1bef-4176-a089-5a85dad854ce"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "434af165-c5b6-4248-8b7d-406b45c7bb4e",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "916d709e-deb0-4e4c-bc4c-a5016e5806c0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "8f7469c0-14b0-4c07-965f-fafa21f11ce7"
+      },
+      "id": "24227c03-d072-4154-ad1e-a7e0a248c7b6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!So. Does everyone\nhave a..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7e730b8c-ed50-4764-b454-ef6e39710b60"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "4e3d06a0-74a4-4185-901f-275ac25774eb"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 25
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "68cb7ec0-c327-4893-9a5a-74ece27a0131"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:ecaf9c4c-c136-4d2f-b7fa-48ef640ac939!A:!F:26fa15df-3318-44ad-8bfd-feff8ba7991d!Oh... Kris",
+          "We tought you\nweren't comming\ntoday!",
+          "We're going group\nproject this\nmonth",
+          "Uhhh... So walk\naround and find a\npartner, Ok?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f9d23d4b-0266-4b92-8e8b-e27c1f7331ab"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0073+0f4+0019+0f!004+0f1a+004+0f!0026+0fb+0013+0fb+0013+0fb+004a+0f6+003+0f5+004+0f5+0019+0f5+002e+0f5+0010+0f6+003+0f5+004+0f5+0010+0f5+004+0f5+0044+0f5+004+0f4+004+0f5+008+0f5+004+0f4+004+0f5+0040+"
+}

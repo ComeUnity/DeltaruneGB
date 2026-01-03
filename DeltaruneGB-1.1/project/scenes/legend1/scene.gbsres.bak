@@ -1,0 +1,105 @@
+{
+  "_resourceType": "scene",
+  "id": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+  "_index": 0,
+  "type": "TOPDOWN",
+  "name": "Legend1",
+  "symbol": "scene_logo",
+  "x": 128,
+  "y": 392,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "9732a30b-6d1d-4a4d-bbd3-3766e8a0a931",
+  "tilesetId": "",
+  "paletteIds": [
+    "df8a3241-117c-424b-b569-a3c12709aeb0",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "1afb85a2-bb43-472a-9bf8-0c3b593068a9"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "76271b1b-ab31-4774-be55-7827a9fa657a"
+    },
+    {
+      "id": "8343c54c-07a1-4d30-892c-91db234b8d9b",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "1a5a2c5c-4a81-42c5-acf3-ea4d5ccba2fd"
+      },
+      "id": "ee70d672-5c8a-412d-9200-1184e7c26265"
+    },
+    {
+      "id": "e88fcc15-89a0-4db6-b069-aeffe9cb222b",
+      "command": "EVENT_OVERLAY_MOVE_TO",
+      "args": {
+        "x": 0,
+        "y": 18,
+        "speed": "2"
+      }
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Once upon a time a\n      Legend",
+          "was wispered among\nShadows...",
+          "It was    It was\na legend  a legend\nof Hope   of dream"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3ca25377-ab3e-4696-b438-cfee205db9b8"
+    },
+    {
+      "id": "9daba1e6-c056-494a-babc-caa87913aa32",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "7af9a902-1817-4262-a252-6cd2ff4b3827",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00190+"
+}

@@ -1,0 +1,211 @@
+{
+  "_resourceType": "script",
+  "id": "23955ca5-9080-40ec-ad7b-8af0e15a8c65",
+  "name": "name_input/Set Hand Position",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "x",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "y",
+      "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "PosX",
+      "passByReference": false
+    },
+    "V3": {
+      "id": "V3",
+      "name": "PosY",
+      "passByReference": false
+    }
+  },
+  "actors": {},
+  "symbol": "script_3",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": false
+            },
+            "id": "86fe57df-3a22-424b-80e9-f766c3bbc043"
+          }
+        ],
+        "false": []
+      },
+      "id": "b9a01837-244d-452a-8b45-c992f0a28958"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "number",
+                "value": 6
+              },
+              "__collapse": false
+            },
+            "id": "d1ab077c-f84f-425f-ab79-a800ea4fe19d"
+          }
+        ],
+        "false": []
+      },
+      "id": "6821d47e-9e40-4db5-9169-214fa0e31a7d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "V1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V1",
+              "value": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": true
+            },
+            "id": "a2af7933-30ce-487b-a1c1-5b6a9c58aec0"
+          }
+        ],
+        "false": []
+      },
+      "id": "83b60740-f032-431c-ba9a-bb21fd795b08"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "V1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V1",
+              "value": {
+                "type": "number",
+                "value": 3
+              },
+              "__collapse": false
+            },
+            "id": "39709654-52da-4c70-8f8b-24b1803b0dd2"
+          }
+        ],
+        "false": []
+      },
+      "id": "b961c47e-206d-474a-80ba-db75951111e0"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "V2",
+        "expression": "3+($V0$*2)",
+        "__collapse": true
+      },
+      "id": "e72925c2-1f30-4455-97d0-fbd006b0b301"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "V3",
+        "expression": "6+($V1$*2)",
+        "__collapse": true
+      },
+      "id": "58f4f866-22bf-4063-904c-d9fa74ee6289"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "variable",
+          "value": "V2"
+        },
+        "y": {
+          "type": "variable",
+          "value": "V3"
+        },
+        "__collapse": true,
+        "__comment": false
+      },
+      "id": "e2e24059-7100-4095-81a7-544baf10b82a"
+    }
+  ]
+}

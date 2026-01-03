@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7109dbde-9f8e-44ee-ac1a-01c1259da44d",
+  "name": "IceDay",
+  "symbol": "bg_iceday",
+  "width": 32,
+  "height": 26,
+  "imageWidth": 256,
+  "imageHeight": 208,
+  "filename": "IceDay.png",
+  "tileColors": "00142+06!0010a+06!00f2+",
+  "autoColor": false
+}

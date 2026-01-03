@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "e6e15559-54bf-40dc-a95e-3a554cba07f6",
+  "name": "Question",
+  "symbol": "bg_question",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 195,
+  "imageHeight": 144,
+  "filename": "Question.png",
+  "tileColors": "00eb+05!004f+05!0074+"
+}

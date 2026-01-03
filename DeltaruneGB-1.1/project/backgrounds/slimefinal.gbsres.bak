@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "16293a97-9ab2-495e-a92b-c9b24268b64b",
+  "name": "SlimeFinal",
+  "symbol": "bg_slimefinal",
+  "width": 23,
+  "height": 18,
+  "imageWidth": 184,
+  "imageHeight": 144,
+  "filename": "SlimeFinal.png",
+  "tileColors": "0018+04!0045+02!0015+024+0012+026+0011+026+0011+025+0014+022+002+023+0014+023+0014+023+0014+023+005+015+0012+016+0011+016+0012+012+0034+",
+  "autoColor": false
+}

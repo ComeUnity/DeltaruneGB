@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d6431d84-193a-4528-b9dd-4432c4f223c0",
+  "name": "Toilet2",
+  "symbol": "bg_toilet2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Toilet2.png",
+  "tileColors": "",
+  "autoColor": false
+}

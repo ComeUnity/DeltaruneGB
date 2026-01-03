@@ -1,0 +1,61 @@
+{
+  "_resourceType": "scene",
+  "id": "edea0211-8406-4338-b45e-5bc96d6600bc",
+  "_index": 17,
+  "name": "Scène 19",
+  "backgroundId": "a5096dff-101a-4c9d-9f46-b7521c2e6a94",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "1515f879-e834-4eea-aa22-c680a48c145d"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0017a+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_19",
+  "x": 2744,
+  "y": 408,
+  "script": [
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "And the world saved\nfrom destruction",
+        "x": 1,
+        "y": 15,
+        "location": "background"
+      },
+      "id": "2c6512b7-822f-4496-a6f4-0c3327a961e1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "ab663128-c903-4396-b6e4-be50fcc736c7"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "8247dfed-2efb-41a9-ab80-d5d052a7b78b",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "be1e7d79-0d8b-4772-9322-97527a310590"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

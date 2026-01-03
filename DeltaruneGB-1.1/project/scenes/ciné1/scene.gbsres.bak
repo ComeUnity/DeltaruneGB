@@ -1,0 +1,132 @@
+{
+  "_resourceType": "scene",
+  "id": "a39cee84-d147-4913-836b-84f18be908df",
+  "_index": 18,
+  "name": "Ciné1",
+  "backgroundId": "bff8146d-de64-44b3-b0e1-0e76f65ad07b",
+  "tilesetId": "",
+  "width": 21,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_20",
+  "x": 2088,
+  "y": 424,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Je brille par mon\nélégance et mes\nvies.",
+          "Mais aussi par ma\nstupidité.\nQui-suis-je ?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "49139ddd-566f-4524-b2b4-ce335e4df5dd"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "Chris.",
+        "option2": "Le Mannequin",
+        "option3": "Le Chat",
+        "option4": "Le Dev de ce jeu",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue"
+      },
+      "id": "b51121b4-3ef0-4ed8-8a98-f7a568c470f3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "number",
+            "value": 3
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "L0"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "13"
+            },
+            "id": "128b2dc3-9f05-4d9d-948b-646cbf847f76"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "13",
+              "operation": "sub",
+              "other": "val",
+              "vectorY": "L0",
+              "value": "0",
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": true
+            },
+            "id": "9f916931-3080-457c-af4b-7ed536231b24"
+          }
+        ]
+      },
+      "id": "a3538203-9347-4db5-8508-6ecba2bcac94"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "59a156c3-7a85-4a8d-b06c-f2d80cacd0bc",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": 0
+      },
+      "id": "a9dccf6d-c76a-47d6-87e7-f33f0a4630ef"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3cab6c7c-1c92-4a67-a3f4-a487039a8344"
+}

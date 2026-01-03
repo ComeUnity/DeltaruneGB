@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d517461b-1d90-40e6-ae7e-8dbd66853568",
+  "name": "castle_town",
+  "symbol": "bg_castle_town",
+  "width": 20,
+  "height": 26,
+  "imageWidth": 160,
+  "imageHeight": 208,
+  "filename": "castle_town.png",
+  "tileColors": "008+074+0010+074+008+0458+054+0410+054+0410+054+0410+054+04d0+0078+",
+  "autoColor": false
+}
